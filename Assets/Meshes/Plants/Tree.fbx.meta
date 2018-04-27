@@ -1,0 +1,258 @@
+fileFormatVersion: 2
+guid: 5ed00b03943cbf841907c00f6e5ed37e
+timeCreated: 1512456393
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Leaf_group
+    100002: Leaf_group1
+    100004: Leaf_group2
+    100006: Leaf_group4
+    100008: Leaf_group5
+    100010: Leaf_group6
+    100012: Leaf_group7
+    100014: Leaf_group8
+    100016: polySurface1
+    100018: pSphere1
+    100020: pSphere1 1
+    100022: pSphere1 2
+    100024: pSphere1 3
+    100026: pSphere1 4
+    100028: pSphere1 5
+    100030: pSphere1 6
+    100032: pSphere1 7
+    100034: pSphere2
+    100036: pSphere2 1
+    100038: pSphere2 2
+    100040: pSphere2 3
+    100042: pSphere2 4
+    100044: pSphere2 5
+    100046: pSphere2 6
+    100048: pSphere2 7
+    100050: pSphere3
+    100052: pSphere3 1
+    100054: pSphere3 2
+    100056: pSphere3 3
+    100058: pSphere3 4
+    100060: pSphere3 5
+    100062: pSphere3 6
+    100064: pSphere3 7
+    100066: //RootNode
+    100068: Leaf_group3
+    100070: Leaf_group10
+    100072: Leaf_group11
+    100074: Leaf_group12
+    100076: Leaf_group13
+    100078: Leaf_group14
+    100080: Leaf_group15
+    100082: Leaf_group16
+    100084: Leaf_group17
+    400000: Leaf_group
+    400002: Leaf_group1
+    400004: Leaf_group2
+    400006: Leaf_group4
+    400008: Leaf_group5
+    400010: Leaf_group6
+    400012: Leaf_group7
+    400014: Leaf_group8
+    400016: polySurface1
+    400018: pSphere1
+    400020: pSphere1 1
+    400022: pSphere1 2
+    400024: pSphere1 3
+    400026: pSphere1 4
+    400028: pSphere1 5
+    400030: pSphere1 6
+    400032: pSphere1 7
+    400034: pSphere2
+    400036: pSphere2 1
+    400038: pSphere2 2
+    400040: pSphere2 3
+    400042: pSphere2 4
+    400044: pSphere2 5
+    400046: pSphere2 6
+    400048: pSphere2 7
+    400050: pSphere3
+    400052: pSphere3 1
+    400054: pSphere3 2
+    400056: pSphere3 3
+    400058: pSphere3 4
+    400060: pSphere3 5
+    400062: pSphere3 6
+    400064: pSphere3 7
+    400066: //RootNode
+    400068: Leaf_group3
+    400070: Leaf_group10
+    400072: Leaf_group11
+    400074: Leaf_group12
+    400076: Leaf_group13
+    400078: Leaf_group14
+    400080: Leaf_group15
+    400082: Leaf_group16
+    400084: Leaf_group17
+    2300000: polySurface1
+    2300002: pSphere1
+    2300004: pSphere1 1
+    2300006: pSphere1 2
+    2300008: pSphere1 3
+    2300010: pSphere1 4
+    2300012: pSphere1 5
+    2300014: pSphere1 6
+    2300016: pSphere1 7
+    2300018: pSphere2
+    2300020: pSphere2 1
+    2300022: pSphere2 2
+    2300024: pSphere2 3
+    2300026: pSphere2 4
+    2300028: pSphere2 5
+    2300030: pSphere2 6
+    2300032: pSphere2 7
+    2300034: pSphere3
+    2300036: pSphere3 1
+    2300038: pSphere3 2
+    2300040: pSphere3 3
+    2300042: pSphere3 4
+    2300044: pSphere3 5
+    2300046: pSphere3 6
+    2300048: pSphere3 7
+    3300000: polySurface1
+    3300002: pSphere1
+    3300004: pSphere1 1
+    3300006: pSphere1 2
+    3300008: pSphere1 3
+    3300010: pSphere1 4
+    3300012: pSphere1 5
+    3300014: pSphere1 6
+    3300016: pSphere1 7
+    3300018: pSphere2
+    3300020: pSphere2 1
+    3300022: pSphere2 2
+    3300024: pSphere2 3
+    3300026: pSphere2 4
+    3300028: pSphere2 5
+    3300030: pSphere2 6
+    3300032: pSphere2 7
+    3300034: pSphere3
+    3300036: pSphere3 1
+    3300038: pSphere3 2
+    3300040: pSphere3 3
+    3300042: pSphere3 4
+    3300044: pSphere3 5
+    3300046: pSphere3 6
+    3300048: pSphere3 7
+    4300000: polySurface1
+    4300002: pSphere1
+    4300004: pSphere2
+    4300006: pSphere3
+    4300008: pSphere1
+    4300010: pSphere2
+    4300012: pSphere3
+    4300014: pSphere1
+    4300016: pSphere2
+    4300018: pSphere3
+    4300020: pSphere1
+    4300022: pSphere2
+    4300024: pSphere3
+    4300026: pSphere1
+    4300028: pSphere2
+    4300030: pSphere3
+    4300032: pSphere1
+    4300034: pSphere2
+    4300036: pSphere3
+    4300038: pSphere1
+    4300040: pSphere2
+    4300042: pSphere3
+    4300044: pSphere1
+    4300046: pSphere2
+    4300048: pSphere3
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn1
+    second: {fileID: 2100000, guid: a2244da11fcaf474e905c5dac4f32eba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 72249297c65ba02469c50101866b644b, type: 2}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 0
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1 @@
+{"clips":[{"instanceID":12970},{"instanceID":11302},{"instanceID":12958}],"audioManager":{"instanceID":163958},"dashEnabled":false,"characterSpeed":1,"healthSystem":0,"objectSpeed":1,"heightLockEnabled":false,"notes":"","screenShakeMode":1,"musicEnabled":true,"musicMode":0}

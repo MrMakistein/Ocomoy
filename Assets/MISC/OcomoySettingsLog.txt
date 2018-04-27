@@ -1,0 +1,1582 @@
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 12:18:10
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "w4rc3",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 12:18:25
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "wdawd",
+    "screenShakeMode": 0,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 12:18:36
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "wdawd",
+    "screenShakeMode": 0,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 12:18:39
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "wdawd",
+    "screenShakeMode": 0,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 12:26:21
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 12:27:3
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "These are cool notes!",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 12:27:27
+{
+    "dashEnabled": true,
+    "characterSpeed": 2,
+    "healthSystem": 1,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "Wowwww",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 12:27:30
+{
+    "dashEnabled": true,
+    "characterSpeed": 2,
+    "healthSystem": 1,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 12:28:7
+{
+    "dashEnabled": false,
+    "characterSpeed": 2,
+    "healthSystem": 1,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 12:28:14
+{
+    "dashEnabled": false,
+    "characterSpeed": 0,
+    "healthSystem": 1,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 12:34:34
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 12:38:48
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 12:41:17
+{
+    "dashEnabled": true,
+    "characterSpeed": 0,
+    "healthSystem": 1,
+    "objectSpeed": 2,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 2
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 12:41:29
+{
+    "dashEnabled": false,
+    "characterSpeed": 0,
+    "healthSystem": 1,
+    "objectSpeed": 2,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 2
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 12:41:36
+{
+    "dashEnabled": true,
+    "characterSpeed": 0,
+    "healthSystem": 1,
+    "objectSpeed": 2,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 2
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 12:44:55
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 12:45:10
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "the menu was closed with close after wrinting me ",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 12:47:38
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 12:48:23
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "writtemeun was closed with esc but i clicked elsewehere beforehand",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 12:49:17
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 12:50:42
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 12:55:58
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 12:56:48
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 13:1:5
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 13:1:59
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 13:9:20
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 13:10:10
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 13:10:36
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 13:12:26
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 13:13:42
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 13:15:18
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 13:19:43
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 13:22:9
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 13:22:55
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 13:24:40
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 13:25:2
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "FUCK YOU",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 13:27:14
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 13:35:6
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 13:37:41
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 13:38:52
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "wefewfgewf",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 13:39:9
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "3erqweqwrdqdwqwd",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 13:42:52
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "one final test",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 13:43:11
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "fina l final test",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 13:43:17
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "final final final test",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 13:45:23
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 13:45:32
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 13:45:36
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 13:45:42
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 14:27:33
+{
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 2,
+    "musicEnabled": false,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 14:27:39
+{
+    "dashEnabled": true,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 2,
+    "musicEnabled": false,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 14:27:45
+{
+    "dashEnabled": true,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": false,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 14:27:49
+{
+    "dashEnabled": true,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 0,
+    "musicEnabled": false,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 14:27:58
+{
+    "dashEnabled": true,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 0,
+    "musicEnabled": false,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 14:38:42
+{
+    "clips": [
+        {
+            "instanceID": 12710
+        },
+        {
+            "instanceID": 11274
+        },
+        {
+            "instanceID": 12892
+        }
+    ],
+    "audioManager": {
+        "instanceID": 25192
+    },
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": false,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 14:41:23
+{
+    "clips": [
+        {
+            "instanceID": 12710
+        },
+        {
+            "instanceID": 11274
+        },
+        {
+            "instanceID": 12892
+        }
+    ],
+    "audioManager": {
+        "instanceID": 25192
+    },
+    "dashEnabled": true,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": false,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 14.4.2018, 	Time: 14:48:22
+{
+    "clips": [
+        {
+            "instanceID": 12798
+        },
+        {
+            "instanceID": 11358
+        },
+        {
+            "instanceID": 12978
+        }
+    ],
+    "audioManager": {
+        "instanceID": 663418
+    },
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": false,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 15.4.2018, 	Time: 18:1:32
+{
+    "clips": [
+        {
+            "instanceID": 12776
+        },
+        {
+            "instanceID": 11300
+        },
+        {
+            "instanceID": 12956
+        }
+    ],
+    "audioManager": {
+        "instanceID": 15748
+    },
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "Hello???",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 15.4.2018, 	Time: 18:1:45
+{
+    "clips": [
+        {
+            "instanceID": 12776
+        },
+        {
+            "instanceID": 11300
+        },
+        {
+            "instanceID": 12956
+        }
+    ],
+    "audioManager": {
+        "instanceID": 15748
+    },
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 15.4.2018, 	Time: 18:4:22
+{
+    "clips": [
+        {
+            "instanceID": 12776
+        },
+        {
+            "instanceID": 11300
+        },
+        {
+            "instanceID": 12956
+        }
+    ],
+    "audioManager": {
+        "instanceID": 15748
+    },
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 1,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 0,
+    "musicEnabled": false,
+    "musicMode": 1
+}
+
+------------- SETTINGS -------------
+Date: 15.4.2018, 	Time: 18:47:15
+{
+    "clips": [
+        {
+            "instanceID": 12776
+        },
+        {
+            "instanceID": 11300
+        },
+        {
+            "instanceID": 12956
+        }
+    ],
+    "audioManager": {
+        "instanceID": 175706
+    },
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 15.4.2018, 	Time: 19:15:6
+{
+    "clips": [
+        {
+            "instanceID": 12776
+        },
+        {
+            "instanceID": 11300
+        },
+        {
+            "instanceID": 12956
+        }
+    ],
+    "audioManager": {
+        "instanceID": 175706
+    },
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 15.4.2018, 	Time: 21:56:24
+{
+    "clips": [
+        {
+            "instanceID": 12784
+        },
+        {
+            "instanceID": 11304
+        },
+        {
+            "instanceID": 12964
+        }
+    ],
+    "audioManager": {
+        "instanceID": 24796
+    },
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 15.4.2018, 	Time: 21:57:27
+{
+    "clips": [
+        {
+            "instanceID": 12784
+        },
+        {
+            "instanceID": 11304
+        },
+        {
+            "instanceID": 12964
+        }
+    ],
+    "audioManager": {
+        "instanceID": 24796
+    },
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 15.4.2018, 	Time: 21:57:37
+{
+    "clips": [
+        {
+            "instanceID": 12784
+        },
+        {
+            "instanceID": 11304
+        },
+        {
+            "instanceID": 12964
+        }
+    ],
+    "audioManager": {
+        "instanceID": 24796
+    },
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 2,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 15.4.2018, 	Time: 21:57:40
+{
+    "clips": [
+        {
+            "instanceID": 12784
+        },
+        {
+            "instanceID": 11304
+        },
+        {
+            "instanceID": 12964
+        }
+    ],
+    "audioManager": {
+        "instanceID": 24796
+    },
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 15.4.2018, 	Time: 22:0:14
+{
+    "clips": [
+        {
+            "instanceID": 12784
+        },
+        {
+            "instanceID": 11304
+        },
+        {
+            "instanceID": 12964
+        }
+    ],
+    "audioManager": {
+        "instanceID": 24796
+    },
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 2,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 15.4.2018, 	Time: 22:0:24
+{
+    "clips": [
+        {
+            "instanceID": 12784
+        },
+        {
+            "instanceID": 11304
+        },
+        {
+            "instanceID": 12964
+        }
+    ],
+    "audioManager": {
+        "instanceID": 24796
+    },
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 0,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 15.4.2018, 	Time: 22:0:28
+{
+    "clips": [
+        {
+            "instanceID": 12784
+        },
+        {
+            "instanceID": 11304
+        },
+        {
+            "instanceID": 12964
+        }
+    ],
+    "audioManager": {
+        "instanceID": 24796
+    },
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 15.4.2018, 	Time: 22:1:12
+{
+    "clips": [
+        {
+            "instanceID": 12784
+        },
+        {
+            "instanceID": 11304
+        },
+        {
+            "instanceID": 12964
+        }
+    ],
+    "audioManager": {
+        "instanceID": 24796
+    },
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": false,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 15.4.2018, 	Time: 22:1:43
+{
+    "clips": [
+        {
+            "instanceID": 12784
+        },
+        {
+            "instanceID": 11304
+        },
+        {
+            "instanceID": 12964
+        }
+    ],
+    "audioManager": {
+        "instanceID": 24796
+    },
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": false,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 15.4.2018, 	Time: 22:5:21
+{
+    "clips": [
+        {
+            "instanceID": 12784
+        },
+        {
+            "instanceID": 11304
+        },
+        {
+            "instanceID": 12964
+        }
+    ],
+    "audioManager": {
+        "instanceID": 24796
+    },
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": false,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 15.4.2018, 	Time: 22:28:59
+{
+    "clips": [
+        {
+            "instanceID": 12784
+        },
+        {
+            "instanceID": 11304
+        },
+        {
+            "instanceID": 12964
+        }
+    ],
+    "audioManager": {
+        "instanceID": 24796
+    },
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 1
+}
+
+------------- SETTINGS -------------
+Date: 15.4.2018, 	Time: 23:0:24
+{
+    "clips": [
+        {
+            "instanceID": 223224
+        },
+        {
+            "instanceID": 11304
+        },
+        {
+            "instanceID": 12964
+        }
+    ],
+    "audioManager": {
+        "instanceID": 440082
+    },
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 15.4.2018, 	Time: 23:0:34
+{
+    "clips": [
+        {
+            "instanceID": 223224
+        },
+        {
+            "instanceID": 11304
+        },
+        {
+            "instanceID": 12964
+        }
+    ],
+    "audioManager": {
+        "instanceID": 440082
+    },
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 15.4.2018, 	Time: 23:0:34
+{
+    "clips": [
+        {
+            "instanceID": 223224
+        },
+        {
+            "instanceID": 11304
+        },
+        {
+            "instanceID": 12964
+        }
+    ],
+    "audioManager": {
+        "instanceID": 440082
+    },
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 15.4.2018, 	Time: 23:0:36
+{
+    "clips": [
+        {
+            "instanceID": 223224
+        },
+        {
+            "instanceID": 11304
+        },
+        {
+            "instanceID": 12964
+        }
+    ],
+    "audioManager": {
+        "instanceID": 440082
+    },
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 15.4.2018, 	Time: 23:0:37
+{
+    "clips": [
+        {
+            "instanceID": 223224
+        },
+        {
+            "instanceID": 11304
+        },
+        {
+            "instanceID": 12964
+        }
+    ],
+    "audioManager": {
+        "instanceID": 440082
+    },
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 15.4.2018, 	Time: 23:7:33
+{
+    "clips": [
+        {
+            "instanceID": 223224
+        },
+        {
+            "instanceID": 11304
+        },
+        {
+            "instanceID": 12964
+        }
+    ],
+    "audioManager": {
+        "instanceID": 579864
+    },
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 15.4.2018, 	Time: 23:7:34
+{
+    "clips": [
+        {
+            "instanceID": 223224
+        },
+        {
+            "instanceID": 11304
+        },
+        {
+            "instanceID": 12964
+        }
+    ],
+    "audioManager": {
+        "instanceID": 579864
+    },
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 15.4.2018, 	Time: 23:7:35
+{
+    "clips": [
+        {
+            "instanceID": 223224
+        },
+        {
+            "instanceID": 11304
+        },
+        {
+            "instanceID": 12964
+        }
+    ],
+    "audioManager": {
+        "instanceID": 579864
+    },
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 15.4.2018, 	Time: 23:7:37
+{
+    "clips": [
+        {
+            "instanceID": 223224
+        },
+        {
+            "instanceID": 11304
+        },
+        {
+            "instanceID": 12964
+        }
+    ],
+    "audioManager": {
+        "instanceID": 579864
+    },
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 15.4.2018, 	Time: 23:7:37
+{
+    "clips": [
+        {
+            "instanceID": 223224
+        },
+        {
+            "instanceID": 11304
+        },
+        {
+            "instanceID": 12964
+        }
+    ],
+    "audioManager": {
+        "instanceID": 579864
+    },
+    "dashEnabled": false,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}
+
+------------- SETTINGS -------------
+Date: 16.4.2018, 	Time: 9:7:18
+{
+    "clips": [
+        {
+            "instanceID": 12970
+        },
+        {
+            "instanceID": 11302
+        },
+        {
+            "instanceID": 12958
+        }
+    ],
+    "audioManager": {
+        "instanceID": 163958
+    },
+    "dashEnabled": true,
+    "characterSpeed": 2,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "",
+    "screenShakeMode": 1,
+    "musicEnabled": true,
+    "musicMode": 0
+}

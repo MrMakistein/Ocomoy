@@ -1,0 +1,138 @@
+fileFormatVersion: 2
+guid: de5bc71a1307f304487be7a33a9c7808
+timeCreated: 1524819912
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Geometry_Shader_Tests1
+    100002: Geometry_Shader_Tests2
+    100004: Geometry_Shader_Tests3
+    100006: GrassTryforShaded_Stone
+    100008: GrassTryforShaded_Stone 1
+    100010: GrassTryforShaded_Stone 2
+    100012: //RootNode
+    100014: StoneTestforShader1
+    100016: StoneTestforShader1 1
+    100018: StoneTestforShader1 2
+    400000: Geometry_Shader_Tests1
+    400002: Geometry_Shader_Tests2
+    400004: Geometry_Shader_Tests3
+    400006: GrassTryforShaded_Stone
+    400008: GrassTryforShaded_Stone 1
+    400010: GrassTryforShaded_Stone 2
+    400012: //RootNode
+    400014: StoneTestforShader1
+    400016: StoneTestforShader1 1
+    400018: StoneTestforShader1 2
+    2100000: Temple_lambert2
+    2100002: ruinstone
+    2300000: GrassTryforShaded_Stone
+    2300002: GrassTryforShaded_Stone 1
+    2300004: GrassTryforShaded_Stone 2
+    2300006: StoneTestforShader1
+    2300008: StoneTestforShader1 1
+    2300010: StoneTestforShader1 2
+    3300000: GrassTryforShaded_Stone
+    3300002: GrassTryforShaded_Stone 1
+    3300004: GrassTryforShaded_Stone 2
+    3300006: StoneTestforShader1
+    3300008: StoneTestforShader1 1
+    3300010: StoneTestforShader1 2
+    4300000: GrassTryforShaded_Stone
+    4300002: StoneTestforShader1
+    4300004: GrassTryforShaded_Stone
+    4300006: StoneTestforShader1
+    4300008: GrassTryforShaded_Stone
+    4300010: StoneTestforShader1
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Temple_lambert2
+    second: {fileID: 2100000, guid: aa3655f9fa933754fb4bd8958e427da1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ruinstone
+    second: {fileID: 2100000, guid: d818ae7b4d0181f4a9dced6e5b4d5d66, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 30
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
