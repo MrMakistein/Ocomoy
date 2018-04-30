@@ -13,6 +13,7 @@ public class Shrine : MonoBehaviour {
     public GameObject altar_mesh;
     public GameObject spawn_mesh;
     public GameObject altar_orb;
+    public GameObject altar_absorb;
 
 	// Use this for initialization
 	void Start () {
@@ -21,6 +22,24 @@ public class Shrine : MonoBehaviour {
 
     private void FixedUpdate()
     {
+
+        if (blessing_spawn_cooldown_timer < 4 && blessing_spawn_cooldown_timer > 1)
+        {
+            if (shrine_swap && shrine_id != 1)
+            {
+                int new_shrine_id = Random.Range(2, 7);
+                shrine_id = new_shrine_id;
+
+
+            }
+            blessing_spawn_cooldown_timer = 0;
+        }
+
+        // Decreases timer for blessing spawn at shrine
+        if (blessing_spawn_cooldown_timer > 0)
+        {
+            blessing_spawn_cooldown_timer -= Time.deltaTime * 10;
+        }
 
         // changes the color of the shrine depening on its state
         if (shrine_cooldown_timer > 0)
@@ -47,32 +66,21 @@ public class Shrine : MonoBehaviour {
 
     IEnumerator StartPray()
     {
-        Debug.Log("startParticles");
-        yield return new WaitForSeconds(1.2f);
-        Debug.Log("endParticles");
+        altar_absorb.GetComponent<ParticleSystem>().Play(true);
+        yield return new WaitForSeconds(1.5f);
+        altar_orb.GetComponent<ParticleSystem>().Stop(true);
+
+
+
 
     }
-        // Update is called once per frame
+
+  
+    // Update is called once per frame
     void Update()
     {
 
-       if (blessing_spawn_cooldown_timer < 4 && blessing_spawn_cooldown_timer > 1)
-        {
-            if (shrine_swap && shrine_id != 1)
-            {
-                int new_shrine_id = Random.Range(2, 7);
-                shrine_id = new_shrine_id;
-
-                
-            }
-            blessing_spawn_cooldown_timer = 0;
-        }
-
-        // Decreases timer for blessing spawn at shrine
-        if (blessing_spawn_cooldown_timer > 0)
-        {
-            blessing_spawn_cooldown_timer -= Time.deltaTime * 10;
-        }
+      
     }
 
     public void SetMeshes()
