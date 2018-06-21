@@ -37,9 +37,7 @@ public class PlayerAnimControl : MonoBehaviour {
             anim.SetBool("isPraying", true);
             pray = false;
             Debug.Log("Praying!");
-        }
-        else
-        {
+        } else {
             anim.SetBool("isPraying", false);
         }
         

@@ -2399,3 +2399,159 @@ Date: 17.4.2018, 	Time: 23:20:44
     "musicEnabled": true,
     "musicMode": 0
 }
+
+------------- SETTINGS -------------
+Date: 28.4.2018, 	Time: 16:31:47
+{
+    "clips": [
+        {
+            "instanceID": 14708
+        },
+        {
+            "instanceID": 15480
+        }
+    ],
+    "audioManager": {
+        "instanceID": 40260
+    },
+    "dashEnabled": true,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "res,kfkh aeövuizgt\t.bs\n",
+    "screenShakeMode": 1,
+    "rating": 5,
+    "musicEnabled": false,
+    "musicMode": 1
+}
+
+------------- SETTINGS -------------
+Date: 28.4.2018, 	Time: 16:31:47
+{
+    "clips": [
+        {
+            "instanceID": 14708
+        },
+        {
+            "instanceID": 15480
+        }
+    ],
+    "audioManager": {
+        "instanceID": 40260
+    },
+    "dashEnabled": true,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "res,kfkh aeövuizgt\t.bs\n",
+    "screenShakeMode": 1,
+    "rating": 5,
+    "musicEnabled": false,
+    "musicMode": 1
+}
+
+------------- SETTINGS -------------
+Date: 28.4.2018, 	Time: 16:31:57
+{
+    "clips": [
+        {
+            "instanceID": 14708
+        },
+        {
+            "instanceID": 15480
+        }
+    ],
+    "audioManager": {
+        "instanceID": 40260
+    },
+    "dashEnabled": true,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "  w$ET QB§$%/ NB\"WR TGH§w56 ub3v7ujer5 ",
+    "screenShakeMode": 1,
+    "rating": 5,
+    "musicEnabled": false,
+    "musicMode": 1
+}
+
+------------- SETTINGS -------------
+Date: 28.4.2018, 	Time: 16:31:58
+{
+    "clips": [
+        {
+            "instanceID": 14708
+        },
+        {
+            "instanceID": 15480
+        }
+    ],
+    "audioManager": {
+        "instanceID": 40260
+    },
+    "dashEnabled": true,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "  w$ET QB§$%/ NB\"WR TGH§w56 ub3v7ujer5 ",
+    "screenShakeMode": 1,
+    "rating": 10,
+    "musicEnabled": false,
+    "musicMode": 1
+}
+
+------------- SETTINGS -------------
+Date: 28.4.2018, 	Time: 16:31:58
+{
+    "clips": [
+        {
+            "instanceID": 14708
+        },
+        {
+            "instanceID": 15480
+        }
+    ],
+    "audioManager": {
+        "instanceID": 40260
+    },
+    "dashEnabled": true,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "  w$ET QB§$%/ NB\"WR TGH§w56 ub3v7ujer5 ",
+    "screenShakeMode": 1,
+    "rating": 10,
+    "musicEnabled": false,
+    "musicMode": 1
+}
+
+------------- SETTINGS -------------
+Date: 28.4.2018, 	Time: 16:31:59
+{
+    "clips": [
+        {
+            "instanceID": 14708
+        },
+        {
+            "instanceID": 15480
+        }
+    ],
+    "audioManager": {
+        "instanceID": 40260
+    },
+    "dashEnabled": true,
+    "characterSpeed": 1,
+    "healthSystem": 0,
+    "objectSpeed": 1,
+    "heightLockEnabled": false,
+    "notes": "  w$ET QB§$%/ NB\"WR TGH§w56 ub3v7ujer5 ",
+    "screenShakeMode": 1,
+    "rating": 10,
+    "musicEnabled": false,
+    "musicMode": 1
+}

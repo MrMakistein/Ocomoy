@@ -194,14 +194,14 @@ public class MenuManager : MonoBehaviour {
 	//creates default settings and updates values & ui elements
 	public void SetDefault(){
 		if (_defaultSettings == null) {
-			_settings.ChangeCharacterSpeed (1);
+			_settings.ChangeCharacterSpeed (2);
 			_settings.ChangeHealthSystem (0);
 			_settings.ChangeMusicMode (1);
 			_settings.ChangeObjectSpeed (1);
-			_settings.EnableMusic (false);
+			_settings.EnableMusic (true);
 			_settings.SetDashEnabled (true);
 			//_settings.SetNotes ("");
-			_settings.SetScreenshake (1.0f);
+			_settings.SetScreenshake (2.0f);
             _settings.SetRating(5);
 			_settings.ToggleHeightLock (false);
 

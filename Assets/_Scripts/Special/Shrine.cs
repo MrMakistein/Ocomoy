@@ -53,7 +53,7 @@ public class Shrine : MonoBehaviour {
         }
         else if (blessing_spawn_cooldown_timer > 0)
         {
-            altar_orb.SetActive(false);
+            Invoke("DisableOrb", 2.0f);
             //GetComponent<Renderer>().material.color = Color.gray;
         }
         else
@@ -64,13 +64,16 @@ public class Shrine : MonoBehaviour {
 
     }
 
+    void DisableOrb()
+    {
+        altar_orb.SetActive(false);
+    }
+
     IEnumerator StartPray()
     {
         altar_absorb.GetComponent<ParticleSystem>().Play(true);
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.3f);
         altar_orb.GetComponent<ParticleSystem>().Stop(true);
-
-
 
 
     }

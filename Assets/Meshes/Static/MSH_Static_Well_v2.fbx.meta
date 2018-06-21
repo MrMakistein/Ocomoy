@@ -1,0 +1,744 @@
+fileFormatVersion: 2
+guid: 50310c7ced1c91541bedd75f09e8f11d
+timeCreated: 1528984995
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Moss
+    100002: Moss10
+    100004: Moss12
+    100006: Moss13
+    100008: Moss14
+    100010: Moss15
+    100012: Moss2
+    100014: Moss5
+    100016: Moss7
+    100018: Moss8
+    100020: Moss9
+    100022: //RootNode
+    100024: pCube10
+    100026: pCube11
+    100028: pCube12
+    100030: pCube13
+    100032: pCube14
+    100034: pCube15
+    100036: pCube16
+    100038: pCube17
+    100040: pCube18
+    100042: pCube19
+    100044: pCube20
+    100046: pCube21
+    100048: pCube22
+    100050: pCube23
+    100052: pCube24
+    100054: pCube25
+    100056: pCube26
+    100058: pCube4
+    100060: pCube5
+    100062: pCube6
+    100064: pCube7
+    100066: pCube8
+    100068: pCube9
+    100070: polySurface1
+    100072: polySurface13
+    100074: polySurface14
+    100076: polySurface15
+    100078: polySurface16
+    100080: polySurface17
+    100082: polySurface18
+    100084: polySurface19
+    100086: polySurface2
+    100088: polySurface20
+    100090: polySurface21
+    100092: polySurface22
+    100094: polySurface23
+    100096: polySurface24
+    100098: polySurface25
+    100100: polySurface26
+    100102: polySurface27
+    100104: polySurface28
+    100106: polySurface29
+    100108: polySurface3
+    100110: polySurface30
+    100112: polySurface31
+    100114: polySurface32
+    100116: polySurface33
+    100118: polySurface34
+    100120: polySurface35
+    100122: polySurface36
+    100124: polySurface37
+    100126: polySurface38
+    100128: polySurface39
+    100130: polySurface4
+    100132: polySurface40
+    100134: polySurface41
+    100136: polySurface42
+    100138: polySurface43
+    100140: polySurface44
+    100142: polySurface45
+    100144: polySurface46
+    100146: polySurface5
+    100148: polySurface6
+    100150: polySurface7
+    100152: Stand_stick
+    100154: Stand_stick1
+    100156: Stand_stick2
+    100158: wellDestroyed
+    100160: group16
+    100162: group17
+    100164: group18
+    100166: pCube265
+    100168: pCube265 1
+    100170: pCube265 2
+    100172: pCube266
+    100174: pCube266 1
+    100176: pCube266 2
+    100178: pCube267
+    100180: pCube267 1
+    100182: pCube267 2
+    100184: pCube283
+    100186: pCube283 1
+    100188: pCube283 2
+    100190: pCube284
+    100192: pCube284 1
+    100194: pCube284 2
+    100196: pCube285
+    100198: pCube285 1
+    100200: polySurface192
+    100202: polySurface192 1
+    100204: polySurface192 2
+    100206: polySurface198
+    100208: polySurface198 1
+    100210: polySurface200
+    100212: polySurface200 1
+    100214: polySurface200 2
+    100216: polySurface206
+    100218: polySurface206 1
+    100220: polySurface206 2
+    100222: polySurface208
+    100224: polySurface208 1
+    100226: polySurface208 2
+    100228: polySurface209
+    100230: polySurface209 1
+    100232: polySurface209 2
+    100234: polySurface218
+    100236: polySurface218 1
+    100238: polySurface218 2
+    100240: polySurface219
+    100242: Static_B_0008:Stand_stick
+    100244: Static_B_0008:Stand_stick1
+    100246: Static_B_0008:Stand_stick2
+    400000: Moss
+    400002: Moss10
+    400004: Moss12
+    400006: Moss13
+    400008: Moss14
+    400010: Moss15
+    400012: Moss2
+    400014: Moss5
+    400016: Moss7
+    400018: Moss8
+    400020: Moss9
+    400022: //RootNode
+    400024: pCube10
+    400026: pCube11
+    400028: pCube12
+    400030: pCube13
+    400032: pCube14
+    400034: pCube15
+    400036: pCube16
+    400038: pCube17
+    400040: pCube18
+    400042: pCube19
+    400044: pCube20
+    400046: pCube21
+    400048: pCube22
+    400050: pCube23
+    400052: pCube24
+    400054: pCube25
+    400056: pCube26
+    400058: pCube4
+    400060: pCube5
+    400062: pCube6
+    400064: pCube7
+    400066: pCube8
+    400068: pCube9
+    400070: polySurface1
+    400072: polySurface13
+    400074: polySurface14
+    400076: polySurface15
+    400078: polySurface16
+    400080: polySurface17
+    400082: polySurface18
+    400084: polySurface19
+    400086: polySurface2
+    400088: polySurface20
+    400090: polySurface21
+    400092: polySurface22
+    400094: polySurface23
+    400096: polySurface24
+    400098: polySurface25
+    400100: polySurface26
+    400102: polySurface27
+    400104: polySurface28
+    400106: polySurface29
+    400108: polySurface3
+    400110: polySurface30
+    400112: polySurface31
+    400114: polySurface32
+    400116: polySurface33
+    400118: polySurface34
+    400120: polySurface35
+    400122: polySurface36
+    400124: polySurface37
+    400126: polySurface38
+    400128: polySurface39
+    400130: polySurface4
+    400132: polySurface40
+    400134: polySurface41
+    400136: polySurface42
+    400138: polySurface43
+    400140: polySurface44
+    400142: polySurface45
+    400144: polySurface46
+    400146: polySurface5
+    400148: polySurface6
+    400150: polySurface7
+    400152: Stand_stick
+    400154: Stand_stick1
+    400156: Stand_stick2
+    400158: wellDestroyed
+    400160: group16
+    400162: group17
+    400164: group18
+    400166: pCube265
+    400168: pCube265 1
+    400170: pCube265 2
+    400172: pCube266
+    400174: pCube266 1
+    400176: pCube266 2
+    400178: pCube267
+    400180: pCube267 1
+    400182: pCube267 2
+    400184: pCube283
+    400186: pCube283 1
+    400188: pCube283 2
+    400190: pCube284
+    400192: pCube284 1
+    400194: pCube284 2
+    400196: pCube285
+    400198: pCube285 1
+    400200: polySurface192
+    400202: polySurface192 1
+    400204: polySurface192 2
+    400206: polySurface198
+    400208: polySurface198 1
+    400210: polySurface200
+    400212: polySurface200 1
+    400214: polySurface200 2
+    400216: polySurface206
+    400218: polySurface206 1
+    400220: polySurface206 2
+    400222: polySurface208
+    400224: polySurface208 1
+    400226: polySurface208 2
+    400228: polySurface209
+    400230: polySurface209 1
+    400232: polySurface209 2
+    400234: polySurface218
+    400236: polySurface218 1
+    400238: polySurface218 2
+    400240: polySurface219
+    400242: Static_B_0008:Stand_stick
+    400244: Static_B_0008:Stand_stick1
+    400246: Static_B_0008:Stand_stick2
+    2100000: Stones6
+    2100002: lambert3
+    2100004: Well
+    2100006: Wood
+    2100008: Static_B_0008_Wood
+    2100010: lambert9
+    2100012: WallStones1
+    2100014: WallStones9
+    2300000: Moss
+    2300002: Moss10
+    2300004: Moss12
+    2300006: Moss13
+    2300008: Moss14
+    2300010: Moss15
+    2300012: Moss2
+    2300014: Moss5
+    2300016: Moss7
+    2300018: Moss8
+    2300020: Moss9
+    2300022: pCube10
+    2300024: pCube11
+    2300026: pCube12
+    2300028: pCube13
+    2300030: pCube14
+    2300032: pCube15
+    2300034: pCube16
+    2300036: pCube17
+    2300038: pCube18
+    2300040: pCube19
+    2300042: pCube20
+    2300044: pCube21
+    2300046: pCube22
+    2300048: pCube23
+    2300050: pCube24
+    2300052: pCube25
+    2300054: pCube26
+    2300056: pCube4
+    2300058: pCube5
+    2300060: pCube6
+    2300062: pCube7
+    2300064: pCube8
+    2300066: pCube9
+    2300068: polySurface1
+    2300070: polySurface13
+    2300072: polySurface14
+    2300074: polySurface15
+    2300076: polySurface16
+    2300078: polySurface17
+    2300080: polySurface18
+    2300082: polySurface19
+    2300084: polySurface2
+    2300086: polySurface20
+    2300088: polySurface21
+    2300090: polySurface22
+    2300092: polySurface23
+    2300094: polySurface24
+    2300096: polySurface25
+    2300098: polySurface26
+    2300100: polySurface27
+    2300102: polySurface28
+    2300104: polySurface29
+    2300106: polySurface3
+    2300108: polySurface30
+    2300110: polySurface31
+    2300112: polySurface32
+    2300114: polySurface33
+    2300116: polySurface34
+    2300118: polySurface35
+    2300120: polySurface36
+    2300122: polySurface37
+    2300124: polySurface38
+    2300126: polySurface39
+    2300128: polySurface4
+    2300130: polySurface40
+    2300132: polySurface41
+    2300134: polySurface42
+    2300136: polySurface43
+    2300138: polySurface44
+    2300140: polySurface45
+    2300142: polySurface46
+    2300144: polySurface5
+    2300146: polySurface6
+    2300148: polySurface7
+    2300150: Stand_stick
+    2300152: Stand_stick1
+    2300154: Stand_stick2
+    2300156: wellDestroyed
+    2300158: pCube265
+    2300160: pCube265 1
+    2300162: pCube265 2
+    2300164: pCube266
+    2300166: pCube266 1
+    2300168: pCube266 2
+    2300170: pCube267
+    2300172: pCube267 1
+    2300174: pCube267 2
+    2300176: pCube283
+    2300178: pCube283 1
+    2300180: pCube283 2
+    2300182: pCube284
+    2300184: pCube284 1
+    2300186: pCube284 2
+    2300188: pCube285
+    2300190: pCube285 1
+    2300192: polySurface192
+    2300194: polySurface192 1
+    2300196: polySurface192 2
+    2300198: polySurface198
+    2300200: polySurface198 1
+    2300202: polySurface200
+    2300204: polySurface200 1
+    2300206: polySurface200 2
+    2300208: polySurface206
+    2300210: polySurface206 1
+    2300212: polySurface206 2
+    2300214: polySurface208
+    2300216: polySurface208 1
+    2300218: polySurface208 2
+    2300220: polySurface209
+    2300222: polySurface209 1
+    2300224: polySurface209 2
+    2300226: polySurface218
+    2300228: polySurface218 1
+    2300230: polySurface218 2
+    2300232: polySurface219
+    2300234: Static_B_0008:Stand_stick
+    2300236: Static_B_0008:Stand_stick1
+    2300238: Static_B_0008:Stand_stick2
+    3300000: Moss
+    3300002: Moss10
+    3300004: Moss12
+    3300006: Moss13
+    3300008: Moss14
+    3300010: Moss15
+    3300012: Moss2
+    3300014: Moss5
+    3300016: Moss7
+    3300018: Moss8
+    3300020: Moss9
+    3300022: pCube10
+    3300024: pCube11
+    3300026: pCube12
+    3300028: pCube13
+    3300030: pCube14
+    3300032: pCube15
+    3300034: pCube16
+    3300036: pCube17
+    3300038: pCube18
+    3300040: pCube19
+    3300042: pCube20
+    3300044: pCube21
+    3300046: pCube22
+    3300048: pCube23
+    3300050: pCube24
+    3300052: pCube25
+    3300054: pCube26
+    3300056: pCube4
+    3300058: pCube5
+    3300060: pCube6
+    3300062: pCube7
+    3300064: pCube8
+    3300066: pCube9
+    3300068: polySurface1
+    3300070: polySurface13
+    3300072: polySurface14
+    3300074: polySurface15
+    3300076: polySurface16
+    3300078: polySurface17
+    3300080: polySurface18
+    3300082: polySurface19
+    3300084: polySurface2
+    3300086: polySurface20
+    3300088: polySurface21
+    3300090: polySurface22
+    3300092: polySurface23
+    3300094: polySurface24
+    3300096: polySurface25
+    3300098: polySurface26
+    3300100: polySurface27
+    3300102: polySurface28
+    3300104: polySurface29
+    3300106: polySurface3
+    3300108: polySurface30
+    3300110: polySurface31
+    3300112: polySurface32
+    3300114: polySurface33
+    3300116: polySurface34
+    3300118: polySurface35
+    3300120: polySurface36
+    3300122: polySurface37
+    3300124: polySurface38
+    3300126: polySurface39
+    3300128: polySurface4
+    3300130: polySurface40
+    3300132: polySurface41
+    3300134: polySurface42
+    3300136: polySurface43
+    3300138: polySurface44
+    3300140: polySurface45
+    3300142: polySurface46
+    3300144: polySurface5
+    3300146: polySurface6
+    3300148: polySurface7
+    3300150: Stand_stick
+    3300152: Stand_stick1
+    3300154: Stand_stick2
+    3300156: wellDestroyed
+    3300158: pCube265
+    3300160: pCube265 1
+    3300162: pCube265 2
+    3300164: pCube266
+    3300166: pCube266 1
+    3300168: pCube266 2
+    3300170: pCube267
+    3300172: pCube267 1
+    3300174: pCube267 2
+    3300176: pCube283
+    3300178: pCube283 1
+    3300180: pCube283 2
+    3300182: pCube284
+    3300184: pCube284 1
+    3300186: pCube284 2
+    3300188: pCube285
+    3300190: pCube285 1
+    3300192: polySurface192
+    3300194: polySurface192 1
+    3300196: polySurface192 2
+    3300198: polySurface198
+    3300200: polySurface198 1
+    3300202: polySurface200
+    3300204: polySurface200 1
+    3300206: polySurface200 2
+    3300208: polySurface206
+    3300210: polySurface206 1
+    3300212: polySurface206 2
+    3300214: polySurface208
+    3300216: polySurface208 1
+    3300218: polySurface208 2
+    3300220: polySurface209
+    3300222: polySurface209 1
+    3300224: polySurface209 2
+    3300226: polySurface218
+    3300228: polySurface218 1
+    3300230: polySurface218 2
+    3300232: polySurface219
+    3300234: Static_B_0008:Stand_stick
+    3300236: Static_B_0008:Stand_stick1
+    3300238: Static_B_0008:Stand_stick2
+    4300000: polySurface1
+    4300002: polySurface6
+    4300004: polySurface2
+    4300006: pCube4
+    4300008: pCube6
+    4300010: polySurface4
+    4300012: polySurface3
+    4300014: pCube5
+    4300016: pCube9
+    4300018: pCube10
+    4300020: pCube11
+    4300022: polySurface7
+    4300024: polySurface13
+    4300026: polySurface5
+    4300028: polySurface14
+    4300030: polySurface15
+    4300032: polySurface16
+    4300034: pCube7
+    4300036: polySurface17
+    4300038: Moss14
+    4300040: Moss13
+    4300042: Moss9
+    4300044: Moss8
+    4300046: Moss7
+    4300048: pCube12
+    4300050: Moss5
+    4300052: polySurface18
+    4300054: wellDestroyed
+    4300056: polySurface19
+    4300058: polySurface20
+    4300060: pCube8
+    4300062: Stand_stick
+    4300064: pCube13
+    4300066: polySurface21
+    4300068: polySurface22
+    4300070: polySurface23
+    4300072: polySurface24
+    4300074: pCube14
+    4300076: polySurface25
+    4300078: polySurface26
+    4300080: Moss12
+    4300082: pCube15
+    4300084: pCube16
+    4300086: pCube17
+    4300088: polySurface27
+    4300090: polySurface28
+    4300092: polySurface29
+    4300094: polySurface30
+    4300096: polySurface31
+    4300098: polySurface32
+    4300100: pCube18
+    4300102: polySurface33
+    4300104: pCube19
+    4300106: pCube20
+    4300108: pCube21
+    4300110: pCube22
+    4300112: polySurface34
+    4300114: polySurface35
+    4300116: polySurface36
+    4300118: polySurface37
+    4300120: polySurface38
+    4300122: polySurface39
+    4300124: polySurface40
+    4300126: polySurface41
+    4300128: pCube23
+    4300130: pCube24
+    4300132: pCube25
+    4300134: pCube26
+    4300136: polySurface42
+    4300138: polySurface43
+    4300140: polySurface44
+    4300142: polySurface45
+    4300144: polySurface46
+    4300146: Stand_stick2
+    4300148: Stand_stick1
+    4300150: Moss
+    4300152: Moss2
+    4300154: Moss15
+    4300156: Moss10
+    4300158: Static_B_0008:Stand_stick2
+    4300160: Static_B_0008:Stand_stick1
+    4300162: Static_B_0008:Stand_stick
+    4300164: pCube284
+    4300166: pCube285
+    4300168: pCube265
+    4300170: polySurface198
+    4300172: polySurface208
+    4300174: polySurface200
+    4300176: polySurface206
+    4300178: polySurface209
+    4300180: pCube283
+    4300182: polySurface192
+    4300184: pCube266
+    4300186: pCube267
+    4300188: polySurface218
+    4300190: pCube284
+    4300192: pCube265
+    4300194: polySurface208
+    4300196: polySurface200
+    4300198: polySurface206
+    4300200: polySurface209
+    4300202: pCube283
+    4300204: polySurface192
+    4300206: pCube266
+    4300208: pCube267
+    4300210: polySurface218
+    4300212: polySurface219
+    4300214: pCube284
+    4300216: pCube285
+    4300218: pCube265
+    4300220: polySurface198
+    4300222: polySurface208
+    4300224: polySurface200
+    4300226: polySurface206
+    4300228: polySurface209
+    4300230: pCube283
+    4300232: polySurface192
+    4300234: pCube266
+    4300236: pCube267
+    4300238: polySurface218
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Static_B_0008_Wood
+    second: {fileID: 2100000, guid: 423b62f0a98a26a4aa6afa7bc487a2f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stones6
+    second: {fileID: 2100000, guid: d818ae7b4d0181f4a9dced6e5b4d5d66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallStones1
+    second: {fileID: 2100000, guid: d818ae7b4d0181f4a9dced6e5b4d5d66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallStones9
+    second: {fileID: 2100000, guid: d818ae7b4d0181f4a9dced6e5b4d5d66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Well
+    second: {fileID: 2100000, guid: e6a76f98f3de9ba4387ee65fd529f114, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood
+    second: {fileID: 2100000, guid: 423b62f0a98a26a4aa6afa7bc487a2f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert3
+    second: {fileID: 2100000, guid: add170f04f6f93842a0094beaee9ed6e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert9
+    second: {fileID: 2100000, guid: add170f04f6f93842a0094beaee9ed6e, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 25
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour {
 
+    public bool trackplayer;
     private GameObject player;
-    private Camera currentCamera;
+    public Camera currentCamera;
     private GameObject dummy;
     private Vector3 playerScreenPos;
     //These two values control at which distance the camera movement will trigger
@@ -39,6 +40,7 @@ public class CameraControl : MonoBehaviour {
     private void Awake()
     {
         instance = this;
+        trackplayer = false;
     }
 
     // Use this for initialization
@@ -50,60 +52,62 @@ public class CameraControl : MonoBehaviour {
         //Convert screen dependent values, to fitting values for the current game screen.
         thresholdWidth = dnd.ScreenSizeCompensation(thresholdWidth);
         thresholdHeight = dnd.ScreenSizeCompensation(thresholdHeight);
+        
     }
     // Update is called once per frame
     void Update() {
 
-        
-        //check for nullpointer
-        if (player != null && dummy != null)
-        {
-            //transform the position of the player to the camera screen
-            playerScreenPos = currentCamera.WorldToScreenPoint(player.transform.position);
+        if (trackplayer) { 
+            //check for nullpointer
+            if (player != null && dummy != null)
+            {
+                //transform the position of the player to the camera screen
+                playerScreenPos = currentCamera.WorldToScreenPoint(player.transform.position);
 
 
      
 
-            //if the player is on the edge of the screen --> realign camera to center
-            if (playerScreenPos.x < thresholdWidth || Screen.width - thresholdWidth < playerScreenPos.x || playerScreenPos.y < thresholdHeight || Screen.height - thresholdHeight < playerScreenPos.y)
-            {
-                //Move to the player position, and a bit more in the direction he is facing. This is solved over cos and sin. They need radients of the angel. 
-                moveToPosition = new Vector3(player.transform.position.x + (additionToPosition * Mathf.Sin(Mathf.Deg2Rad * player.transform.eulerAngles.y)), player.transform.position.y, player.transform.position.z + (additionToPosition * Mathf.Cos(Mathf.Deg2Rad * player.transform.eulerAngles.y)));
-                movementTriggered = true;
-            }
-            if (movementTriggered)
-            {
-                //SmoothDamp is a function for smooth camera movement.
-                dummy.transform.position = Vector3.SmoothDamp(dummy.transform.position, moveToPosition, ref cameraVelocity, smoothTime);
-                if(Vector3.Distance(dummy.transform.position, moveToPosition) < 0.1)
+                //if the player is on the edge of the screen --> realign camera to center
+                if (playerScreenPos.x < thresholdWidth || Screen.width - thresholdWidth < playerScreenPos.x || playerScreenPos.y < thresholdHeight || Screen.height - thresholdHeight < playerScreenPos.y)
                 {
-                    movementTriggered = false;
+                    //Move to the player position, and a bit more in the direction he is facing. This is solved over cos and sin. They need radients of the angel. 
+                    moveToPosition = new Vector3(player.transform.position.x + (additionToPosition * Mathf.Sin(Mathf.Deg2Rad * player.transform.eulerAngles.y)), player.transform.position.y, player.transform.position.z + (additionToPosition * Mathf.Cos(Mathf.Deg2Rad * player.transform.eulerAngles.y)));
+                    movementTriggered = true;
                 }
-            }
-
-            //applys the camera shake
-            if (cameraShakeTimer < cameraShakeTime)
-            {
-                // has to defferentiate between moving and standing still
                 if (movementTriggered)
                 {
-                    dummy.transform.position = Vector3.Lerp(dummy.transform.position + new Vector3(Random.Range(-cameraShakeStrength, cameraShakeStrength), Random.Range(-cameraShakeStrength, cameraShakeStrength), Random.Range(-cameraShakeStrength, cameraShakeStrength)), dummy.transform.position, cameraShakeTimer / cameraShakeTime);
+                    //SmoothDamp is a function for smooth camera movement.
+                    dummy.transform.position = Vector3.SmoothDamp(dummy.transform.position, moveToPosition, ref cameraVelocity, smoothTime);
+                    if(Vector3.Distance(dummy.transform.position, moveToPosition) < 0.1)
+                    {
+                        movementTriggered = false;
+                    }
                 }
-                else
+
+                //applys the camera shake
+                if (cameraShakeTimer < cameraShakeTime)
                 {
-                    dummy.transform.position = Vector3.Lerp(moveToPosition + new Vector3(Random.Range(-cameraShakeStrength, cameraShakeStrength), Random.Range(-cameraShakeStrength, cameraShakeStrength), Random.Range(-cameraShakeStrength, cameraShakeStrength)), moveToPosition, cameraShakeTimer / cameraShakeTime);
+                    // has to defferentiate between moving and standing still
+                    if (movementTriggered)
+                    {
+                        dummy.transform.position = Vector3.Lerp(dummy.transform.position + new Vector3(Random.Range(-cameraShakeStrength, cameraShakeStrength), Random.Range(-cameraShakeStrength, cameraShakeStrength), Random.Range(-cameraShakeStrength, cameraShakeStrength)), dummy.transform.position, cameraShakeTimer / cameraShakeTime);
+                    }
+                    else
+                    {
+                        dummy.transform.position = Vector3.Lerp(moveToPosition + new Vector3(Random.Range(-cameraShakeStrength, cameraShakeStrength), Random.Range(-cameraShakeStrength, cameraShakeStrength), Random.Range(-cameraShakeStrength, cameraShakeStrength)), moveToPosition, cameraShakeTimer / cameraShakeTime);
 
+                    }
+                    cameraShakeTimer += Time.deltaTime;
                 }
-                cameraShakeTimer += Time.deltaTime;
+
+
             }
-
-
+            else
+            {
+                Debug.LogError("Reference not found in CameraControl");
+            }
         }
-        else
-        {
-            Debug.LogError("Reference not found in CameraControl");
-        }
-	}
+    }
 
     public void CameraShake(float shakeTime)
     {
@@ -111,6 +115,13 @@ public class CameraControl : MonoBehaviour {
         cameraShakeTime = shakeTime;
     }
 
+    public void CenterCamera()
+    {
+        if (player != null && dummy != null)
+        {
+            dummy.transform.position = player.transform.position;
+        }
+    }
 
     public void CameraShake()
     {

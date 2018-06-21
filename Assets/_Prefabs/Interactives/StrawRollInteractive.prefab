@@ -314,8 +314,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1966201623961726}
-  m_LocalRotation: {x: -0, y: -0.057266556, z: -0, w: 0.99835896}
-  m_LocalPosition: {x: -71.57, y: 1.2873414, z: -11.64}
+  m_LocalRotation: {x: -0, y: 0.75547, z: -0, w: 0.6551834}
+  m_LocalPosition: {x: -39.67, y: 1.2873414, z: -24.3}
   m_LocalScale: {x: 1.0000007, y: 1, z: 1.0000007}
   m_Children:
   - {fileID: 4198263937526018}
@@ -347,7 +347,7 @@ Transform:
   m_GameObject: {fileID: 1939878266298836}
   m_LocalRotation: {x: -0.4677166, y: 0.2362391, z: -0.8468092, w: -0.09135918}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.6, y: 2.6, z: 2.6}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 4464634774848846}
   m_Father: {fileID: 4009546267997398}
@@ -361,7 +361,7 @@ Transform:
   m_GameObject: {fileID: 1018177499029958}
   m_LocalRotation: {x: -0.46771654, y: 0.23623914, z: -0.8468092, w: -0.09135916}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.6, y: 2.6, z: 2.6}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 4132704269221998}
   m_RootOrder: 0
@@ -374,7 +374,7 @@ Transform:
   m_GameObject: {fileID: 1716928552755184}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.6, y: 2.6, z: 2.6}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 4030140777899786}
   - {fileID: 4273360802627784}
@@ -396,8 +396,8 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 4541558b54a5bdb46a0a9a3bafecc1dd, type: 3}
-  - {fileID: 2100002, guid: 4541558b54a5bdb46a0a9a3bafecc1dd, type: 3}
+  - {fileID: 2100000, guid: d1711a25effc80e44b32e74676ac9fd4, type: 2}
+  - {fileID: 2100000, guid: 31252a63e99816348b3df5bae8684940, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -506,6 +506,7 @@ MonoBehaviour:
   combo_particles2: {fileID: 1362220598358186}
   combo_particles3: {fileID: 1149796441804308}
   combo_particle_reset_timer: 0
+  shrink_timer: 0
 --- !u!114 &114293211670043408
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -1,0 +1,245 @@
+fileFormatVersion: 2
+guid: 0ffddb61b1e2e9e4db7f3e9b50b79037
+timeCreated: 1529347879
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: group2
+    100004: pCube152
+    100006: pCube155
+    100008: pCube157
+    100010: pCube158
+    100012: pCube161
+    100014: pCube162
+    100016: pCube31
+    100018: pCube32
+    100020: pCube33
+    100022: pCube34
+    100024: pCube37
+    100026: pCube39
+    100028: pCube4
+    100030: pCube5
+    100032: pCube7
+    100034: pCube9
+    100036: polySurface14
+    100038: polySurface16
+    100040: polySurface17
+    100042: polySurface18
+    100044: polySurface3
+    100046: polySurface4
+    100048: polySurface5
+    100050: polySurface6
+    100052: polySurface66
+    100054: polySurface68
+    100056: polySurface71
+    400000: //RootNode
+    400002: group2
+    400004: pCube152
+    400006: pCube155
+    400008: pCube157
+    400010: pCube158
+    400012: pCube161
+    400014: pCube162
+    400016: pCube31
+    400018: pCube32
+    400020: pCube33
+    400022: pCube34
+    400024: pCube37
+    400026: pCube39
+    400028: pCube4
+    400030: pCube5
+    400032: pCube7
+    400034: pCube9
+    400036: polySurface14
+    400038: polySurface16
+    400040: polySurface17
+    400042: polySurface18
+    400044: polySurface3
+    400046: polySurface4
+    400048: polySurface5
+    400050: polySurface6
+    400052: polySurface66
+    400054: polySurface68
+    400056: polySurface71
+    2100000: WallStones1
+    2100002: WallStones9
+    2100004: Walls
+    2300000: pCube152
+    2300002: pCube155
+    2300004: pCube157
+    2300006: pCube158
+    2300008: pCube161
+    2300010: pCube162
+    2300012: pCube31
+    2300014: pCube32
+    2300016: pCube33
+    2300018: pCube34
+    2300020: pCube37
+    2300022: pCube39
+    2300024: pCube4
+    2300026: pCube5
+    2300028: pCube7
+    2300030: pCube9
+    2300032: polySurface14
+    2300034: polySurface16
+    2300036: polySurface17
+    2300038: polySurface18
+    2300040: polySurface3
+    2300042: polySurface4
+    2300044: polySurface5
+    2300046: polySurface6
+    2300048: polySurface66
+    2300050: polySurface68
+    2300052: polySurface71
+    3300000: pCube152
+    3300002: pCube155
+    3300004: pCube157
+    3300006: pCube158
+    3300008: pCube161
+    3300010: pCube162
+    3300012: pCube31
+    3300014: pCube32
+    3300016: pCube33
+    3300018: pCube34
+    3300020: pCube37
+    3300022: pCube39
+    3300024: pCube4
+    3300026: pCube5
+    3300028: pCube7
+    3300030: pCube9
+    3300032: polySurface14
+    3300034: polySurface16
+    3300036: polySurface17
+    3300038: polySurface18
+    3300040: polySurface3
+    3300042: polySurface4
+    3300044: polySurface5
+    3300046: polySurface6
+    3300048: polySurface66
+    3300050: polySurface68
+    3300052: polySurface71
+    4300000: pCube34
+    4300002: pCube37
+    4300004: polySurface3
+    4300006: polySurface4
+    4300008: polySurface18
+    4300010: polySurface16
+    4300012: pCube5
+    4300014: pCube4
+    4300016: pCube39
+    4300018: pCube7
+    4300020: pCube32
+    4300022: pCube31
+    4300024: pCube9
+    4300026: polySurface6
+    4300028: polySurface5
+    4300030: polySurface14
+    4300032: pCube162
+    4300034: pCube161
+    4300036: pCube157
+    4300038: pCube155
+    4300040: pCube152
+    4300042: pCube33
+    4300044: polySurface68
+    4300046: polySurface71
+    4300048: polySurface17
+    4300050: polySurface66
+    4300052: pCube158
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallStones1
+    second: {fileID: 2100000, guid: d818ae7b4d0181f4a9dced6e5b4d5d66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallStones9
+    second: {fileID: 2100000, guid: d818ae7b4d0181f4a9dced6e5b4d5d66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Walls
+    second: {fileID: 2100000, guid: 63f65cf5f23e45f44b3c6a2e60bf78ca, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 25
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

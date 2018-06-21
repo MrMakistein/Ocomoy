@@ -8,7 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: MAT_Shrine_moss
   m_Shader: {fileID: 4800000, guid: 7ed66685e1692a94c8e82233723b7db8, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: _USEGRADIENTCOLORS_ON _USERAMPTEXTURE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -64,23 +64,38 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _EdgeTolerance: 1.18
+    - _EdgeTolerance: 0
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
+    - _GradientScale: -8.17
+    - _GradientStartHeight: -0.68
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _OutlineDot: 0.25
     - _OutlineExtrusion: 0
     - _Parallax: 0.02
+    - _RampPos1: 0.398
+    - _RampPos2: 0.634
+    - _RampPos3: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
+    - _UseGradientColors: 1
+    - _UseRampTexture: 1
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 0.47118342, g: 0.5441177, b: 0.116025105, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _RampColor1: {r: 0.56078434, g: 0.56078434, b: 0.56078434, a: 1}
+    - _RampColor1Grad: {r: 0, g: 0, b: 0, a: 1}
+    - _RampColor2: {r: 0.69803923, g: 0.69803923, b: 0.69803923, a: 1}
+    - _RampColor2Grad: {r: 0, g: 0, b: 0, a: 1}
+    - _RampColor3: {r: 1, g: 1, b: 1, a: 1}
+    - _RampColor3Grad: {r: 0, g: 0, b: 0, a: 1}
+    - _RampColor4: {r: 1, g: 1, b: 1, a: 1}
+    - _RampColor4Grad: {r: 0, g: 0, b: 0, a: 1}
     - _RampTint: {r: 1, g: 1, b: 1, a: 1}

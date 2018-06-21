@@ -12,8 +12,10 @@ public class Movement : MonoBehaviour
     public float slowTime = 2;
     public float slowMultiplicator = 2;
 
+    public float speedMultiplicator = 1;
 
-    public bool move_block = false;
+    public bool move_block;
+    public bool move_block2; //Set to true after the intro animation by the animationmanager script
     public bool stunned = false;
     public bool reversed = false;
 
@@ -22,7 +24,6 @@ public class Movement : MonoBehaviour
 
     //store initial values
     private float initalDrag;
-    public float initialmSpeed;
 
     //states
     private bool sliding = false;
@@ -32,10 +33,16 @@ public class Movement : MonoBehaviour
     private float slowTimer = 0;
     private float slideTimer = 0;
 
+    public static Movement instance;
+
+    private void Awake()
+    {
+        Movement.instance = this;
+    }
+
     void Start()
     {
         initalDrag = GetComponent<Rigidbody>().drag;
-        initialmSpeed = mSpeed;
     }
 
     void Update()
@@ -52,7 +59,7 @@ public class Movement : MonoBehaviour
             }
         }
 
-        if (!GameManager.instance.gamePaused && !stunned && !move_block && this.GetComponent<Dash>().dashTimer <= 0)
+        if (!GameManager.instance.gamePaused && !stunned && !move_block && this.GetComponent<Dash>().dashTimer <= 0 && !move_block2)
         {
             #region oldMovment
             /*
@@ -88,37 +95,43 @@ public class Movement : MonoBehaviour
             Vector3 tempVelo = gameObject.GetComponent<Rigidbody>().velocity;
 
             Vector3 Direction = new Vector3(CrossPlatformInputManager.GetAxisRaw("Horizontal"), 0, CrossPlatformInputManager.GetAxisRaw("Vertical"));
-            Vector3 DirectionVelocity = Direction.normalized * mSpeed;
+            Vector3 DirectionVelocity = Direction.normalized * mSpeed * speedMultiplicator;
 
-            //check for horizontal input
-            if (CrossPlatformInputManager.GetAxisRaw("Horizontal") != 0)
+            if (reversed)
             {
-                //set the horizontal movement of the character according to the input manager
-                tempVelo = new Vector3(CrossPlatformInputManager.GetAxisRaw("Horizontal") * mSpeed, tempVelo.y, tempVelo.z);
+                DirectionVelocity = new Vector3(DirectionVelocity.x * -1, 0, DirectionVelocity.z * -1);
+            }
+            //move differently for sliding and not sliding
+            if (sliding)
+            {
+
+                //Add Force to the character --> floaty feel
+                gameObject.GetComponent<Rigidbody>().AddForce(transform.forward * forceMultiplier * GetComponent<Rigidbody>().mass * (1 - (gameObject.GetComponent<Rigidbody>().velocity.magnitude) / mSpeed) * (slow ? 1/slowMultiplicator : 1) * speedMultiplicator);
+
+
+            }
+            else
+            {
+                if (slow)
+                {
+                    //set the calculated velocity to the character velocity + slow
+                    gameObject.GetComponent<Rigidbody>().velocity = new Vector3(DirectionVelocity.x / slowMultiplicator, tempVelo.y, DirectionVelocity.z / slowMultiplicator);
+                } else
+                {                    
+                    //set the calculated velocity to the character velocity
+                    gameObject.GetComponent<Rigidbody>().velocity = new Vector3(DirectionVelocity.x, tempVelo.y, DirectionVelocity.z);
+
+                }
             }
 
-            //check for vertical input
-            if (CrossPlatformInputManager.GetAxisRaw("Vertical") != 0)
-            {
-                //set the vertical movement of the character according to the input manager
-                tempVelo = new Vector3(tempVelo.x, tempVelo.y, CrossPlatformInputManager.GetAxisRaw("Vertical") * mSpeed);
-            }
-
-            //set the calculated velocity to the character velocity
-            gameObject.GetComponent<Rigidbody>().velocity = new Vector3(DirectionVelocity.x, tempVelo.y, DirectionVelocity.z);
-
-
-            #region OldRotate
-            
             // Rotates the player into the correct direction
-            Vector3 movement = new Vector3(Input.GetAxisRaw("Horizontal"), 0.0f, Input.GetAxisRaw("Vertical"));
+            Vector3 movement = new Vector3(CrossPlatformInputManager.GetAxisRaw("Horizontal"), 0.0f, CrossPlatformInputManager.GetAxisRaw("Vertical"));
             movement *= reversed ? -1 : 1;
             if (movement != Vector3.zero)
             {
                 transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15F);
             }
-            
-            #endregion
+                      
         }
 
         //Check if timer are finished

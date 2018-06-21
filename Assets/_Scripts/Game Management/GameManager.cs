@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour {
 		} else if (m_gameState == GameState.tutorial) {
 			//TODO: set condition for determining the end of the tutorial and invoking the main game 
 			//TODO: am besten in separate Szene auslagern --> SceneManager?
-			SetGameState(GameState.mainGameLoop);	
+			//SetGameState(GameState.mainGameLoop);	
 		}
 
 		//checking for pause input
@@ -58,7 +58,10 @@ public class GameManager : MonoBehaviour {
 	public enum GameState { undefined, startscreen, cutscene, tutorial, mainGameLoop, pause, playerWins, godWins, end, restart } //namen für den status
 	GameState m_gameState = GameState.undefined;
 
-
+    public void SetMainGameLoop()
+    {
+        SetGameState(GameState.mainGameLoop);
+    }
 
 	public GameState GetGameState()
 	{

@@ -39,6 +39,8 @@ public class SpawnController : MonoBehaviour {
     public void SetPlayerPosition()
     {
         player.transform.position = player_pos;
+        CameraControl.instance.CenterCamera();
+
         //player.transform.position = new Vector3(59.8f, 7.5f, 27f); // Manually set player position
 
     }

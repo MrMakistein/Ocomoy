@@ -15,7 +15,9 @@ public class GodEffects : MonoBehaviour
 
     //how the effect should be triggered
     //true = throw, false = click
-    public bool ThrowOrClick = true; 
+    public bool ThrowOrClick = true;
+
+    public GameObject[] particle_auras;
 
     public Material chargeMaterial;
 	[Space(10)]
@@ -45,7 +47,32 @@ public class GodEffects : MonoBehaviour
     void Start()
     {
         CurrentType = (GodEffectType) Random.Range(0, 6);
-        display = this.gameObject.transform.GetChild(0).GetChild(0).gameObject;
+
+        if (CurrentType == GodEffectType.tornado)
+        {
+            particle_auras[0].SetActive(true);
+        }
+        if (CurrentType == GodEffectType.rain)
+        {
+            particle_auras[1].SetActive(true);
+        }
+        if (CurrentType == GodEffectType.earthshatter)
+        {
+            particle_auras[2].SetActive(true);
+        }
+        if (CurrentType == GodEffectType.thunder)
+        {
+            particle_auras[3].SetActive(true);
+
+        }
+        if (CurrentType == GodEffectType.avalanche)
+        {
+            particle_auras[4].SetActive(true);
+        }
+        if (CurrentType == GodEffectType.blizzard)
+        {
+            particle_auras[5].SetActive(true);
+        }
     }
 
 
@@ -55,28 +82,28 @@ public class GodEffects : MonoBehaviour
         //to display the correct item
         if (CurrentType == GodEffectType.tornado)
         {
-            display.gameObject.GetComponent<Text>().text = "tornado";
+            //display.gameObject.GetComponent<Text>().text = "tornado";
         }
         if (CurrentType == GodEffectType.rain)
         {
-            display.gameObject.GetComponent<Text>().text = "rain";
+            //display.gameObject.GetComponent<Text>().text = "rain";
         }
         if (CurrentType == GodEffectType.earthshatter)
         {
-            display.gameObject.GetComponent<Text>().text = "earthshatter";
+            //display.gameObject.GetComponent<Text>().text = "earthshatter";
         }
         if (CurrentType == GodEffectType.thunder)
         {
-            display.gameObject.GetComponent<Text>().text = "thunder";
+            //display.gameObject.GetComponent<Text>().text = "thunder";
 
         }
         if (CurrentType == GodEffectType.avalanche)
         {
-            display.gameObject.GetComponent<Text>().text = "avalanche";
+            //display.gameObject.GetComponent<Text>().text = "avalanche";
         }
         if (CurrentType == GodEffectType.blizzard)
         {
-            display.gameObject.GetComponent<Text>().text = "blizzard";
+            //display.gameObject.GetComponent<Text>().text = "blizzard";
         }
 
         if (!charged && dnd.draggingObject == this.gameObject && CrossPlatformInputManager.GetButtonDown("ActivateCurse"))

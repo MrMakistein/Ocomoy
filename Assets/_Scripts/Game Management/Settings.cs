@@ -59,16 +59,13 @@ public class Settings : MonoBehaviour {
 		switch (mode) {
 		case 0: //slow
 			_player.GetComponent<Movement>().mSpeed = 6;
-			_player.GetComponent<Movement>().initialmSpeed = 6;
 
 			break;
 		case 1: //medium
 			_player.GetComponent<Movement>().mSpeed = 7;
-			_player.GetComponent<Movement>().initialmSpeed = 7;
 			break;
 		case 2: //fast
 			_player.GetComponent<Movement>().mSpeed = 8;
-			_player.GetComponent<Movement>().initialmSpeed = 8;
 			break;
 		default:
 			characterSpeed = 1; //set medium speed as default in case of error
@@ -80,11 +77,13 @@ public class Settings : MonoBehaviour {
 		healthSystem = mode;
 		switch (mode) {
 		case 0: //Regeneration
-			_player.GetComponent<Player>().regenSpeed = 2;
-			break;
+			_player.GetComponent<Player>().regenSpeed = 1.5f;
+            _player.GetComponent<Player>().healthOnPickup = false;
+            break;
 		case 1: //Health Packs (no regen + collectible as 'medikit')
 			_player.GetComponent<Player>().regenSpeed = 0;
-			break;
+            _player.GetComponent<Player>().healthOnPickup = true;
+            break;
 		default:
 			healthSystem = 0; //set no regen as default in case of error
 			Debug.Log ("Yer an idiot");
@@ -146,7 +145,7 @@ public class Settings : MonoBehaviour {
                 CameraControl.instance.defaultShakeTime = 0;
                 break;
             case 1: //medium
-                CameraControl.instance.cameraShakeStrength = 0.05f;
+                CameraControl.instance.cameraShakeStrength = 0.1f;
                 CameraControl.instance.defaultShakeTime = 0.05f;
 
                 break;

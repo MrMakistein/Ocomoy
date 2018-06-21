@@ -14,6 +14,7 @@ public class Player : MonoBehaviour {
     public float currentHealth;
     public Image healthBar;
     public float regenSpeed = 2;
+    [HideInInspector] public bool healthOnPickup = false;
 
     //Clone Ability Variables
     public float clone_time = 0;
@@ -557,9 +558,9 @@ public class Player : MonoBehaviour {
 
             collectibleCount++;
             collectSound = true;
-            if (regenSpeed <= 0.5)
+            if (healthOnPickup)
             {
-                currentHealth = 100;
+                currentHealth = maxHealth;
                 healthBar.fillAmount = 1;
             }
             

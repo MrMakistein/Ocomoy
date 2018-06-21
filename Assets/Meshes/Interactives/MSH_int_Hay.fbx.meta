@@ -14,7 +14,17 @@ ModelImporter:
     3300000: //RootNode
     4300000: Hay
     4300002: HayV2
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hay2
+    second: {fileID: 2100000, guid: d1711a25effc80e44b32e74676ac9fd4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rope
+    second: {fileID: 2100000, guid: 31252a63e99816348b3df5bae8684940, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

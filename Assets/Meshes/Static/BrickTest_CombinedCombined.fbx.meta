@@ -1,0 +1,222 @@
+fileFormatVersion: 2
+guid: f366c66edf84e5c448e124e25640a6db
+timeCreated: 1529349558
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: pCube155
+    100004: pCube158
+    100006: pCube161
+    100008: pCube165
+    100010: pCube166
+    100012: pCube167
+    100014: pCube168
+    100016: pCube31
+    100018: pCube32
+    100020: pCube37
+    100022: pCube4
+    100024: polySurface14
+    100026: polySurface18
+    100028: polySurface3
+    100030: polySurface4
+    100032: polySurface5
+    100034: polySurface68
+    100036: polySurface71
+    100038: polySurface74
+    100040: polySurface75
+    100042: polySurface76
+    100044: polySurface77
+    100046: polySurface78
+    100048: polySurface79
+    400000: //RootNode
+    400002: pCube155
+    400004: pCube158
+    400006: pCube161
+    400008: pCube165
+    400010: pCube166
+    400012: pCube167
+    400014: pCube168
+    400016: pCube31
+    400018: pCube32
+    400020: pCube37
+    400022: pCube4
+    400024: polySurface14
+    400026: polySurface18
+    400028: polySurface3
+    400030: polySurface4
+    400032: polySurface5
+    400034: polySurface68
+    400036: polySurface71
+    400038: polySurface74
+    400040: polySurface75
+    400042: polySurface76
+    400044: polySurface77
+    400046: polySurface78
+    400048: polySurface79
+    2100000: WallStones1
+    2100002: Walls
+    2300000: pCube155
+    2300002: pCube158
+    2300004: pCube161
+    2300006: pCube165
+    2300008: pCube166
+    2300010: pCube167
+    2300012: pCube168
+    2300014: pCube31
+    2300016: pCube32
+    2300018: pCube37
+    2300020: pCube4
+    2300022: polySurface14
+    2300024: polySurface18
+    2300026: polySurface3
+    2300028: polySurface4
+    2300030: polySurface5
+    2300032: polySurface68
+    2300034: polySurface71
+    2300036: polySurface74
+    2300038: polySurface75
+    2300040: polySurface76
+    2300042: polySurface77
+    2300044: polySurface78
+    2300046: polySurface79
+    3300000: pCube155
+    3300002: pCube158
+    3300004: pCube161
+    3300006: pCube165
+    3300008: pCube166
+    3300010: pCube167
+    3300012: pCube168
+    3300014: pCube31
+    3300016: pCube32
+    3300018: pCube37
+    3300020: pCube4
+    3300022: polySurface14
+    3300024: polySurface18
+    3300026: polySurface3
+    3300028: polySurface4
+    3300030: polySurface5
+    3300032: polySurface68
+    3300034: polySurface71
+    3300036: polySurface74
+    3300038: polySurface75
+    3300040: polySurface76
+    3300042: polySurface77
+    3300044: polySurface78
+    3300046: polySurface79
+    4300000: pCube158
+    4300002: polySurface5
+    4300004: polySurface77
+    4300006: polySurface79
+    4300008: pCube168
+    4300010: pCube167
+    4300012: polySurface78
+    4300014: pCube166
+    4300016: polySurface76
+    4300018: polySurface75
+    4300020: polySurface74
+    4300022: pCube31
+    4300024: polySurface18
+    4300026: pCube4
+    4300028: polySurface3
+    4300030: pCube165
+    4300032: pCube155
+    4300034: pCube161
+    4300036: polySurface68
+    4300038: polySurface71
+    4300040: pCube32
+    4300042: pCube37
+    4300044: polySurface4
+    4300046: polySurface14
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WallStones1
+    second: {fileID: 2100000, guid: d818ae7b4d0181f4a9dced6e5b4d5d66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Walls
+    second: {fileID: 2100000, guid: 63f65cf5f23e45f44b3c6a2e60bf78ca, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 25
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

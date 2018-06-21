@@ -1,0 +1,628 @@
+fileFormatVersion: 2
+guid: 89a7fe009a839854ca1f09344b566622
+timeCreated: 1524841431
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Altar
+    100002: Altar1
+    100004: //RootNode
+    100006: pCube10
+    100008: pCube11
+    100010: pCube12
+    100012: pCube13
+    100014: pCube14
+    100016: pCube15
+    100018: pCube4
+    100020: pCube4 1
+    100022: pCube5
+    100024: pCube5 1
+    100026: pCube6
+    100028: pCube6 1
+    100030: pCube7
+    100032: pCube9
+    100034: Plate_Original10
+    100036: Plate_Original11
+    100038: Plate_Original12
+    100040: Plate_Original13
+    100042: Plate_Original14
+    100044: Plate_Original14 1
+    100046: Plate_Original17
+    100048: Plate_Original17 1
+    100050: Plate_Original18
+    100052: Plate_Original19
+    100054: Plate_Original4
+    100056: Plate_Original4 1
+    100058: Plate_Original4 2
+    100060: Plate_Original4 3
+    100062: Plate_Original4 4
+    100064: Plate_Original4 5
+    100066: Plate_Original4 6
+    100068: Plate_Original4 7
+    100070: Plate_Original6
+    100072: Plate_Original6 1
+    100074: Plate_Original6 2
+    100076: Plate_Original6 3
+    100078: Plate_Original7
+    100080: Plate_Original8
+    100082: Plate_Original9
+    100084: Plate_Random10
+    100086: Plate_Random12
+    100088: Plate_Random13
+    100090: Plate_Random15
+    100092: Plate_Random15 1
+    100094: Plate_Random16
+    100096: Plate_Random16 1
+    100098: Plate_Random17
+    100100: Plate_Random17 1
+    100102: Plate_Random18
+    100104: Plate_Random5
+    100106: Plate_Random5 1
+    100108: Plate_Random5 2
+    100110: Plate_Random5 3
+    100112: Plate_Random6
+    100114: Plate_Random6 1
+    100116: Plate_Random6 2
+    100118: Plate_Random6 3
+    100120: Plate_Random6 4
+    100122: Plate_Random6 5
+    100124: Plate_Random6 6
+    100126: Plate_Random6 7
+    100128: Plate_Random7
+    100130: Plate_Random7 1
+    100132: Plate_Random7 2
+    100134: Plate_Random7 3
+    100136: Plate_Random8
+    100138: Plate_Random9
+    100140: Plate_Spiral10
+    100142: Plate_Spiral12
+    100144: Plate_Spiral12 1
+    100146: Plate_Spiral14
+    100148: Plate_Spiral14 1
+    100150: Plate_Spiral15
+    100152: Plate_Spiral16
+    100154: Plate_Spiral18
+    100156: Plate_Spiral3
+    100158: Plate_Spiral3 1
+    100160: Plate_Spiral3 2
+    100162: Plate_Spiral3 3
+    100164: Plate_Spiral4
+    100166: Plate_Spiral4 1
+    100168: Plate_Spiral4 2
+    100170: Plate_Spiral4 3
+    100172: Plate_Spiral4 4
+    100174: Plate_Spiral4 5
+    100176: Plate_Spiral4 6
+    100178: Plate_Spiral4 7
+    100180: Plate_Spiral5
+    100182: Plate_Spiral6
+    100184: Plate_Spiral7
+    100186: Plate_Spiral8
+    100188: Plate_Spiral9
+    100190: PlatesOnTemple
+    100192: PlatesOnTemple 1
+    100194: PlatesOnTemple 2
+    100196: PlatesOnTemple1
+    100198: PlatesOnTemple1 1
+    100200: PlatesOnTemple1 2
+    100202: PlatesOnTemple2
+    100204: PlatesOnTemple3
+    100206: PlatesOnTempleGroup
+    100208: PlatesOnTempleGroup1
+    100210: PlatesOnTempleGroup2
+    100212: Stairs
+    100214: Stairs1
+    100216: Temple
+    100218: Temple1
+    100220: Temple4
+    100222: Temple5
+    100224: Temple6
+    100226: Temple7
+    100228: textureDeformerHandle3
+    100230: textureDeformerHandle5
+    100232: textureDeformerHandle8
+    400000: Altar
+    400002: Altar1
+    400004: //RootNode
+    400006: pCube10
+    400008: pCube11
+    400010: pCube12
+    400012: pCube13
+    400014: pCube14
+    400016: pCube15
+    400018: pCube4
+    400020: pCube4 1
+    400022: pCube5
+    400024: pCube5 1
+    400026: pCube6
+    400028: pCube6 1
+    400030: pCube7
+    400032: pCube9
+    400034: Plate_Original10
+    400036: Plate_Original11
+    400038: Plate_Original12
+    400040: Plate_Original13
+    400042: Plate_Original14
+    400044: Plate_Original14 1
+    400046: Plate_Original17
+    400048: Plate_Original17 1
+    400050: Plate_Original18
+    400052: Plate_Original19
+    400054: Plate_Original4
+    400056: Plate_Original4 1
+    400058: Plate_Original4 2
+    400060: Plate_Original4 3
+    400062: Plate_Original4 4
+    400064: Plate_Original4 5
+    400066: Plate_Original4 6
+    400068: Plate_Original4 7
+    400070: Plate_Original6
+    400072: Plate_Original6 1
+    400074: Plate_Original6 2
+    400076: Plate_Original6 3
+    400078: Plate_Original7
+    400080: Plate_Original8
+    400082: Plate_Original9
+    400084: Plate_Random10
+    400086: Plate_Random12
+    400088: Plate_Random13
+    400090: Plate_Random15
+    400092: Plate_Random15 1
+    400094: Plate_Random16
+    400096: Plate_Random16 1
+    400098: Plate_Random17
+    400100: Plate_Random17 1
+    400102: Plate_Random18
+    400104: Plate_Random5
+    400106: Plate_Random5 1
+    400108: Plate_Random5 2
+    400110: Plate_Random5 3
+    400112: Plate_Random6
+    400114: Plate_Random6 1
+    400116: Plate_Random6 2
+    400118: Plate_Random6 3
+    400120: Plate_Random6 4
+    400122: Plate_Random6 5
+    400124: Plate_Random6 6
+    400126: Plate_Random6 7
+    400128: Plate_Random7
+    400130: Plate_Random7 1
+    400132: Plate_Random7 2
+    400134: Plate_Random7 3
+    400136: Plate_Random8
+    400138: Plate_Random9
+    400140: Plate_Spiral10
+    400142: Plate_Spiral12
+    400144: Plate_Spiral12 1
+    400146: Plate_Spiral14
+    400148: Plate_Spiral14 1
+    400150: Plate_Spiral15
+    400152: Plate_Spiral16
+    400154: Plate_Spiral18
+    400156: Plate_Spiral3
+    400158: Plate_Spiral3 1
+    400160: Plate_Spiral3 2
+    400162: Plate_Spiral3 3
+    400164: Plate_Spiral4
+    400166: Plate_Spiral4 1
+    400168: Plate_Spiral4 2
+    400170: Plate_Spiral4 3
+    400172: Plate_Spiral4 4
+    400174: Plate_Spiral4 5
+    400176: Plate_Spiral4 6
+    400178: Plate_Spiral4 7
+    400180: Plate_Spiral5
+    400182: Plate_Spiral6
+    400184: Plate_Spiral7
+    400186: Plate_Spiral8
+    400188: Plate_Spiral9
+    400190: PlatesOnTemple
+    400192: PlatesOnTemple 1
+    400194: PlatesOnTemple 2
+    400196: PlatesOnTemple1
+    400198: PlatesOnTemple1 1
+    400200: PlatesOnTemple1 2
+    400202: PlatesOnTemple2
+    400204: PlatesOnTemple3
+    400206: PlatesOnTempleGroup
+    400208: PlatesOnTempleGroup1
+    400210: PlatesOnTempleGroup2
+    400212: Stairs
+    400214: Stairs1
+    400216: Temple
+    400218: Temple1
+    400220: Temple4
+    400222: Temple5
+    400224: Temple6
+    400226: Temple7
+    400228: textureDeformerHandle3
+    400230: textureDeformerHandle5
+    400232: textureDeformerHandle8
+    2100000: lambert1
+    2300000: pCube10
+    2300002: pCube11
+    2300004: pCube12
+    2300006: pCube13
+    2300008: pCube14
+    2300010: pCube15
+    2300012: pCube4
+    2300014: pCube4 1
+    2300016: pCube5
+    2300018: pCube5 1
+    2300020: pCube6
+    2300022: pCube6 1
+    2300024: pCube7
+    2300026: pCube9
+    2300028: Plate_Original10
+    2300030: Plate_Original11
+    2300032: Plate_Original12
+    2300034: Plate_Original13
+    2300036: Plate_Original14
+    2300038: Plate_Original14 1
+    2300040: Plate_Original17
+    2300042: Plate_Original17 1
+    2300044: Plate_Original18
+    2300046: Plate_Original19
+    2300048: Plate_Original4
+    2300050: Plate_Original4 1
+    2300052: Plate_Original4 2
+    2300054: Plate_Original4 3
+    2300056: Plate_Original4 4
+    2300058: Plate_Original4 5
+    2300060: Plate_Original4 6
+    2300062: Plate_Original4 7
+    2300064: Plate_Original6
+    2300066: Plate_Original6 1
+    2300068: Plate_Original6 2
+    2300070: Plate_Original6 3
+    2300072: Plate_Original7
+    2300074: Plate_Original8
+    2300076: Plate_Original9
+    2300078: Plate_Random10
+    2300080: Plate_Random12
+    2300082: Plate_Random13
+    2300084: Plate_Random15
+    2300086: Plate_Random15 1
+    2300088: Plate_Random16
+    2300090: Plate_Random16 1
+    2300092: Plate_Random17
+    2300094: Plate_Random17 1
+    2300096: Plate_Random18
+    2300098: Plate_Random5
+    2300100: Plate_Random5 1
+    2300102: Plate_Random5 2
+    2300104: Plate_Random5 3
+    2300106: Plate_Random6
+    2300108: Plate_Random6 1
+    2300110: Plate_Random6 2
+    2300112: Plate_Random6 3
+    2300114: Plate_Random6 4
+    2300116: Plate_Random6 5
+    2300118: Plate_Random6 6
+    2300120: Plate_Random6 7
+    2300122: Plate_Random7
+    2300124: Plate_Random7 1
+    2300126: Plate_Random7 2
+    2300128: Plate_Random7 3
+    2300130: Plate_Random8
+    2300132: Plate_Random9
+    2300134: Plate_Spiral10
+    2300136: Plate_Spiral12
+    2300138: Plate_Spiral12 1
+    2300140: Plate_Spiral14
+    2300142: Plate_Spiral14 1
+    2300144: Plate_Spiral15
+    2300146: Plate_Spiral16
+    2300148: Plate_Spiral18
+    2300150: Plate_Spiral3
+    2300152: Plate_Spiral3 1
+    2300154: Plate_Spiral3 2
+    2300156: Plate_Spiral3 3
+    2300158: Plate_Spiral4
+    2300160: Plate_Spiral4 1
+    2300162: Plate_Spiral4 2
+    2300164: Plate_Spiral4 3
+    2300166: Plate_Spiral4 4
+    2300168: Plate_Spiral4 5
+    2300170: Plate_Spiral4 6
+    2300172: Plate_Spiral4 7
+    2300174: Plate_Spiral5
+    2300176: Plate_Spiral6
+    2300178: Plate_Spiral7
+    2300180: Plate_Spiral8
+    2300182: Plate_Spiral9
+    2300184: Stairs
+    2300186: Stairs1
+    2300188: Temple
+    2300190: Temple1
+    2300192: Temple4
+    2300194: Temple5
+    2300196: Temple6
+    2300198: Temple7
+    3300000: pCube10
+    3300002: pCube11
+    3300004: pCube12
+    3300006: pCube13
+    3300008: pCube14
+    3300010: pCube15
+    3300012: pCube4
+    3300014: pCube4 1
+    3300016: pCube5
+    3300018: pCube5 1
+    3300020: pCube6
+    3300022: pCube6 1
+    3300024: pCube7
+    3300026: pCube9
+    3300028: Plate_Original10
+    3300030: Plate_Original11
+    3300032: Plate_Original12
+    3300034: Plate_Original13
+    3300036: Plate_Original14
+    3300038: Plate_Original14 1
+    3300040: Plate_Original17
+    3300042: Plate_Original17 1
+    3300044: Plate_Original18
+    3300046: Plate_Original19
+    3300048: Plate_Original4
+    3300050: Plate_Original4 1
+    3300052: Plate_Original4 2
+    3300054: Plate_Original4 3
+    3300056: Plate_Original4 4
+    3300058: Plate_Original4 5
+    3300060: Plate_Original4 6
+    3300062: Plate_Original4 7
+    3300064: Plate_Original6
+    3300066: Plate_Original6 1
+    3300068: Plate_Original6 2
+    3300070: Plate_Original6 3
+    3300072: Plate_Original7
+    3300074: Plate_Original8
+    3300076: Plate_Original9
+    3300078: Plate_Random10
+    3300080: Plate_Random12
+    3300082: Plate_Random13
+    3300084: Plate_Random15
+    3300086: Plate_Random15 1
+    3300088: Plate_Random16
+    3300090: Plate_Random16 1
+    3300092: Plate_Random17
+    3300094: Plate_Random17 1
+    3300096: Plate_Random18
+    3300098: Plate_Random5
+    3300100: Plate_Random5 1
+    3300102: Plate_Random5 2
+    3300104: Plate_Random5 3
+    3300106: Plate_Random6
+    3300108: Plate_Random6 1
+    3300110: Plate_Random6 2
+    3300112: Plate_Random6 3
+    3300114: Plate_Random6 4
+    3300116: Plate_Random6 5
+    3300118: Plate_Random6 6
+    3300120: Plate_Random6 7
+    3300122: Plate_Random7
+    3300124: Plate_Random7 1
+    3300126: Plate_Random7 2
+    3300128: Plate_Random7 3
+    3300130: Plate_Random8
+    3300132: Plate_Random9
+    3300134: Plate_Spiral10
+    3300136: Plate_Spiral12
+    3300138: Plate_Spiral12 1
+    3300140: Plate_Spiral14
+    3300142: Plate_Spiral14 1
+    3300144: Plate_Spiral15
+    3300146: Plate_Spiral16
+    3300148: Plate_Spiral18
+    3300150: Plate_Spiral3
+    3300152: Plate_Spiral3 1
+    3300154: Plate_Spiral3 2
+    3300156: Plate_Spiral3 3
+    3300158: Plate_Spiral4
+    3300160: Plate_Spiral4 1
+    3300162: Plate_Spiral4 2
+    3300164: Plate_Spiral4 3
+    3300166: Plate_Spiral4 4
+    3300168: Plate_Spiral4 5
+    3300170: Plate_Spiral4 6
+    3300172: Plate_Spiral4 7
+    3300174: Plate_Spiral5
+    3300176: Plate_Spiral6
+    3300178: Plate_Spiral7
+    3300180: Plate_Spiral8
+    3300182: Plate_Spiral9
+    3300184: Stairs
+    3300186: Stairs1
+    3300188: Temple
+    3300190: Temple1
+    3300192: Temple4
+    3300194: Temple5
+    3300196: Temple6
+    3300198: Temple7
+    4300000: pCube6
+    4300002: pCube5
+    4300004: pCube4
+    4300006: pCube7
+    4300008: pCube9
+    4300010: pCube6
+    4300012: pCube5
+    4300014: pCube4
+    4300016: pCube13
+    4300018: pCube14
+    4300020: pCube15
+    4300022: Temple
+    4300024: Stairs
+    4300026: Plate_Spiral4
+    4300028: Plate_Random6
+    4300030: Plate_Original4
+    4300032: Plate_Random7
+    4300034: Plate_Spiral9
+    4300036: Plate_Random8
+    4300038: Plate_Random13
+    4300040: Plate_Original19
+    4300042: Plate_Random5
+    4300044: Plate_Spiral3
+    4300046: Plate_Spiral4
+    4300048: Plate_Random6
+    4300050: Plate_Original4
+    4300052: Plate_Original6
+    4300054: Plate_Original10
+    4300056: Plate_Random9
+    4300058: Plate_Spiral18
+    4300060: Plate_Spiral4
+    4300062: Plate_Random6
+    4300064: Plate_Original4
+    4300066: Plate_Random7
+    4300068: Plate_Original7
+    4300070: Plate_Original8
+    4300072: Plate_Original9
+    4300074: Plate_Original12
+    4300076: Plate_Original13
+    4300078: Plate_Random12
+    4300080: Plate_Spiral10
+    4300082: Plate_Original18
+    4300084: Plate_Random18
+    4300086: Plate_Random5
+    4300088: Plate_Spiral3
+    4300090: Plate_Spiral4
+    4300092: Plate_Random6
+    4300094: Plate_Original4
+    4300096: Plate_Original6
+    4300098: Plate_Spiral5
+    4300100: Plate_Spiral6
+    4300102: Plate_Spiral7
+    4300104: Plate_Spiral8
+    4300106: Plate_Random10
+    4300108: Plate_Original11
+    4300110: Plate_Spiral15
+    4300112: Plate_Spiral16
+    4300114: Plate_Spiral4
+    4300116: Plate_Random6
+    4300118: Plate_Original4
+    4300120: Plate_Random7
+    4300122: Plate_Random15
+    4300124: Plate_Original14
+    4300126: Plate_Random16
+    4300128: Plate_Spiral12
+    4300130: Plate_Random5
+    4300132: Plate_Spiral3
+    4300134: Plate_Spiral4
+    4300136: Plate_Random6
+    4300138: Plate_Original4
+    4300140: Plate_Original6
+    4300142: Plate_Original17
+    4300144: Plate_Random17
+    4300146: Plate_Spiral14
+    4300148: Temple1
+    4300150: Temple4
+    4300152: pCube10
+    4300154: pCube11
+    4300156: pCube12
+    4300158: Temple5
+    4300160: Temple6
+    4300162: Temple7
+    4300164: Stairs1
+    4300166: Plate_Spiral4
+    4300168: Plate_Random6
+    4300170: Plate_Original4
+    4300172: Plate_Random7
+    4300174: Plate_Random15
+    4300176: Plate_Original14
+    4300178: Plate_Random16
+    4300180: Plate_Spiral12
+    4300182: Plate_Random5
+    4300184: Plate_Spiral3
+    4300186: Plate_Spiral4
+    4300188: Plate_Random6
+    4300190: Plate_Original4
+    4300192: Plate_Original6
+    4300194: Plate_Original17
+    4300196: Plate_Random17
+    4300198: Plate_Spiral14
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: d72c865165cbc6543abdf034fdd64fae, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 20
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 65
+    normalImportMode: 1
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,153 @@
+fileFormatVersion: 2
+guid: 989bd3f8698f8cb43aa36d4733eb2bae
+timeCreated: 1528907642
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Base1
+    100002: Bodenbelag
+    100004: bodenbelag4
+    100006: bodenbelag6
+    100008: bodenbelag7
+    100010: bodenbelag9
+    100012: bodenbelag_2
+    100014: bodenbelag_3
+    100016: bodenbelag_5
+    100018: //RootNode
+    100020: fluss_smoothed
+    100022: ground1
+    100024: wasserfall
+    400000: Base1
+    400002: Bodenbelag
+    400004: bodenbelag4
+    400006: bodenbelag6
+    400008: bodenbelag7
+    400010: bodenbelag9
+    400012: bodenbelag_2
+    400014: bodenbelag_3
+    400016: bodenbelag_5
+    400018: //RootNode
+    400020: fluss_smoothed
+    400022: ground1
+    400024: wasserfall
+    2100000: lambert2
+    2100002: pasted__lambert4
+    2100004: lambert3
+    2300000: Base1
+    2300002: Bodenbelag
+    2300004: bodenbelag4
+    2300006: bodenbelag6
+    2300008: bodenbelag7
+    2300010: bodenbelag9
+    2300012: bodenbelag_2
+    2300014: bodenbelag_3
+    2300016: bodenbelag_5
+    2300018: fluss_smoothed
+    2300020: ground1
+    2300022: wasserfall
+    3300000: Base1
+    3300002: Bodenbelag
+    3300004: bodenbelag4
+    3300006: bodenbelag6
+    3300008: bodenbelag7
+    3300010: bodenbelag9
+    3300012: bodenbelag_2
+    3300014: bodenbelag_3
+    3300016: bodenbelag_5
+    3300018: fluss_smoothed
+    3300020: ground1
+    3300022: wasserfall
+    4300000: bodenbelag4
+    4300002: bodenbelag_5
+    4300004: bodenbelag6
+    4300006: bodenbelag7
+    4300008: bodenbelag9
+    4300010: bodenbelag_3
+    4300012: wasserfall
+    4300014: fluss_smoothed
+    4300016: bodenbelag_2
+    4300018: Bodenbelag
+    4300020: ground1
+    4300022: Base1
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

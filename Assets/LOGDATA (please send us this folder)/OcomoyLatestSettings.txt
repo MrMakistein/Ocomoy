@@ -1,1 +1,1 @@
-{"clips":[{"instanceID":14454},{"instanceID":15226}],"audioManager":{"instanceID":17342},"dashEnabled":true,"characterSpeed":1,"healthSystem":0,"objectSpeed":1,"heightLockEnabled":false,"notes":"","screenShakeMode":1,"rating":5,"musicEnabled":false,"musicMode":1}
+{"clips":[{"instanceID":16270},{"instanceID":18866}],"audioManager":{"instanceID":42984},"dashEnabled":true,"characterSpeed":2,"healthSystem":0,"objectSpeed":1,"heightLockEnabled":false,"notes":"","screenShakeMode":2,"rating":5,"musicEnabled":true,"musicMode":1}

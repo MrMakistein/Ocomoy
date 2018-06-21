@@ -241,13 +241,16 @@ public class dnd : MonoBehaviour
                 }
 
                 // if the object isnt locked, move it with the camera
+
+                //!!!due to feedback currently disabled!!!
+                /*
                 if (!lockObject)
                 {
                     //Update Position for camera movement
                     cameraDifference = currentCamera.transform.position - oldCameraPosition;
                     DrObj.transform.position += cameraDifference;
                 }
-
+                */
 
             }
         }
