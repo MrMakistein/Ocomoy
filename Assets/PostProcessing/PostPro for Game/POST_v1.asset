@@ -100,8 +100,8 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       bloom:
-        intensity: 1.75
-        threshold: 1.69
+        intensity: 0.02
+        threshold: 0.43
         softKnee: 0.8
         radius: 3.06
         antiFlicker: 0
@@ -120,23 +120,23 @@ MonoBehaviour:
         neutralWhiteLevel: 5.3
         neutralWhiteClip: 10
       basic:
-        postExposure: 0
-        temperature: 3.7
-        tint: 0
+        postExposure: 0.3
+        temperature: 0
+        tint: 1.5
         hueShift: 0
-        saturation: 1
-        contrast: 1
+        saturation: 1.002
+        contrast: 1.011
       channelMixer:
-        red: {x: 1, y: 0, z: 0}
-        green: {x: 0, y: 1, z: 0}
-        blue: {x: 0, y: 0, z: 1}
+        red: {x: 0.994, y: 0, z: 0}
+        green: {x: 0, y: 0.994, z: 0}
+        blue: {x: 0, y: 0, z: 0.943}
         currentEditingChannel: 0
       colorWheels:
         mode: 1
         log:
-          slope: {r: 1, g: 1, b: 1, a: 0}
-          power: {r: 0.9770138, g: 1, b: 0.989823, a: 0}
-          offset: {r: 1, g: 1, b: 1, a: 0}
+          slope: {r: 1, g: 0.9648888, b: 0.9583147, a: 0}
+          power: {r: 1, g: 0.8749435, b: 0.8946657, a: 0}
+          offset: {r: 0.9880068, g: 1, b: 0.97601414, a: 0}
         linear:
           lift: {r: 1, g: 1, b: 1, a: 0}
           gamma: {r: 1, g: 1, b: 1, a: 0}
@@ -307,7 +307,7 @@ MonoBehaviour:
   dithering:
     m_Enabled: 0
   monitors:
-    currentMonitorID: 0
+    currentMonitorID: 2
     refreshOnPlay: 0
     histogramMode: 3
     waveformExposure: 0.12

@@ -103,9 +103,9 @@ Material:
     - _OutlineDot: 0.25
     - _OutlineExtrusion: 0
     - _Parallax: 0.02
-    - _RampPos1: 0
-    - _RampPos2: 0.167
-    - _RampPos3: 0.532
+    - _RampPos1: 0.118
+    - _RampPos2: 0.362
+    - _RampPos3: 0.737
     - _Scale: 0
     - _SmoothnessTextureChannel: 0
     - _SparkleDepth: 1

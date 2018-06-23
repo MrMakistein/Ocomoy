@@ -31650,387 +31650,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4289433860841620, guid: 9817b1496bdc1844eb41ac7dc2422037,
     type: 2}
   m_PrefabInternal: {fileID: 183024316}
---- !u!1 &351050730 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1477453275415588, guid: 8f4a537fd669d374c9b43c592e26f5ce,
+--- !u!114 &351050731 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114733273876743812, guid: 8f4a537fd669d374c9b43c592e26f5ce,
     type: 2}
   m_PrefabInternal: {fileID: 1261355616}
---- !u!114 &351050731
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 351050730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: -745406591, guid: 220224b43fc464c28bc0e8de8f54a432, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Trigger:
-    m_IsTriggerExpanded: 1
-    m_Type: 1
-    m_LifecycleEvent: 0
-    m_ApplyRules: 0
-    m_Rules:
-      m_Rules: []
-    m_TriggerBool: 0
-    m_InitTime: 5
-    m_RepeatTime: 5
-    m_Repetitions: 0
-    repetitionCount: 0
-  m_EventPayload:
-    m_IsEventExpanded: 1
-    m_StandardEventType: CustomEvent
-    m_Parameters:
-      m_Parameters:
-      - m_RequirementType: 0
-        m_GroupID: 
-        m_Tooltip: 
-        m_Name: Dash
-        m_Value:
-          m_EditingCustomValue: 0
-          m_PopupIndex: 0
-          m_CustomValue: 
-          m_FixedType: 0
-          m_EnumType: 
-          m_EnumTypeIsCustomizable: 0
-          m_CanDisable: 0
-          m_PropertyType: 2
-          m_ValueType: System.Boolean
-          m_Value: 
-          m_Target:
-            m_Target: {fileID: 881011928}
-            m_Path: dashEnabled
-            m_ValidTypeNames:
-            - System.Int32
-            - System.Boolean
-            - System.Decimal
-            - System.Double
-            - System.Single
-            - System.Int64
-            - System.Int16
-            - System.String
-            - enum
-            m_Type: System.Boolean
-            m_EnumType: 
-      - m_RequirementType: 0
-        m_GroupID: 
-        m_Tooltip: 
-        m_Name: Speed
-        m_Value:
-          m_EditingCustomValue: 0
-          m_PopupIndex: 0
-          m_CustomValue: 
-          m_FixedType: 0
-          m_EnumType: 
-          m_EnumTypeIsCustomizable: 0
-          m_CanDisable: 0
-          m_PropertyType: 2
-          m_ValueType: System.Int32
-          m_Value: True
-          m_Target:
-            m_Target: {fileID: 881011928}
-            m_Path: characterSpeed
-            m_ValidTypeNames:
-            - System.Int32
-            - System.Boolean
-            - System.Decimal
-            - System.Double
-            - System.Single
-            - System.Int64
-            - System.Int16
-            - System.String
-            - enum
-            m_Type: System.Int32
-            m_EnumType: 
-      - m_RequirementType: 0
-        m_GroupID: 
-        m_Tooltip: 
-        m_Name: Health
-        m_Value:
-          m_EditingCustomValue: 0
-          m_PopupIndex: 0
-          m_CustomValue: 
-          m_FixedType: 0
-          m_EnumType: 
-          m_EnumTypeIsCustomizable: 0
-          m_CanDisable: 0
-          m_PropertyType: 2
-          m_ValueType: System.Int32
-          m_Value: 0
-          m_Target:
-            m_Target: {fileID: 881011928}
-            m_Path: healthSystem
-            m_ValidTypeNames:
-            - System.Int32
-            - System.Boolean
-            - System.Decimal
-            - System.Double
-            - System.Single
-            - System.Int64
-            - System.Int16
-            - System.String
-            - enum
-            m_Type: System.Int32
-            m_EnumType: 
-      - m_RequirementType: 0
-        m_GroupID: 
-        m_Tooltip: 
-        m_Name: Object Speed
-        m_Value:
-          m_EditingCustomValue: 0
-          m_PopupIndex: 0
-          m_CustomValue: 
-          m_FixedType: 0
-          m_EnumType: 
-          m_EnumTypeIsCustomizable: 0
-          m_CanDisable: 0
-          m_PropertyType: 2
-          m_ValueType: System.Int32
-          m_Value: 0
-          m_Target:
-            m_Target: {fileID: 881011928}
-            m_Path: objectSpeed
-            m_ValidTypeNames:
-            - System.Int32
-            - System.Boolean
-            - System.Decimal
-            - System.Double
-            - System.Single
-            - System.Int64
-            - System.Int16
-            - System.String
-            - enum
-            m_Type: System.Int32
-            m_EnumType: 
-      - m_RequirementType: 0
-        m_GroupID: 
-        m_Tooltip: 
-        m_Name: ScreenShake
-        m_Value:
-          m_EditingCustomValue: 0
-          m_PopupIndex: 0
-          m_CustomValue: 
-          m_FixedType: 0
-          m_EnumType: 
-          m_EnumTypeIsCustomizable: 0
-          m_CanDisable: 0
-          m_PropertyType: 2
-          m_ValueType: System.Int32
-          m_Value: 0
-          m_Target:
-            m_Target: {fileID: 881011928}
-            m_Path: screenShakeMode
-            m_ValidTypeNames:
-            - System.Int32
-            - System.Boolean
-            - System.Decimal
-            - System.Double
-            - System.Single
-            - System.Int64
-            - System.Int16
-            - System.String
-            - enum
-            m_Type: System.Int32
-            m_EnumType: 
-      - m_RequirementType: 0
-        m_GroupID: 
-        m_Tooltip: 
-        m_Name: Height
-        m_Value:
-          m_EditingCustomValue: 0
-          m_PopupIndex: 0
-          m_CustomValue: 
-          m_FixedType: 0
-          m_EnumType: 
-          m_EnumTypeIsCustomizable: 0
-          m_CanDisable: 0
-          m_PropertyType: 2
-          m_ValueType: System.Boolean
-          m_Value: 0
-          m_Target:
-            m_Target: {fileID: 881011928}
-            m_Path: heightLockEnabled
-            m_ValidTypeNames:
-            - System.Int32
-            - System.Boolean
-            - System.Decimal
-            - System.Double
-            - System.Single
-            - System.Int64
-            - System.Int16
-            - System.String
-            - enum
-            m_Type: System.Boolean
-            m_EnumType: 
-      - m_RequirementType: 0
-        m_GroupID: 
-        m_Tooltip: 
-        m_Name: Music
-        m_Value:
-          m_EditingCustomValue: 0
-          m_PopupIndex: 0
-          m_CustomValue: 
-          m_FixedType: 0
-          m_EnumType: 
-          m_EnumTypeIsCustomizable: 0
-          m_CanDisable: 0
-          m_PropertyType: 2
-          m_ValueType: System.Boolean
-          m_Value: True
-          m_Target:
-            m_Target: {fileID: 881011928}
-            m_Path: musicEnabled
-            m_ValidTypeNames:
-            - System.Int32
-            - System.Boolean
-            - System.Decimal
-            - System.Double
-            - System.Single
-            - System.Int64
-            - System.Int16
-            - System.String
-            - enum
-            m_Type: System.Boolean
-            m_EnumType: 
-      - m_RequirementType: 0
-        m_GroupID: 
-        m_Tooltip: 
-        m_Name: Music Mode
-        m_Value:
-          m_EditingCustomValue: 0
-          m_PopupIndex: 0
-          m_CustomValue: 
-          m_FixedType: 0
-          m_EnumType: 
-          m_EnumTypeIsCustomizable: 0
-          m_CanDisable: 0
-          m_PropertyType: 2
-          m_ValueType: System.Int32
-          m_Value: True
-          m_Target:
-            m_Target: {fileID: 881011928}
-            m_Path: musicMode
-            m_ValidTypeNames:
-            - System.Int32
-            - System.Boolean
-            - System.Decimal
-            - System.Double
-            - System.Single
-            - System.Int64
-            - System.Int16
-            - System.String
-            - enum
-            m_Type: System.Int32
-            m_EnumType: 
-      - m_RequirementType: 0
-        m_GroupID: 
-        m_Tooltip: 
-        m_Name: Notes
-        m_Value:
-          m_EditingCustomValue: 0
-          m_PopupIndex: 0
-          m_CustomValue: 
-          m_FixedType: 0
-          m_EnumType: 
-          m_EnumTypeIsCustomizable: 0
-          m_CanDisable: 0
-          m_PropertyType: 2
-          m_ValueType: System.String
-          m_Value: 0
-          m_Target:
-            m_Target: {fileID: 881011928}
-            m_Path: notes
-            m_ValidTypeNames:
-            - System.Int32
-            - System.Boolean
-            - System.Decimal
-            - System.Double
-            - System.Single
-            - System.Int64
-            - System.Int16
-            - System.String
-            - enum
-            m_Type: System.String
-            m_EnumType: 
-      - m_RequirementType: 0
-        m_GroupID: 
-        m_Tooltip: 
-        m_Name: XP
-        m_Value:
-          m_EditingCustomValue: 0
-          m_PopupIndex: 0
-          m_CustomValue: 
-          m_FixedType: 0
-          m_EnumType: 
-          m_EnumTypeIsCustomizable: 0
-          m_CanDisable: 0
-          m_PropertyType: 2
-          m_ValueType: System.Single
-          m_Value: 
-          m_Target:
-            m_Target: {fileID: 459426198}
-            m_Path: value
-            m_ValidTypeNames:
-            - System.Int32
-            - System.Boolean
-            - System.Decimal
-            - System.Double
-            - System.Single
-            - System.Int64
-            - System.Int16
-            - System.String
-            - enum
-            m_Type: System.Single
-            m_EnumType: 
-    m_Name: Settings
---- !u!114 &351050733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 351050730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f61eb247b4448a41963c2ab19ec576e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  combo_level: 0
-  combo_timer: 0
-  combo_time_limit: 0.08
-  cursor1: {fileID: 2800000, guid: 1b61491ab42968c469ab5f5a9d42e8f9, type: 3}
-  cursor2: {fileID: 2800000, guid: d24b7c6a9d428b54c85373e569e54099, type: 3}
-  cursor3: {fileID: 2800000, guid: 920adfe9c22cfca43ac1070ca9d0fd8d, type: 3}
-  cursor4: {fileID: 2800000, guid: 40f36cd7bfeac404a895223eab3eb630, type: 3}
---- !u!114 &351050734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 351050730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd160fd95dc5bd3448bfcc8b014ad492, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  round_player_hits: 0
-  round_objects_picked_up: 0
-  round_time_played: 0
-  round_distance_walked: 0
-  round_powerups_used_god: 0
-  round_powerups_used_player: 0
-  round_highest_combo: 0
-  round_ignited_objects: 0
-  totalRoundTime: 0
-  finishedRoundCount: 0
-  totalGameTime: 0
-  totalDistanceWalked: 0
-  total_player_hits: 0
-  total_objects_picked_up: 0
-  total_powerups_used_god: 0
-  total_powerups_used_player: 0
-  total_highest_combo: 0
-  total_ignited_objects: 0
 --- !u!1001 &354258384
 Prefab:
   m_ObjectHideFlags: 0
@@ -59996,15 +59621,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4636544790943238, guid: c6395567ecddd5449a32812450ba32e9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 65.08456
+      value: 61.69
       objectReference: {fileID: 0}
     - target: {fileID: 4636544790943238, guid: c6395567ecddd5449a32812450ba32e9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.7
+      value: 2.1
       objectReference: {fileID: 0}
     - target: {fileID: 4636544790943238, guid: c6395567ecddd5449a32812450ba32e9, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 15.835213
+      value: 15.78
       objectReference: {fileID: 0}
     - target: {fileID: 4636544790943238, guid: c6395567ecddd5449a32812450ba32e9, type: 2}
       propertyPath: m_LocalRotation.x
@@ -60029,6 +59654,26 @@ Prefab:
     - target: {fileID: 1276747627741412, guid: c6395567ecddd5449a32812450ba32e9, type: 2}
       propertyPath: m_Name
       value: GodEffectObj (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1216172482664708, guid: c6395567ecddd5449a32812450ba32e9, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1155991831261534, guid: c6395567ecddd5449a32812450ba32e9, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1072803633820942, guid: c6395567ecddd5449a32812450ba32e9, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1411520179109338, guid: c6395567ecddd5449a32812450ba32e9, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1929141918714474, guid: c6395567ecddd5449a32812450ba32e9, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6395567ecddd5449a32812450ba32e9, type: 2}
@@ -71146,11 +70791,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114486783494209630, guid: 8f4a537fd669d374c9b43c592e26f5ce,
-        type: 2}
-      propertyPath: clips.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 4631544064742500, guid: 8f4a537fd669d374c9b43c592e26f5ce, type: 2}
       propertyPath: m_LocalPosition.x
       value: 34.71494
@@ -71183,41 +70823,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 23
       objectReference: {fileID: 0}
+    - target: {fileID: 114733273876743812, guid: 8f4a537fd669d374c9b43c592e26f5ce,
+        type: 2}
+      propertyPath: m_EventPayload.m_Parameters.m_Parameters.Array.data[9].m_Value.m_Target.m_Target
+      value: 
+      objectReference: {fileID: 459426198}
     - target: {fileID: 114486783494209630, guid: 8f4a537fd669d374c9b43c592e26f5ce,
         type: 2}
       propertyPath: audioManager
       value: 
       objectReference: {fileID: 526441463}
-    - target: {fileID: 114486783494209630, guid: 8f4a537fd669d374c9b43c592e26f5ce,
-        type: 2}
-      propertyPath: clips.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: 75acaf2aa4be9c74aa4c7bd428d27439, type: 3}
-    - target: {fileID: 114486783494209630, guid: 8f4a537fd669d374c9b43c592e26f5ce,
-        type: 2}
-      propertyPath: clips.Array.data[1]
-      value: 
-      objectReference: {fileID: 8300000, guid: d1b2496ebab205a41b8d32704bf64b48, type: 3}
-    - target: {fileID: 114486783494209630, guid: 8f4a537fd669d374c9b43c592e26f5ce,
-        type: 2}
-      propertyPath: clips.Array.data[2]
-      value: 
-      objectReference: {fileID: 8300000, guid: 996d2b1aac0dbc74692c8bd31e752687, type: 3}
-    - target: {fileID: 114368226800850820, guid: 8f4a537fd669d374c9b43c592e26f5ce,
-        type: 2}
-      propertyPath: logPath
-      value: \logs\
-      objectReference: {fileID: 0}
-    - target: {fileID: 114368226800850820, guid: 8f4a537fd669d374c9b43c592e26f5ce,
-        type: 2}
-      propertyPath: path
-      value: \logs\
-      objectReference: {fileID: 0}
-    - target: {fileID: 114486783494209630, guid: 8f4a537fd669d374c9b43c592e26f5ce,
-        type: 2}
-      propertyPath: characterSpeed
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8f4a537fd669d374c9b43c592e26f5ce, type: 2}
   m_IsPrefabParent: 0
