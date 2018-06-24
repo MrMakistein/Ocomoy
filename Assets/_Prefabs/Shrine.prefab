@@ -368,7 +368,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1694246414381054
 GameObject:
   m_ObjectHideFlags: 1
@@ -475,7 +475,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1794701120155318
 GameObject:
   m_ObjectHideFlags: 1
@@ -870,7 +870,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1576681979193260}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.8, y: 21.46, z: -4.7}
+  m_LocalPosition: {x: -23.95, y: 21.46, z: 4.17}
   m_LocalScale: {x: 2.4076855, y: 2.4076853, z: 2.4076853}
   m_Children:
   - {fileID: 4543301326561880}
@@ -2026,7 +2026,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1901950746
+  randomSeed: 1547026867
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -8817,7 +8817,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 87239371
+  randomSeed: -1106288125
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -25740,7 +25740,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -278608171
+  randomSeed: 1155449444
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -29107,7 +29107,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -861399338
+  randomSeed: 208689732
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -39206,7 +39206,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 44954759
+  randomSeed: -1873341440
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -49784,8 +49784,8 @@ ParticleSystemRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7046a90d5cbfea04c8d2249788c232f6, type: 2}
-  - {fileID: 2100000, guid: 7046a90d5cbfea04c8d2249788c232f6, type: 2}
+  - {fileID: 2100000, guid: a9ccdfe06b7f08f4cad83fb800cee8f4, type: 2}
+  - {fileID: 2100000, guid: a9ccdfe06b7f08f4cad83fb800cee8f4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
