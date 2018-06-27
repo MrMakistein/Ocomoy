@@ -43,6 +43,7 @@ public class Player : MonoBehaviour {
     public static float slow_mass = 15;
 
     // Random Shit
+    public Texture[] collectibleImages;
     public int equipped_ability = 0;
     public float hit_cooldown_timer;
     public float hit_cooldown = 10;
@@ -109,15 +110,15 @@ public class Player : MonoBehaviour {
         //Update Collectibles Display
         if (collectibleCount == 1)
         {
-            collectibles_gui.GetComponent<Text>().text = "Collectibles: 1";
+            collectibles_gui.GetComponent<RawImage>().texture = collectibleImages[0];
         }
         if (collectibleCount == 2)
         {
-            collectibles_gui.GetComponent<Text>().text = "Collectibles: 2";
+            collectibles_gui.GetComponent<RawImage>().texture = collectibleImages[1];
         }
         if (collectibleCount == 3)
         {
-            collectibles_gui.GetComponent<Text>().text = "Collectibles: 3";
+            collectibles_gui.GetComponent<RawImage>().texture = collectibleImages[2];
         }
 
 
@@ -604,8 +605,10 @@ public class Player : MonoBehaviour {
             if (col.gameObject.GetComponent<Shrine>().shrine_id > 1) { 
                 col.gameObject.GetComponent<Shrine>().shrine_cooldown_timer = col.gameObject.GetComponent<Shrine>().shrine_cooldown;
                 col.gameObject.GetComponent<Shrine>().StartCoroutine("StartPray");
-                equipped_ability = col.gameObject.GetComponent<Shrine>().shrine_id;
-            
+                // UNCOMMENT AFTER PRESENTATION equipped_ability = col.gameObject.GetComponent<Shrine>().shrine_id;
+                equipped_ability = 2;
+
+
                 // Reset Other Abilities before activating new one
                 {
                     display_shield.SetActive(false);
@@ -639,7 +642,8 @@ public class Player : MonoBehaviour {
                 PlayerAnimControl.playPrayAnimation();
             }
 
-            if (col.gameObject.GetComponent<Shrine>().shrine_id == 2)
+            display_clone.SetActive(true);
+            /*if (col.gameObject.GetComponent<Shrine>().shrine_id == 2)
             {
                 display_clone.SetActive(true);
             }
@@ -659,6 +663,7 @@ public class Player : MonoBehaviour {
             {
                 display_slow.SetActive(true);
             }
+            */
             if (col.gameObject.GetComponent<Shrine>().shrine_id == 1 && arena.GetComponent<SpawnController>().allCollected)
             {
                 //print("Player wins");

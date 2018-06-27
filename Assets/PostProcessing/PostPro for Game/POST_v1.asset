@@ -71,17 +71,17 @@ MonoBehaviour:
   depthOfField:
     m_Enabled: 0
     m_Settings:
-      focusDistance: 10
-      aperture: 5.6
-      focalLength: 50
+      focusDistance: 14.87
+      aperture: 0.85
+      focalLength: 64.7
       useCameraFov: 0
-      kernelSize: 1
+      kernelSize: 3
   motionBlur:
     m_Enabled: 0
     m_Settings:
       shutterAngle: 270
       sampleCount: 10
-      frameBlending: 0
+      frameBlending: 1
   eyeAdaptation:
     m_Enabled: 0
     m_Settings:
@@ -124,7 +124,7 @@ MonoBehaviour:
         temperature: 0
         tint: 1.5
         hueShift: 0
-        saturation: 1.002
+        saturation: 1.05
         contrast: 1.011
       channelMixer:
         red: {x: 0.994, y: 0, z: 0}
@@ -134,9 +134,9 @@ MonoBehaviour:
       colorWheels:
         mode: 1
         log:
-          slope: {r: 1, g: 0.9648888, b: 0.9583147, a: 0}
-          power: {r: 1, g: 0.8749435, b: 0.8946657, a: 0}
-          offset: {r: 0.9880068, g: 1, b: 0.97601414, a: 0}
+          slope: {r: 1, g: 0.9406986, b: 0.99635357, a: 0}
+          power: {r: 0.46628302, g: 0.4991078, b: 1, a: 0}
+          offset: {r: 0.97532827, g: 0.9506581, b: 1, a: 0}
         linear:
           lift: {r: 1, g: 1, b: 1, a: 0}
           gamma: {r: 1, g: 1, b: 1, a: 0}
@@ -289,18 +289,18 @@ MonoBehaviour:
     m_Enabled: 0
     m_Settings:
       colored: 1
-      intensity: 0.5
-      size: 1
+      intensity: 0.062
+      size: 1.063
       luminanceContribution: 0.8
   vignette:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
       mode: 0
       color: {r: 0, g: 0, b: 0, a: 1}
       center: {x: 0.5, y: 0.5}
-      intensity: 0.45
-      smoothness: 0.2
-      roundness: 1
+      intensity: 0.58307135
+      smoothness: 1
+      roundness: 0.437
       mask: {fileID: 0}
       opacity: 1
       rounded: 0
@@ -315,6 +315,6 @@ MonoBehaviour:
     waveformR: 1
     waveformG: 1
     waveformB: 1
-    paradeExposure: 0.12
+    paradeExposure: 0.13666667
     vectorscopeExposure: 0.12
     vectorscopeShowBackground: 1

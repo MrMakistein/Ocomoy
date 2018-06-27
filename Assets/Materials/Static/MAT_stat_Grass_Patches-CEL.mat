@@ -74,15 +74,18 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
+    - _Opacity: 0.881
     - _OutlineDot: 0.25
     - _OutlineExtrusion: 0
     - _Parallax: 0.02
+    - _RampColorBlend: 0.001
     - _RampPos1: 0
     - _RampPos2: 0.282
     - _RampPos3: 0.638
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _Transparency: 1
     - _UVSec: 0
     - _UseGradientColors: 1
     - _UseRampTexture: 1

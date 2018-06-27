@@ -139,11 +139,18 @@ MonoBehaviour:
   healthSystem: 0
   objectSpeed: 0
   heightLockEnabled: 0
+  newGodMode: 0
   notes: 
   screenShakeMode: 0
   rating: 0
   musicEnabled: 0
   musicMode: 0
+  charSpeed0: 6
+  charSpeed1: 7
+  charSpeed2: 8
+  godSpeed0: 150
+  godSpeed1: 200
+  godSpeed2: 300
 --- !u!114 &114733273876743812
 MonoBehaviour:
   m_ObjectHideFlags: 1

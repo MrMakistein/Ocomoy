@@ -8,24 +8,25 @@ using UnityEngine.UI;
  * Accessed by UI (for invoking function calls) and MenuManager (for logging).
  **/
 public class Settings : MonoBehaviour {
-	//all private variables go here
-	private GameObject _player;
-	private GameObject _god;
-	public AudioClip[] clips;
-	public GameObject audioManager;
-	private GameObject _input_notes;
+    //all private variables go here
+    private GameObject _player;
+    private GameObject _god;
+    public AudioClip[] clips;
+    public GameObject audioManager;
+    private GameObject _input_notes;
 
 
-	//SETTINGS VARIABLES (public; appear in JSON file) //TODO @Theo @Maki: bitte alle anderen variablen soweit es geht private machen, sonst sind die im logfile drin ;D
-	#region settings variables
-	[Header("Player")]
-	public bool dashEnabled;
-	public int characterSpeed; //0-slow, 1-medium, 2-fast
-	public int healthSystem; //0-regen, 1-health packs
+    //SETTINGS VARIABLES (public; appear in JSON file) //TODO @Theo @Maki: bitte alle anderen variablen soweit es geht private machen, sonst sind die im logfile drin ;D
+    #region settings variables
+    [Header("Player")]
+    public bool dashEnabled;
+    public int characterSpeed; //0-slow, 1-medium, 2-fast
+    public int healthSystem; //0-regen, 1-health packs
 
-	[Header("God")]
-	public int objectSpeed; //0-slow, 1-medium, 2-fast
+    [Header("God")]
+    public int objectSpeed; //0-slow, 1-medium, 2-fast
 	public bool heightLockEnabled;
+    public bool newGodMode;
 
 	[Header("General")]
 	public string notes;
@@ -33,11 +34,22 @@ public class Settings : MonoBehaviour {
     public int rating;
 	public bool musicEnabled;
 	public int musicMode; //0-with lead, 1-no lead
-	#endregion
+
+    [Header("Options")]
+    [SerializeField] private float charSpeed0 = 6;
+    [SerializeField] private float charSpeed1 = 7;
+    [SerializeField] private float charSpeed2 = 8;
+
+    [SerializeField] private float godSpeed0 = 150;
+
+    [SerializeField] private float godSpeed1 = 200;
+
+    [SerializeField] private float godSpeed2 = 300;
+    #endregion
 
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		//Autointialize
 		_player = GameObject.Find ("Player");
 		_god = GameObject.Find ("TheosGott");
@@ -58,14 +70,14 @@ public class Settings : MonoBehaviour {
 		characterSpeed = mode; //update variables
 		switch (mode) {
 		case 0: //slow
-			_player.GetComponent<Movement>().mSpeed = 6;
+			_player.GetComponent<Movement>().mSpeed = charSpeed0;
 
 			break;
 		case 1: //medium
-			_player.GetComponent<Movement>().mSpeed = 7;
+			_player.GetComponent<Movement>().mSpeed = charSpeed0;
 			break;
 		case 2: //fast
-			_player.GetComponent<Movement>().mSpeed = 8;
+			_player.GetComponent<Movement>().mSpeed = charSpeed0;
 			break;
 		default:
 			characterSpeed = 1; //set medium speed as default in case of error
@@ -98,7 +110,7 @@ public class Settings : MonoBehaviour {
 		objectSpeed = mode;
 		switch (mode) {
 		case 0: //slow
-			dnd.instance.forceStrenght = 150;
+			dnd.instance.forceStrenght = godSpeed0;
 
 			dnd.instance.InfluenceWeightClass1 = 1;
 			dnd.instance.InfluenceWeightClass2 = 1;
@@ -106,7 +118,7 @@ public class Settings : MonoBehaviour {
 			dnd.instance.InfluenceWeightClass4 = 1;
 			break;
 		case 1: //medium
-			dnd.instance.forceStrenght = 200;
+			dnd.instance.forceStrenght = godSpeed1;
 
 			dnd.instance.InfluenceWeightClass1 = 2;
 			dnd.instance.InfluenceWeightClass2 = 2;
@@ -114,7 +126,7 @@ public class Settings : MonoBehaviour {
 			dnd.instance.InfluenceWeightClass4 = 2;
 			break;
 		case 2: //fast
-			dnd.instance.forceStrenght = 300;
+			dnd.instance.forceStrenght = godSpeed2;
 			dnd.instance.InfluenceWeightClass1 = 5;
 			dnd.instance.InfluenceWeightClass2 = 5;
 			dnd.instance.InfluenceWeightClass3 = 5;
@@ -129,9 +141,32 @@ public class Settings : MonoBehaviour {
 
 	public void ToggleHeightLock(bool isEnabled){
 		heightLockEnabled = isEnabled;
-
-		_god.GetComponent<dnd> ().heightLock = !(_god.GetComponent<dnd> ().heightLock);
+        
+        _god.GetComponent<dnd>().heightLock = !(_god.GetComponent<dnd> ().heightLock);
 	}
+
+    public void ToggleGodMode(bool godMode)
+    {
+        newGodMode = godMode;
+        if (newGodMode)
+        {
+            dnd.instance.wobbleDrag = false;
+            dnd.instance.pickNThrow = true;
+            foreach (GameObject godObject in GameObject.FindGameObjectsWithTag("GodObject"))
+            {
+                godObject.GetComponent<GodEffects>().ThrowOrClick = true;
+            }
+        } else
+        {
+            dnd.instance.wobbleDrag = true;
+            dnd.instance.pickNThrow = false;
+
+            foreach (GameObject godObject in GameObject.FindGameObjectsWithTag("GodObject"))
+            {
+                godObject.GetComponent<GodEffects>().ThrowOrClick = false;
+            }
+        }
+    }
 	#endregion
 
 	//############## 	general		##############

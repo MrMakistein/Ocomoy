@@ -19,6 +19,8 @@ public class Movement : MonoBehaviour
     public bool stunned = false;
     public bool reversed = false;
 
+    public float maxHeight = 5;
+
     //Used to adjust sliding-force
     private float forceMultiplier = 10f;
 
@@ -58,7 +60,10 @@ public class Movement : MonoBehaviour
                 move_block = true;
             }
         }
-
+        if(GetComponent<Rigidbody>().transform.position.y > maxHeight)
+        {
+            GetComponent<Rigidbody>().transform.position = new Vector3(GetComponent<Rigidbody>().transform.position.x, maxHeight, GetComponent<Rigidbody>().transform.position.z);
+        }
         if (!GameManager.instance.gamePaused && !stunned && !move_block && this.GetComponent<Dash>().dashTimer <= 0 && !move_block2)
         {
             #region oldMovment
@@ -106,7 +111,7 @@ public class Movement : MonoBehaviour
             {
 
                 //Add Force to the character --> floaty feel
-                gameObject.GetComponent<Rigidbody>().AddForce(transform.forward * forceMultiplier * GetComponent<Rigidbody>().mass * (1 - (gameObject.GetComponent<Rigidbody>().velocity.magnitude) / mSpeed) * (slow ? 1/slowMultiplicator : 1) * speedMultiplicator);
+                gameObject.GetComponent<Rigidbody>().AddForce(DirectionVelocity.magnitude * transform.forward * forceMultiplier * GetComponent<Rigidbody>().mass * (1 - (gameObject.GetComponent<Rigidbody>().velocity.magnitude) / mSpeed) * (slow ? 1/slowMultiplicator : 1) * speedMultiplicator);
 
 
             }

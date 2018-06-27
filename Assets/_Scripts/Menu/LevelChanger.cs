@@ -41,7 +41,7 @@ public class LevelChanger : MonoBehaviour {
     }
     public void IntroFinish()
     {
-        SceneManager.LoadScene("LevelV6");
+        SceneManager.LoadScene("LevelV9");
         Debug.Log("load scene");
 
     }

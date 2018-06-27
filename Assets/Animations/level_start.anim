@@ -140,7 +140,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 4.4666667
+    m_StopTime: 4.577778
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -374,14 +374,14 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 4.3777776
+  - time: 4.3
     functionName: StartPlayerTrack
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 4.4666667
+  - time: 4.577778
     functionName: StartMainGameLoop
     data: 
     objectReferenceParameter: {fileID: 0}

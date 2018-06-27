@@ -42,6 +42,20 @@ ModelImporter:
     100068: env_base_s6
     100070: env_base_s7
     100072: left
+    100074: MSH_env_plateau_v2
+    100076: MSH_env_riverv2
+    100078: MSH_env_riverv3
+    100080: MSH_env_riverv3hist
+    100082: transform1
+    100084: group1
+    100086: group2
+    100088: group2_MSH_env_riverv4
+    100090: MSH_env_riverv3 1
+    100092: MSH_env_riverv4
+    100094: MSH_env_riverv4 1
+    100096: transform2
+    100098: transform3
+    100100: group2_MSH_env_riverv5
     400000: Base1
     400002: Bodenbelag
     400004: Bodenbelag1
@@ -79,6 +93,20 @@ ModelImporter:
     400068: env_base_s6
     400070: env_base_s7
     400072: left
+    400074: MSH_env_plateau_v2
+    400076: MSH_env_riverv2
+    400078: MSH_env_riverv3
+    400080: MSH_env_riverv3hist
+    400082: transform1
+    400084: group1
+    400086: group2
+    400088: group2_MSH_env_riverv4
+    400090: MSH_env_riverv3 1
+    400092: MSH_env_riverv4
+    400094: MSH_env_riverv4 1
+    400096: transform2
+    400098: transform3
+    400100: group2_MSH_env_riverv5
     2000000: bottom
     2000002: left
     2100000: lambert2
@@ -116,6 +144,13 @@ ModelImporter:
     2300058: env_base_s5_softened
     2300060: env_base_s6
     2300062: env_base_s7
+    2300064: MSH_env_plateau_v2
+    2300066: MSH_env_riverv2
+    2300068: MSH_env_riverv3
+    2300070: MSH_env_riverv3hist
+    2300072: group2_MSH_env_riverv4
+    2300074: MSH_env_riverv4
+    2300076: group2_MSH_env_riverv5
     3300000: Base1
     3300002: Bodenbelag
     3300004: Bodenbelag1
@@ -148,6 +183,13 @@ ModelImporter:
     3300058: env_base_s5_softened
     3300060: env_base_s6
     3300062: env_base_s7
+    3300064: MSH_env_plateau_v2
+    3300066: MSH_env_riverv2
+    3300068: MSH_env_riverv3
+    3300070: MSH_env_riverv3hist
+    3300072: group2_MSH_env_riverv4
+    3300074: MSH_env_riverv4
+    3300076: group2_MSH_env_riverv5
     4300000: bodenbelag4
     4300002: bodenbelag_5
     4300004: bodenbelag6
@@ -180,6 +222,13 @@ ModelImporter:
     4300058: env_base_s5_softened
     4300060: env_base_s6
     4300062: env_base_s7
+    4300064: MSH_env_plateau_v2
+    4300066: MSH_env_riverv3hist
+    4300068: MSH_env_riverv3
+    4300070: MSH_env_riverv2
+    4300072: MSH_env_riverv4
+    4300074: group2_MSH_env_riverv4
+    4300076: group2_MSH_env_riverv5
     9500000: //RootNode
   externalObjects: {}
   materials:

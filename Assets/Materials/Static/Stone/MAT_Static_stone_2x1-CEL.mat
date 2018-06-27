@@ -78,9 +78,11 @@ Material:
     - _NoiseScale: 1
     - _OcclusionStrength: 1
     - _Offset: -1
+    - _Opacity: 0.5
     - _OutlineDot: 0.25
     - _OutlineExtrusion: 0
     - _Parallax: 0.02
+    - _RampColorBlend: 0.005
     - _RampPos1: 0.508
     - _RampPos2: 0.726
     - _RampPos3: 1
@@ -89,6 +91,7 @@ Material:
     - _SparkleDepth: 1
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _Transparency: 1
     - _UVSec: 0
     - _UseGradientColors: 1
     - _UseRampTexture: 1

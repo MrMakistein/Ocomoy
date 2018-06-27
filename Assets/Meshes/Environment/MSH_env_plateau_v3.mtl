@@ -1,0 +1,18 @@
+newmtl bodenbelag4SG
+illum 4
+Kd 0.53 0.66 0.13
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl ground1SG
+illum 4
+Kd 0.93 0.86 0.29
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl wasserfallSG
+illum 4
+Kd 0.02 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 0.93 0.93 0.93
+Ni 1.00

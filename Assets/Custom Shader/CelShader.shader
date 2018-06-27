@@ -11,7 +11,7 @@
 		_RampTint("RampTint", Color) = (1, 1, 1, 1)
 		_EdgeTolerance("Edge Tolerance", float) = 0.7
 
-		[HEADER(Ramp)]
+		[Header(Ramp)]
 	[MaterialToggle] _UseRampTexture("Use Ramp from Slider", float) = 0
 		_RampColor1("Ramp Color 1", color) = (0, 0, 0, 1)
 		_RampPos1("Ramp Position 1", Range(0, 1)) = 0
@@ -20,8 +20,9 @@
 		_RampColor3("Ramp Color 3", color) = (0.50, 0.50, 0.50, 1)
 		_RampPos3("Ramp Position 3", Range(0, 1)) = 0.66
 		_RampColor4("Ramp Color 4", color) = (0.75, 0.75, 0.75, 1)
+		_RampColorBlend("Ramp Blend", Range(0, 1)) = 0.0
 
-		[HEADER(Gradient)]
+		[Header(Gradient)]
 	[MaterialToggle] _UseGradientColors("Use Gradients:", float) = 0
 		_GradientStartHeight("Gradient Start Height", float) = 0
 		_GradientScale("Gradient Size", float) = 1
@@ -114,6 +115,7 @@
 		float _RampPos1;
 		float _RampPos2;
 		float _RampPos3;
+		float _RampColorBlend;
 
 		//helper variables
 		float lowSliderPos;
@@ -149,43 +151,60 @@
 
 			//end sort
 
+			//if Gradient is not used, set the calculation to 0, not performant, but more readable :O
+			if (_UseGradientColors == 0) {
+				gradientPos = 0;
+			}
+
 			//getGradientInformation
-			if (_UseGradientColors != 0) {
-				//calculate color based on Gradient
-				//get color according to Position
-				if (pos < lowSliderPos) {
-					return lerp(_RampColor1, _RampColor1Grad, gradientPos);
-				}
-				else if (pos < midSliderPos) {
-					return lerp(_RampColor2, _RampColor2Grad, gradientPos);
-				}
-				else if (pos < highSliderPos) {
-					return lerp(_RampColor3, _RampColor3Grad, gradientPos);
-				}
-				else
-				{
-					return lerp(_RampColor4, _RampColor4Grad, gradientPos);
-				}
-			}
-			else {
-				//get color according to Position
-				if (pos < lowSliderPos) {
-					return _RampColor1;
-				}
-				else if (pos < midSliderPos) {
-					return _RampColor2;
-				}
-				else if (pos < highSliderPos) {
-					return _RampColor3;
-				}
-				else
-				{
-					return _RampColor4;
-				}
+			//calculate color based on Gradient
+			//get color according to Position and Ramp blending
+			if (pos < lowSliderPos - _RampColorBlend) {
+				return lerp(_RampColor1, _RampColor1Grad, gradientPos);
 			}
 
+			else if (pos < lowSliderPos + _RampColorBlend) { //blend
+				//lerps the two colors
+				float4 col1 = lerp(_RampColor1, _RampColor1Grad, gradientPos);
+				float4 col2 = lerp(_RampColor2, _RampColor2Grad, gradientPos);
 
+				//lerps the two colors together, uses the position of the blend sector as input-> needs to be mapped to the Range of the blend
+				return lerp(col2, col1, (lowSliderPos + _RampColorBlend - pos) / (2 * _RampColorBlend));
+			}
+
+			else if (pos < midSliderPos - _RampColorBlend) {
+				return lerp(_RampColor2, _RampColor2Grad, gradientPos);
+			}
+
+			else if (pos < midSliderPos + _RampColorBlend) { //blend
+																 
+				float4 col1 = lerp(_RampColor2, _RampColor2Grad, gradientPos);
+				float4 col2 = lerp(_RampColor3, _RampColor3Grad, gradientPos);
+
+				//lerps the two colors together, uses the position of the blend sector as input-> needs to be mapped to the Range of the blend
+				return lerp(col2, col1, (midSliderPos + _RampColorBlend - pos) / (2 * _RampColorBlend));
+			}
+
+			else if (pos < highSliderPos - _RampColorBlend) {
+				return lerp(_RampColor3, _RampColor3Grad, gradientPos);
+			}
+
+			else if (pos < highSliderPos + _RampColorBlend) { //blend
+																  
+				float4 col1 = lerp(_RampColor3, _RampColor3Grad, gradientPos);
+				float4 col2 = lerp(_RampColor4, _RampColor4Grad, gradientPos);
+
+				//lerps the two colors together, uses the position of the blend sector as input-> needs to be mapped to the Range of the blend
+				return lerp(col2, col1, (highSliderPos + _RampColorBlend - pos) / (2 * _RampColorBlend));
+			}
+
+			else
+			{
+				return lerp(_RampColor4, _RampColor4Grad, gradientPos);
+			}
 		}
+
+		
 
 
 		struct vertexInput
@@ -375,7 +394,9 @@
 			#pragma multi_compile_fog
 			#pragma only_renderers d3d9 d3d11 glcore gles gles3 metal d3d11_9x xboxone ps4 psp2 n3ds wiiu 
 			#pragma target 3.0
-			uniform sampler2D _MainTex; uniform float4 _MainTex_ST;
+			uniform sampler2D _MainTex; 
+			uniform float4 _MainTex_ST;
+			uniform float _Cutoff;
 			struct VertexInput {
 				float4 vertex : POSITION;
 				float2 texcoord0 : TEXCOORD0;
@@ -407,6 +428,14 @@
 			float3 viewDirection = normalize(_WorldSpaceCameraPos.xyz - i.posWorld.xyz);
 			float4 _MainTex_var = tex2D(_MainTex,TRANSFORM_TEX(i.uv0, _MainTex));
 			clip(_MainTex_var.a - 0.5);*/
+			//handles alpha cutoff
+
+			float2 newUV = TRANSFORM_TEX(i.uv0, _MainTex);
+				float4 albedo = tex2D(_MainTex, newUV.xy); //wert der main tex (falls vorhanden)
+				if (albedo.a < _Cutoff)
+				{
+					discard;
+				}
 			SHADOW_CASTER_FRAGMENT(i)
 			}
 				ENDCG

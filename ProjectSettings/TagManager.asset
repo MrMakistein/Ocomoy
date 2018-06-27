@@ -28,7 +28,7 @@ TagManager:
   - Decoration
   - Interactives
   - Player
-  - 
+  - onlyPlayerCollision
   - 
   - 
   - 

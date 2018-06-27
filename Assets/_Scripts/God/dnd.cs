@@ -8,6 +8,8 @@ public class dnd : MonoBehaviour
 {
     //mask used for raycast that the raycast only hits the ground
     int mask;
+
+    int objectMask;
     //prevents picking up another object after a object was dropped without releasing the mouse button
     bool buttonReleased = true;
 
@@ -98,6 +100,15 @@ public class dnd : MonoBehaviour
     //position of the mouse in world space
     public Vector3 MouseVector;
 
+    public Vector3 PositionRelativeToCamera;
+
+    [Header("Pick n Throw")]
+
+    public bool pickNThrow = false;
+
+    public bool isHolding = false;    
+
+
     //true if you want to stop the dragging process
     bool stopDragging = false;
 
@@ -127,6 +138,7 @@ public class dnd : MonoBehaviour
         oldCameraPosition = currentCamera.transform.position;
         //the way to tell the mask that the raycast should only hit the ground
         mask = 1 << LayerMask.NameToLayer("is Ground");
+        objectMask = ~(1 << LayerMask.NameToLayer("onlyPlayerCollision"));
 
         //Every screen dependent variable has to be scaled to fit any resolution
         initialDropDistance = ScreenSizeCompensation(initialDropDistance);
@@ -138,11 +150,15 @@ public class dnd : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         //main if, if true --> object is beeing picked up.
         //
         //handles everything while picking up, while holding and after release 
-        if (enableGod && buttonReleased && CrossPlatformInputManager.GetButton("PickUp") && (!isDragging || Vector3.Distance(pickUpScreenPos, CrossPlatformInputManager.mousePosition) <= DropDistance) && !stopDragging)
+        if(CrossPlatformInputManager.GetButtonDown("PickUp") && isHolding)
+        {
+            isHolding = false;
+        }
+
+        if ((enableGod && buttonReleased && CrossPlatformInputManager.GetButton("PickUp") && (!isDragging || Vector3.Distance(pickUpScreenPos, CrossPlatformInputManager.mousePosition) <= DropDistance) && !stopDragging) || isHolding)
         {
             //Check if the player is using a slow effect.
             //TODO: more performent methode for this effect.
@@ -158,6 +174,10 @@ public class dnd : MonoBehaviour
                 if (draggingObject)
                 {
                     isDragging = true;
+                    if (pickNThrow)
+                    {
+                        isHolding = true;
+                    }
                     pickUpScreenPos = currentCamera.WorldToScreenPoint(draggingObject.GetComponent<Rigidbody>().position);
 
                     //used for lockObject = true    
@@ -171,11 +191,10 @@ public class dnd : MonoBehaviour
             //while dragging
             else if (draggingObject != null)
             {
+
                 //to shorten code
                 DrObj = draggingObject.GetComponent<Rigidbody>();
-
-
-
+                
                 //with clickNFling
                 if (clickNFling && (DrObj.tag != "GodObject" || !wobbleDrag))
                 {
@@ -234,10 +253,18 @@ public class dnd : MonoBehaviour
                     }
 
                 }
-                else
+
+                if(!wobbleDrag && !pickNThrow)
                 {
                     DrObj.constraints = RigidbodyConstraints.FreezeAll;
                     DrObj.transform.position = Vector3.Lerp(DrObj.transform.position, MouseVector, Time.deltaTime * pickUpSpeed);
+                }
+
+                if(pickNThrow)
+                {
+                    DrObj.constraints = RigidbodyConstraints.FreezePosition;
+                    DrObj.transform.position = Vector3.Lerp(DrObj.transform.position, currentCamera.transform.position + PositionRelativeToCamera, Time.deltaTime * pickUpSpeed);
+                    DrObj.angularVelocity = new Vector3(0, Mathf.PI * 0.2f,0);
                 }
 
                 // if the object isnt locked, move it with the camera
@@ -280,6 +307,11 @@ public class dnd : MonoBehaviour
                     DrObj.AddForce((new Vector3(MouseVector.x, DrObj.transform.position.y, MouseVector.z) - DrObj.transform.position).normalized * strength, ForceMode.Force);
 
                 }
+                if (pickNThrow)
+                {
+                    DrObj.AddForce((MouseVector - DrObj.position) * shotStrength);
+
+                }
                 DrObj.drag = 0;
                 draggingObject = null;
 
@@ -287,7 +319,7 @@ public class dnd : MonoBehaviour
             isDragging = false;
             stopDragging = false;
         }
-
+       
         //Check if the mouse button was released
         if (CrossPlatformInputManager.GetButton("PickUp") && !isDragging)
         {
@@ -297,6 +329,8 @@ public class dnd : MonoBehaviour
         {
             buttonReleased = true;
         }
+
+        
 
         //Camera Update
         oldCameraPosition = currentCamera.transform.position;

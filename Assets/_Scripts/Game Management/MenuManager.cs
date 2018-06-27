@@ -68,15 +68,18 @@ public class MenuManager : MonoBehaviour {
         notes = GameObject.Find("INPUTFIELD_Notes").GetComponent<InputField>();
         screenShakeSlider = GameObject.Find("SLIDER_ScreenshakeMode").GetComponent<Slider>();
         ratingSlider = GameObject.Find("SLIDER_Xp").GetComponent<Slider>();
-
         saveData = GameObject.Find("BUTTON_Send_Nudes").GetComponent<Button>();
+
+        m_pauseOverlay = GameObject.Find("Canvas_PauseOverlay");
+        m_pauseOverlay.SetActive(false); //deactivate pause menu
+
+
+       
     }
 
     void Start() {
         _settings = this.gameObject.GetComponent<Settings>();
         SetDefault();
-        m_pauseOverlay = GameObject.Find("Canvas_PauseOverlay");
-        m_pauseOverlay.SetActive(false); //deactivate pause menu
 
         //(hopefully) platform independent relative paths
         string logPathPart = "LOGDATA (please send us this folder)" + Path.DirectorySeparatorChar + "OcomoySettingsLog.txt";

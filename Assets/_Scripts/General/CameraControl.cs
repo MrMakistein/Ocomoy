@@ -56,8 +56,7 @@ public class CameraControl : MonoBehaviour {
     }
     // Update is called once per frame
     void Update() {
-
-        if (trackplayer) { 
+            if (trackplayer) { 
             //check for nullpointer
             if (player != null && dummy != null)
             {
