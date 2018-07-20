@@ -19,6 +19,8 @@ public class ThrowObject : MonoBehaviour
     private float initialMass;
     public GameObject mesh;
 
+    
+
     // Use this for initialization
     void Start()
     {

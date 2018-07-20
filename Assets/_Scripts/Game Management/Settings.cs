@@ -9,11 +9,12 @@ using UnityEngine.UI;
  **/
 public class Settings : MonoBehaviour {
     //all private variables go here
-    private GameObject _player;
+    public GameObject _player;
     private GameObject _god;
     public AudioClip[] clips;
     public GameObject audioManager;
-    private GameObject _input_notes;
+    private GameObject _sliderXP;
+    ///private GameObject _input_notes;
 
 
     //SETTINGS VARIABLES (public; appear in JSON file) //TODO @Theo @Maki: bitte alle anderen variablen soweit es geht private machen, sonst sind die im logfile drin ;D
@@ -51,12 +52,12 @@ public class Settings : MonoBehaviour {
     // Use this for initialization
     void Start () {
 		//Autointialize
-		_player = GameObject.Find ("Player");
+		//_player = GameObject.Find ("Player");
 		_god = GameObject.Find ("TheosGott");
-
-        _input_notes = GameObject.Find ("AdditionalNotes");
-		notes = _input_notes.GetComponentInChildren<Text> ().text;
-	}
+        ///_sliderXP = GameObject.Find("SLIDER_Xp");
+        ///_input_notes = GameObject.Find ("AdditionalNotes");
+        ///notes = _input_notes.GetComponentInChildren<Text> ().text;
+    }
 
 	//------------------- METHODS FOR ACTUALLY CHANGING SETTINGS -------------------------
 	//############## 	character 	##############
@@ -199,7 +200,7 @@ public class Settings : MonoBehaviour {
     public void SetRating(float ratingAmount)
     {
         this.rating = (int)(ratingAmount);
-        GameObject.Find("SLIDER_Xp").GetComponent<Slider>().value = rating;
+       ///_sliderXP.GetComponent<Slider>().value = rating;
     }
 
 	public void SetNotes(string theNotes){ //set notes to any text 

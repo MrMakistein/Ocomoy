@@ -220,7 +220,7 @@
 			float4 pos : SV_POSITION;
 			float3 normal : NORMAL;
 			float3 texCoord : TEXCOORD0;
-			float3 normalDir : TEXCOORD1;
+			//float3 normalDir : TEXCOORD1;
 			float3 screenPos : TEXCOORD2;
 			float2 lightMap : TEXCOORD3;
 			float3 objectPos : TEXCOORD4;
@@ -330,7 +330,7 @@
 		} //end lighting pass
 
 
-
+		//-----------------------------------------------------------------------------------------------------------------------------------------------
 
 
 		  //Shadow pass
@@ -442,32 +442,33 @@
 
 			} //end shadow pass
 
-			  // Outline pass
+
+			//---------------------------------------------------------------------------------------------------------------------
+			// Outline pass
+
 				Pass
 			{
 				//Blend DstColor SrcColor // Multiplicative
 
 				// Won't draw where it sees ref value 4
-				Cull OFF
+				Cull Front
 				ZWrite OFF
 				ZTest ON
-				Stencil
-			{
-				Ref 4
-				Comp notequal
-				Fail keep
-				Pass replace
-			}
+
+				Blend SrcAlpha OneMinusSrcAlpha
 
 				CGPROGRAM
 		#pragma vertex vert
 		#pragma fragment frag
 
+		#include "UnityCG.cginc"
+
 			// Properties
 			uniform float4 _OutlineColor;
-		uniform float _OutlineSize;
-		uniform float _OutlineExtrusion;
-		uniform float _OutlineDot;
+			uniform float _OutlineSize;
+			uniform float _OutlineExtrusion;
+			uniform float _OutlineDot;
+			uniform float4 _MousePos;
 
 		struct vertexInput
 		{
@@ -493,7 +494,6 @@
 
 			// convert to world space
 			output.pos = UnityObjectToClipPos(newPos);
-
 			output.color = _OutlineColor;
 			return output;
 		}
@@ -507,13 +507,35 @@
 
 			// clip HLSL instruction stops rendering a pixel if value is negative
 			//clip(checker);
+			if (_OutlineExtrusion == 0) {
+				discard;
+			}
 
+
+			//calculate screen position
+			float4 screenPos = ComputeScreenPos(input.pos);
+
+			//_CutObjPos
+			float dx = _MousePos.x/2 - screenPos.x + 5;
+			float dy = -_MousePos.y/2 - screenPos.y;
+
+
+			//include aspect ratio, that cutout appears round |not needed apparently
+			//dy *= _ScreenParams.y / _ScreenParams.x;
+			float dist = (sqrt(dx * dx + dy * dy) / (_ScreenParams.y / 20));
+
+			input.color.a = input.color.a - saturate(-0.2 + dist);
 			return input.color;
-		}
+			}
 
 			ENDCG
 
-	}//end outline pass*/	
+	}//end outline pass
+
+
+					
+
+	//________________________________________________________________________________________________________________________________________
 	 /*
 	 //Lightmap pass
 	 Pass

@@ -69,8 +69,6 @@ public class dnd : MonoBehaviour
 
     //__________________________ DIFFERENT MECHANICS
 
-    //activate the click and fling mechanic
-    public bool clickNFling = true;
     //is a object currently being helt in place to fling
     bool charging = false;
     public float shotStrength = 10000f;
@@ -78,13 +76,7 @@ public class dnd : MonoBehaviour
 
 
 
-    //lock the picked up object, so one can only fling it
-    public bool lockObject = true;
 
-
-
-    //if the object woobles(uses forces) or uses lerp
-    public bool wobbleDrag = false;
 
     //How fast the object is being picked up (if wobble drag is not active
     public float pickUpSpeed = 10;
@@ -102,11 +94,36 @@ public class dnd : MonoBehaviour
 
     public Vector3 PositionRelativeToCamera;
 
-    [Header("Pick n Throw")]
+    private bool is_Holding = false;
+
+    [Header("God Modes")]
+
+
+    //activate the click and fling mechanic
+    public bool clickNFling = true;
+    //lock the picked up object, so one can only fling it
+    public bool lockObject = true;
+    
+    //if the object woobles(uses forces) or uses lerp
+    public bool wobbleDrag = false;
 
     public bool pickNThrow = false;
 
-    public bool isHolding = false;    
+
+
+    //helper variables for secondary dragging
+    public bool secondaryDrag = false;
+
+    public bool secondaryShot = false;
+
+    private bool secondaryDragClick = false;
+
+    private bool secondaryShotClick = false;
+    private bool lastPressedMouseWasLeft = false;
+
+    private bool currentModeIsPNT = false;
+
+    
 
 
     //true if you want to stop the dragging process
@@ -127,6 +144,11 @@ public class dnd : MonoBehaviour
     float time = 0;
     //singelton
     public static dnd instance;
+
+    public void setIsHolding(bool toIsHolding)
+    {
+        is_Holding = toIsHolding;
+    }
 
     void Awake()
     {
@@ -153,12 +175,33 @@ public class dnd : MonoBehaviour
         //main if, if true --> object is beeing picked up.
         //
         //handles everything while picking up, while holding and after release 
-        if(CrossPlatformInputManager.GetButtonDown("PickUp") && isHolding)
+        if(CrossPlatformInputManager.GetButtonDown("PickUp") && is_Holding)
         {
-            isHolding = false;
+
+            is_Holding = false;
         }
 
-        if ((enableGod && buttonReleased && CrossPlatformInputManager.GetButton("PickUp") && (!isDragging || Vector3.Distance(pickUpScreenPos, CrossPlatformInputManager.mousePosition) <= DropDistance) && !stopDragging) || isHolding)
+        //if the secondary Drag is enabled, check for input     
+        secondaryDragClick = (secondaryDrag && CrossPlatformInputManager.GetButton("ActivateCurse") && !is_Holding);
+
+
+        //if the secondary Shot is enabled, check for input     
+        secondaryShotClick = (secondaryShot && CrossPlatformInputManager.GetButton("ActivateCurse") && !is_Holding);
+
+        //change var on click
+        if (CrossPlatformInputManager.GetButtonUp("PickUp"))
+        {
+            lastPressedMouseWasLeft = true;
+        }
+
+        if (CrossPlatformInputManager.GetButtonUp("ActivateCurse"))
+        {
+            lastPressedMouseWasLeft = false;
+        }
+
+
+        //Handles Pickup
+        if ((enableGod && buttonReleased && (CrossPlatformInputManager.GetButton("PickUp") || secondaryDragClick || secondaryShotClick) && (!isDragging || Vector3.Distance(pickUpScreenPos, CrossPlatformInputManager.mousePosition) <= DropDistance) && !stopDragging) || is_Holding)
         {
             //Check if the player is using a slow effect.
             //TODO: more performent methode for this effect.
@@ -168,15 +211,17 @@ public class dnd : MonoBehaviour
             if (!isDragging)
             {
                 //get the object the player has clicked on (if it is a valid object, otherwise return will be null)
+               
                 draggingObject = GetObjectFromMouseRaycast();
                 StatsManager.instance.round_objects_picked_up++;
                 //if it is a valid object, initiate dragging
                 if (draggingObject)
                 {
                     isDragging = true;
-                    if (pickNThrow)
+                    if (pickNThrow && !secondaryDragClick && secondaryDrag || secondaryShotClick)
                     {
-                        isHolding = true;
+                        currentModeIsPNT = true;
+                        is_Holding = true;
                     }
                     pickUpScreenPos = currentCamera.WorldToScreenPoint(draggingObject.GetComponent<Rigidbody>().position);
 
@@ -225,11 +270,11 @@ public class dnd : MonoBehaviour
                     MouseVector = CalculateMouse3DVector(currentCamera, mask, pickUpHeight + heightOffset);
                 }
 
-                //calculate the relative distance using screen coordinates
+                //calculate the relative distance using screen coordinates | used for click n fling
                 screenDistanceRel = (Vector3.Distance(pickUpScreenPos, Input.mousePosition) / DropDistance);
 
                 //Apply force and change drag
-                if (wobbleDrag)
+                if (wobbleDrag && (!secondaryDrag && !secondaryShot) || !secondaryShotClick && secondaryShot && !currentModeIsPNT || secondaryDragClick)
                 {
                     if (heightLock)
                     {
@@ -238,7 +283,7 @@ public class dnd : MonoBehaviour
                         //uses lerp to get the object fast to the pick up height, but then uses the standard wobble drag at pick up height
                         if (pickUpHeight + heightOffset + heightCompensation > DrObj.transform.position.y + heightThreshhold)
                         {
-                            Debug.Log("ntered If for Height Drag");
+                           
                             DrObj.transform.position = new Vector3(DrObj.transform.position.x, Vector3.Lerp(DrObj.transform.position, MouseVector, Time.deltaTime * pickUpSpeed).y, DrObj.transform.position.z);
                         }
                         DrObj.AddForce((Time.deltaTime * 140) * (MouseVector - DrObj.transform.position).normalized * forceStrenght / (screenSizeMultiplier), ForceMode.Force);
@@ -254,17 +299,26 @@ public class dnd : MonoBehaviour
 
                 }
 
+                //lerp to mouse pos 
                 if(!wobbleDrag && !pickNThrow)
                 {
                     DrObj.constraints = RigidbodyConstraints.FreezeAll;
                     DrObj.transform.position = Vector3.Lerp(DrObj.transform.position, MouseVector, Time.deltaTime * pickUpSpeed);
                 }
 
-                if(pickNThrow)
+                if(pickNThrow && (!secondaryDrag && !secondaryShot|| !secondaryDragClick && secondaryDrag || secondaryShotClick || currentModeIsPNT))
                 {
+                    if (secondaryShotClick)
+                    {
+                        currentModeIsPNT = true;
+                        is_Holding = true;
+                    }
+                    //Change Collsion Mode to detect collisions also at high velocity
+                    DrObj.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
                     DrObj.constraints = RigidbodyConstraints.FreezePosition;
                     DrObj.transform.position = Vector3.Lerp(DrObj.transform.position, currentCamera.transform.position + PositionRelativeToCamera, Time.deltaTime * pickUpSpeed);
                     DrObj.angularVelocity = new Vector3(0, Mathf.PI * 0.2f,0);
+                    
                 }
 
                 // if the object isnt locked, move it with the camera
@@ -307,10 +361,11 @@ public class dnd : MonoBehaviour
                     DrObj.AddForce((new Vector3(MouseVector.x, DrObj.transform.position.y, MouseVector.z) - DrObj.transform.position).normalized * strength, ForceMode.Force);
 
                 }
-                if (pickNThrow)
+                if (pickNThrow && !secondaryShot && !secondaryDrag || lastPressedMouseWasLeft && ((secondaryDrag) || (currentModeIsPNT && secondaryShot)))
                 {
+                    currentModeIsPNT = false;
                     DrObj.AddForce((MouseVector - DrObj.position) * shotStrength);
-
+                    StartCoroutine(resetCollision(DrObj, 3f));
                 }
                 DrObj.drag = 0;
                 draggingObject = null;
@@ -321,7 +376,7 @@ public class dnd : MonoBehaviour
         }
        
         //Check if the mouse button was released
-        if (CrossPlatformInputManager.GetButton("PickUp") && !isDragging)
+        if ((CrossPlatformInputManager.GetButton("PickUp") || CrossPlatformInputManager.GetButton("ActivateCurse"))&& !isDragging)
         {
             buttonReleased = false;
         }
@@ -449,4 +504,14 @@ public class dnd : MonoBehaviour
     }
 
 
+    //for coroutine
+    IEnumerator resetCollision(Rigidbody body, float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+        if (body != null)
+        {
+            body.collisionDetectionMode = CollisionDetectionMode.Discrete;
+        }
+    }
 }
+  

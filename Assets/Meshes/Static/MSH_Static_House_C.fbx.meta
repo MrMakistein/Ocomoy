@@ -1663,7 +1663,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: WallStones1
-    second: {fileID: 2100000, guid: d818ae7b4d0181f4a9dced6e5b4d5d66, type: 2}
+    second: {fileID: 2100000, guid: 05b1fb0926afac34e9e663471a13b96b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

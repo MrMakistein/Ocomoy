@@ -396,8 +396,8 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 348983524d9fd26489f2cc2c3e44ec8b, type: 3}
-  - {fileID: 2100002, guid: 348983524d9fd26489f2cc2c3e44ec8b, type: 3}
+  - {fileID: 2100000, guid: 7dcad62a7f5916943a8efac071a8d685, type: 2}
+  - {fileID: 2100000, guid: 53c503b62a7a6074fa28e8c457525503, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -538,6 +538,7 @@ MonoBehaviour:
   combo_particles2: {fileID: 1546637439620220}
   combo_particles3: {fileID: 1717307573438996}
   combo_particle_reset_timer: 0
+  shrink_timer: 0
 --- !u!114 &114820794967864370
 MonoBehaviour:
   m_ObjectHideFlags: 1

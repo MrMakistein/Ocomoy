@@ -16,7 +16,6 @@ public class SpawnController : MonoBehaviour
     public GameObject godObject;
     public Vector3 player_pos;
     public GameObject player;
-    public GameObject[] temp_collectibles; //TEMP COLL [UNCOMMENT AGAIN AFTER PRESENTATION] 
 
     //PRIVATE VARIABLES
     private GameObject[] interactives; //all interactive GameObjects in the scene
@@ -45,7 +44,7 @@ public class SpawnController : MonoBehaviour
         player.transform.position = player_pos;
         CameraControl.instance.CenterCamera();
 
-        player.transform.position = new Vector3(50.4f, 1.04f, 19f); // Manually set player position
+        //player.transform.position = new Vector3(50.4f, 1.04f, 19f); // Manually set player position
 
     }
 
@@ -82,7 +81,7 @@ public class SpawnController : MonoBehaviour
 
     public void SpawnGodObjects()
     {
-       /* godObjectSpawnPositions = GameObject.FindGameObjectsWithTag("GodObjectSpawnPosition");
+        godObjectSpawnPositions = GameObject.FindGameObjectsWithTag("GodObjectSpawnPosition");
 
         while (initialGodObjects > 0)
         {
@@ -98,7 +97,7 @@ public class SpawnController : MonoBehaviour
                 godItem.GetComponent<GodEffects>().uid = uid;
             }
         }
-        */
+        
     }
 
     public void DetermineAreas()
@@ -167,17 +166,14 @@ public class SpawnController : MonoBehaviour
 
             //CHOOSE A RANDOM INTERACTIVE IN THE ZONE TO SET AS COLLECTIBLE
             int r = rnd2.Next(0, interactivesInZone.Count - 1);
-            //TEMP COLL [UNCOMMENT AGAIN AFTER PRESENTATION] interactivesInZone[r].GetComponent<InteractiveSettings>().SetCollectible();
+            interactivesInZone[r].GetComponent<InteractiveSettings>().SetCollectible();
 
             //ADD IT TO THE COLLECTIBLE LIST
             
-            //TEMP COLL [UNCOMMENT AGAIN AFTER PRESENTATION]  chosenCollectibles.Add(interactivesInZone[r]); //add the game object to the collectibles List
+            chosenCollectibles.Add(interactivesInZone[r]); //add the game object to the collectibles List
 
             Destroy(zone); //then destroy the zone! (isn't needed anymore)
         }
-        chosenCollectibles.Add(temp_collectibles[0]); //TEMP COLL [UNCOMMENT AGAIN AFTER PRESENTATION] 
-        chosenCollectibles.Add(temp_collectibles[1]); //TEMP COLL [UNCOMMENT AGAIN AFTER PRESENTATION] 
-        chosenCollectibles.Add(temp_collectibles[2]); //TEMP COLL [UNCOMMENT AGAIN AFTER PRESENTATION] 
 
 
         collectibles = chosenCollectibles.ToArray(); //to array cuz what r lists
@@ -197,7 +193,7 @@ public class SpawnController : MonoBehaviour
     private void SpawnShrines()
     {
         // Assigns random id from 1 to 6 to all of the shrines (no repeating values)
-        /*List<int> list = new List<int>(new int[] { 1, 2, 3, 4, 5, 6 });
+        List<int> list = new List<int>(new int[] { 1, 2, 3, 4, 5, 6 });
         int rand = 0;
         GameObject[] shrines = GameObject.FindGameObjectsWithTag("Shrine");
 		foreach (GameObject shrine in shrines) {
@@ -207,24 +203,9 @@ public class SpawnController : MonoBehaviour
 
             list.RemoveAt (rand);
 		}
-    }*/
-
-        //Manually set spawn shrine ids
-        GameObject[] shrines = GameObject.FindGameObjectsWithTag("Shrine");
-        int number = 3;
-        foreach (GameObject shrine in shrines)
-        {
-            shrine.gameObject.GetComponent<Shrine>().shrine_id = number;
-            shrine.gameObject.GetComponent<Shrine>().SetMeshes();
-            number++;
-
-            if (number >= 7)
-            {
-                number = 0;
-            }
-
-        }
     }
+
+        
 }
 
 

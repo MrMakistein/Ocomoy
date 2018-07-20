@@ -201,7 +201,7 @@ public class MenuManager : MonoBehaviour {
 			_settings.ChangeHealthSystem (0);
 			_settings.ChangeMusicMode (1);
 			_settings.ChangeObjectSpeed (1);
-			_settings.EnableMusic (true);
+			_settings.EnableMusic (false);
 			_settings.SetDashEnabled (true);
 			//_settings.SetNotes ("");
 			_settings.SetScreenshake (2.0f);

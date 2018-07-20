@@ -58,15 +58,19 @@ Material:
         m_Texture: {fileID: 2800000, guid: bb9f096b054a0154aa3aab3466947b84, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _ToonShade:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - _AlphaCutOff: 0
     - _AnimSpeed: 1
-    - _Aufheller: 0.2
+    - _Aufheller: 0.27
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _EdgeTolerance: 0
+    - _EdgeTolerance: 0.24
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -78,9 +82,11 @@ Material:
     - _NoiseScale: 1
     - _OcclusionStrength: 1
     - _Offset: -1
-    - _OutlineDot: 0.25
-    - _OutlineExtrusion: 0
+    - _Outline: 0.00927
+    - _OutlineDot: 0.74
+    - _OutlineExtrusion: 0.1
     - _Parallax: 0.02
+    - _RampColorBlend: 0
     - _RampPos1: 0.297
     - _RampPos2: 0.722
     - _RampPos3: 1
@@ -96,7 +102,7 @@ Material:
     m_Colors:
     - _Color: {r: 0.6397059, g: 0.6360727, b: 0.6067799, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
     - _RampColor1: {r: 0.29411763, g: 0.29411763, b: 0.29411763, a: 1}
     - _RampColor1Grad: {r: 0.22461219, g: 0.22794116, b: 0.16760378, a: 1}
     - _RampColor2: {r: 0.60294116, g: 0.60294116, b: 0.60294116, a: 1}

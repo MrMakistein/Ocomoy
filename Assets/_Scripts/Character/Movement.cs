@@ -129,13 +129,7 @@ public class Movement : MonoBehaviour
                 }
             }
 
-            // Rotates the player into the correct direction
-            Vector3 movement = new Vector3(CrossPlatformInputManager.GetAxisRaw("Horizontal"), 0.0f, CrossPlatformInputManager.GetAxisRaw("Vertical"));
-            movement *= reversed ? -1 : 1;
-            if (movement != Vector3.zero)
-            {
-                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15F);
-            }
+           
                       
         }
 
@@ -163,6 +157,17 @@ public class Movement : MonoBehaviour
             slowTimer += Time.deltaTime;
         }
 
+    }
+
+    void FixedUpdate()
+    {
+        // Rotates the player into the correct direction
+        Vector3 movement = new Vector3(CrossPlatformInputManager.GetAxisRaw("Horizontal"), 0.0f, CrossPlatformInputManager.GetAxisRaw("Vertical"));
+        movement *= reversed ? -1 : 1;
+        if (movement != Vector3.zero)
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15F);
+        }
     }
 
     public void SetSliding()

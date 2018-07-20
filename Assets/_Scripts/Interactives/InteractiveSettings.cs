@@ -16,6 +16,9 @@ public class InteractiveSettings : MonoBehaviour
     public GameObject combo_particles3;
     public float combo_particle_reset_timer = 0;
     public float shrink_timer = 0;
+
+    //used to reset the position in the "CollectibleOutOfReach" script 
+    public float illegal_position_reset_timer = 0;
     
 
     // Use this for initialization
@@ -87,7 +90,6 @@ public class InteractiveSettings : MonoBehaviour
 
             if (combo_particle_reset_timer > 2.0 && combo_particle_reset_timer <= 2.29)
             {
-                combo_particles1.GetComponent<ComboParticles>().StopParticles();
                 combo_particles2.GetComponent<ComboParticles>().StopParticles();
                 combo_particles3.GetComponent<ComboParticles>().StopParticles();
                 combo_particle_reset_timer = 2.0f;

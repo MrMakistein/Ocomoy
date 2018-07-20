@@ -80,6 +80,13 @@ public class Player : MonoBehaviour {
 
     public static Player instance;
 
+    //Particles 
+
+    public bool in_water;
+    public int water_count;
+    public GameObject hit_particles;
+    public ParticleSystem hit_particle_system;
+
     private void Awake()
     {
         Player.instance = this;
@@ -87,6 +94,9 @@ public class Player : MonoBehaviour {
 
     // Use this for initialization
     void Start() {
+        in_water = false;
+        water_count = 0;
+        hit_particle_system = hit_particles.GetComponent<ParticleSystem>();
         arena = GameObject.Find("Arena");
         slip_count = 5;
         collectibleCount = 0;
@@ -383,6 +393,13 @@ public class Player : MonoBehaviour {
         {
 
             god.GetComponent<dnd>().ReleaseObject(); // Makes the god drop the object he's holding
+
+            //Play Hit Particles
+            hit_particles.transform.position = col.transform.position;
+            hit_particle_system.Play();
+
+
+
             CameraControl.instance.CameraShake();
             hit_cooldown_timer = hit_cooldown;
             if (selectedClone == null)
@@ -605,8 +622,7 @@ public class Player : MonoBehaviour {
             if (col.gameObject.GetComponent<Shrine>().shrine_id > 1) { 
                 col.gameObject.GetComponent<Shrine>().shrine_cooldown_timer = col.gameObject.GetComponent<Shrine>().shrine_cooldown;
                 col.gameObject.GetComponent<Shrine>().StartCoroutine("StartPray");
-                // UNCOMMENT AFTER PRESENTATION equipped_ability = col.gameObject.GetComponent<Shrine>().shrine_id;
-                equipped_ability = 2;
+                equipped_ability = col.gameObject.GetComponent<Shrine>().shrine_id;
 
 
                 // Reset Other Abilities before activating new one
@@ -642,8 +658,7 @@ public class Player : MonoBehaviour {
                 PlayerAnimControl.playPrayAnimation();
             }
 
-            display_clone.SetActive(true);
-            /*if (col.gameObject.GetComponent<Shrine>().shrine_id == 2)
+            if (col.gameObject.GetComponent<Shrine>().shrine_id == 2)
             {
                 display_clone.SetActive(true);
             }
@@ -663,7 +678,7 @@ public class Player : MonoBehaviour {
             {
                 display_slow.SetActive(true);
             }
-            */
+            
             if (col.gameObject.GetComponent<Shrine>().shrine_id == 1 && arena.GetComponent<SpawnController>().allCollected)
             {
                 //print("Player wins");

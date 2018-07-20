@@ -12,7 +12,17 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Bucket
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BucketMat
+    second: {fileID: 2100000, guid: 3834305139a6c9645b693b60f749cc8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BucketRim
+    second: {fileID: 2100000, guid: 5990ce5140c12d74f98b3d5baf55aa28, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
