@@ -94,7 +94,7 @@ Material:
     - _GradientStartHeight: 0
     - _HeightOffset: 0.421
     - _IndentDepth: 0.5
-    - _LightmapIntensity: 0.371
+    - _LightmapIntensity: 0
     - _Metallic: 0
     - _Mode: 0
     - _NoiseScale: 1
@@ -103,6 +103,7 @@ Material:
     - _OutlineDot: 0.25
     - _OutlineExtrusion: 0
     - _Parallax: 0.02
+    - _RampColorBlend: 0
     - _RampPos1: 0
     - _RampPos2: 0.167
     - _RampPos3: 0.532

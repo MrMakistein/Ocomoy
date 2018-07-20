@@ -5,9 +5,11 @@
 		_Color("Color", Color) = (1, 1, 1, 0)
 		// color of the edge effect
 		_EdgeColor("Edge Color", Color) = (1, 1, 1, 0)
+
+
 		// width of the edge effect
 		_DepthFactor("Depth Factor", float) = 1.0
-	  
+		
 		_WaveSpeed("Wave Speed", float) = 1.0
 
 		_WaveAmp("Wave Amp", float) = 0.2
@@ -21,6 +23,21 @@
 		_ExtraHeight("Extra Height", float) = 0.0
 
 		_EnableRamp("Enable Ramp", float) = 0.0
+
+		[Header(Foam)]
+
+
+		_FoamColor("Foam Color", Color) = (1, 1, 1, 0)
+
+		_FoamThreshhold("Foam Thereshhold", Range(0,2)) = 0.5
+
+		_flowSpeed("Flow Speed", float) = 1
+		
+		_SpriteMap("SpriteMap", 2D) = "white" {}
+
+
+
+
 	}
 
 	SubShader
@@ -118,6 +135,15 @@
             float _DistortStrength;
 			float _WaveSpeed;
 			float _WaveAmp;
+			
+			//For Flow effect
+			sampler2D _SpriteMap;
+			//is Filled automatically with scale and offset from map
+			float4 _SpriteMap_ST;
+			float4 _FoamColor;
+			float _flowSpeed;
+			float _FoamThreshhold;
+
 
 			float _EnableRamp;
 
@@ -131,7 +157,9 @@
 			struct vertexOutput
 			{
 				float4 pos : SV_POSITION;
-				float4 screenPos : TEXCOORD1;	
+				float4 screenPos : TEXCOORD0;	
+				float4 UVFlowcoord : TEXCOORD1;
+				
 			};
 
 			vertexOutput vert(vertexInput input)
@@ -148,6 +176,7 @@
 
 				// compute depth (screenPos is a float4)
 				output.screenPos = ComputeScreenPos(output.pos);
+				output.UVFlowcoord = input.texCoord;
 
 				return output;
 			}
@@ -182,10 +211,22 @@
 				float4 col; 
 				if(_EnableRamp >= 1.0) {
 					col = foamRamp * _Color;
+
+					
 				} else {
+					//TRANSFORM_TEX applys the scale/offset declared in the editor, based on the values given in _SpriteMan_ST
+					
+
 					col = foamLine * _EdgeColor + _Color;
 				}
 				//float4 col = foamRamp * _Color;
+				
+				float noiseForWaves = float4(tex2D(_SpriteMap, float2(TRANSFORM_TEX(input.UVFlowcoord.xy, _SpriteMap).x, TRANSFORM_TEX(input.UVFlowcoord.xy, _SpriteMap).y + _Time.x * _flowSpeed))).r;
+				col = noiseForWaves > _FoamThreshhold && foamRamp != 1? _Color + _FoamColor : col;
+
+				
+				
+
 				return col;
 			}
 

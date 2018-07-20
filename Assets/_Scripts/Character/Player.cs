@@ -87,6 +87,9 @@ public class Player : MonoBehaviour {
     public GameObject hit_particles;
     public ParticleSystem hit_particle_system;
 
+    public GameObject water_particles;
+    public ParticleSystem water_particle_system;
+
     private void Awake()
     {
         Player.instance = this;
@@ -97,6 +100,8 @@ public class Player : MonoBehaviour {
         in_water = false;
         water_count = 0;
         hit_particle_system = hit_particles.GetComponent<ParticleSystem>();
+        water_particle_system = water_particles.GetComponent<ParticleSystem>();
+
         arena = GameObject.Find("Arena");
         slip_count = 5;
         collectibleCount = 0;
@@ -261,8 +266,15 @@ public class Player : MonoBehaviour {
         return gMin;
     }
 
+    public void StartWaterParticles()
+    {
+        water_particle_system.Play();
+    }
 
-
+    public void StopWaterParticles()
+    {
+        water_particle_system.Stop();
+    }
 
     private void UpdateVignette() //ADJUST
     {

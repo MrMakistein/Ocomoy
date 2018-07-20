@@ -7,13 +7,21 @@ ModelImporter:
   fileIDToRecycleName:
     100000: MSH_env_plateau_v2_env_base_s6_env_base
     100002: //RootNode
+    100004: default
     400000: MSH_env_plateau_v2_env_base_s6_env_base
     400002: //RootNode
+    400004: default
     2100000: ground1SG
     2100002: bodenbelag4SG
+    2100004: MSH_env_plateau_v8_ground1SG
+    2100006: MSH_env_plateau_v8_bodenbelag4SG
+    2100008: lambert5SG
     2300000: MSH_env_plateau_v2_env_base_s6_env_base
+    2300002: default
     3300000: MSH_env_plateau_v2_env_base_s6_env_base
+    3300002: default
     4300000: MSH_env_plateau_v2_env_base_s6_env_base
+    4300002: default
   externalObjects: {}
   materials:
     importMaterials: 1

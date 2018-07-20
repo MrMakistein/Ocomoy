@@ -1,18 +1,127 @@
-newmtl bodenbelag4SG
+newmtl BAseSG
 illum 4
-Kd 0.53 0.66 0.13
+Kd 0.66 0.64 0.58
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 Ni 1.00
-newmtl ground1SG
+newmtl Base1SG
 illum 4
 Kd 0.93 0.86 0.29
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 Ni 1.00
-newmtl wasserfallSG
+newmtl BodenbelagSG
+illum 4
+Kd 0.53 0.66 0.13
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl HouseSG
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl MSH_env_plateau_v2_env_base_s6_env_baseSG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TEX_ground_Sand_Tiles_1.psd
+Ni 1.00
+newmtl MSH_env_plateau_v2_env_base_s6_env_baseSG1
+illum 4
+Kd 0.51 0.57 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl MSH_env_plateau_v3:bodenbelag4SG
+illum 4
+Kd 0.53 0.66 0.13
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl MSH_env_plateau_v3:ground1SG
+illum 4
+Kd 0.93 0.86 0.29
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl MSH_env_plateau_v8:bodenbelag4SG
+illum 4
+Kd 0.53 0.66 0.13
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl MSH_env_plateau_v8:ground1SG
+illum 4
+Kd 0.93 0.86 0.29
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl MSH_env_river_v4:wasserfallSG
 illum 4
 Kd 0.02 0.50 0.50
 Ka 0.00 0.00 0.00
 Tf 0.93 0.93 0.93
+Ni 1.00
+newmtl SandSparkleSG
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl fluss_smoothedSG
+illum 4
+Kd 0.02 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl group2_MSH_env_riverv6SG
+illum 4
+Kd 0.06 0.87 0.63
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl lambert5SG
+illum 4
+Kd 0.30 0.14 0.02
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl pCube10SG
+illum 4
+Kd 0.66 0.64 0.58
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl pCube24SG
+illum 4
+Kd 0.45 0.25 0.03
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl pCube28SG
+illum 4
+Kd 0.84 0.65 0.25
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl pCube29SG
+illum 4
+Kd 0.71 0.63 0.46
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl pCube42_2SG
+illum 4
+Kd 0.64 0.64 0.61
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl pPlane1SG
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
 Ni 1.00

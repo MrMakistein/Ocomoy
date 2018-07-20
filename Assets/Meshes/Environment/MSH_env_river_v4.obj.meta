@@ -7,12 +7,17 @@ ModelImporter:
   fileIDToRecycleName:
     100000: group2_MSH_env_riverv5
     100002: //RootNode
+    100004: default
     400000: group2_MSH_env_riverv5
     400002: //RootNode
+    400004: default
     2100000: wasserfallSG
     2300000: group2_MSH_env_riverv5
+    2300002: default
     3300000: group2_MSH_env_riverv5
+    3300002: default
     4300000: group2_MSH_env_riverv5
+    4300002: default
   externalObjects: {}
   materials:
     importMaterials: 0

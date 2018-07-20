@@ -116,9 +116,14 @@ public class dnd : MonoBehaviour
 
     public bool secondaryShot = false;
 
+    public bool secondaryShotWithRight = false;
+
+
     private bool secondaryDragClick = false;
 
     private bool secondaryShotClick = false;
+
+    
     private bool lastPressedMouseWasLeft = false;
 
     private bool currentModeIsPNT = false;
@@ -175,11 +180,7 @@ public class dnd : MonoBehaviour
         //main if, if true --> object is beeing picked up.
         //
         //handles everything while picking up, while holding and after release 
-        if(CrossPlatformInputManager.GetButtonDown("PickUp") && is_Holding)
-        {
-
-            is_Holding = false;
-        }
+        
 
         //if the secondary Drag is enabled, check for input     
         secondaryDragClick = (secondaryDrag && CrossPlatformInputManager.GetButton("ActivateCurse") && !is_Holding);
@@ -199,9 +200,13 @@ public class dnd : MonoBehaviour
             lastPressedMouseWasLeft = false;
         }
 
+        if (((CrossPlatformInputManager.GetButtonDown("PickUp") && !secondaryShotWithRight) || (secondaryShotWithRight && CrossPlatformInputManager.GetButtonDown("ActivateCurse"))) && is_Holding)
+        {
+            is_Holding = false;
+        }
 
         //Handles Pickup
-        if ((enableGod && buttonReleased && (CrossPlatformInputManager.GetButton("PickUp") || secondaryDragClick || secondaryShotClick) && (!isDragging || Vector3.Distance(pickUpScreenPos, CrossPlatformInputManager.mousePosition) <= DropDistance) && !stopDragging) || is_Holding)
+        if ((enableGod && buttonReleased && (CrossPlatformInputManager.GetButton("PickUp") || secondaryDragClick || (secondaryShotClick)) && (!isDragging || Vector3.Distance(pickUpScreenPos, CrossPlatformInputManager.mousePosition) <= DropDistance) && !stopDragging) || is_Holding)
         {
             //Check if the player is using a slow effect.
             //TODO: more performent methode for this effect.
@@ -310,6 +315,7 @@ public class dnd : MonoBehaviour
                 {
                     if (secondaryShotClick)
                     {
+                        Debug.Log("Return of the Doggo");
                         currentModeIsPNT = true;
                         is_Holding = true;
                     }
@@ -361,7 +367,7 @@ public class dnd : MonoBehaviour
                     DrObj.AddForce((new Vector3(MouseVector.x, DrObj.transform.position.y, MouseVector.z) - DrObj.transform.position).normalized * strength, ForceMode.Force);
 
                 }
-                if (pickNThrow && !secondaryShot && !secondaryDrag || lastPressedMouseWasLeft && ((secondaryDrag) || (currentModeIsPNT && secondaryShot)))
+                if ((pickNThrow && !secondaryShot && !secondaryDrag) || (lastPressedMouseWasLeft && ((secondaryDrag)) || (currentModeIsPNT && secondaryShot)))
                 {
                     currentModeIsPNT = false;
                     DrObj.AddForce((MouseVector - DrObj.position) * shotStrength);
@@ -385,7 +391,7 @@ public class dnd : MonoBehaviour
             buttonReleased = true;
         }
 
-        
+    
 
         //Camera Update
         oldCameraPosition = currentCamera.transform.position;

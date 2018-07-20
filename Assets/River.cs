@@ -24,11 +24,18 @@ public class River : MonoBehaviour {
             {
                 Debug.Log("entered");
                 Player.instance.in_water = true;
+                Player.instance.StartWaterParticles();
 
 
             }
             Player.instance.water_count++;
+        } else if (col.tag == "Interactive")
+        {
+            col.GetComponent<InteractiveSettings>().water_particle_system.Play();
+            col.GetComponent<InteractiveSettings>().PlaySplashSound();
         }
+
+        
 
     }
 
@@ -41,6 +48,7 @@ public class River : MonoBehaviour {
             {
                 Debug.Log("exit");
                 Player.instance.in_water = false;
+                Player.instance.StopWaterParticles();
 
             }
 

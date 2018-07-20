@@ -16,6 +16,12 @@ public class InteractiveSettings : MonoBehaviour
     public GameObject combo_particles3;
     public float combo_particle_reset_timer = 0;
     public float shrink_timer = 0;
+    public GameObject water_particles;
+    public ParticleSystem water_particle_system;
+    public AudioClip[] splash_sounds;
+    public AudioSource AudioSource;
+    public float splash_cd;
+
 
     //used to reset the position in the "CollectibleOutOfReach" script 
     public float illegal_position_reset_timer = 0;
@@ -24,9 +30,10 @@ public class InteractiveSettings : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        splash_cd = 10;
         //isCollectible = false; //default: not a collectible; will be changed by SpawnController	
         //isCollectible = false;
-
+        water_particle_system = water_particles.GetComponent<ParticleSystem>();
         GetComponent<Rigidbody>().isKinematic = false; //disable kinematics -> can be grabbed
         GetComponent<Collider>().isTrigger = false;
     }
@@ -48,6 +55,11 @@ public class InteractiveSettings : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (splash_cd >= 0)
+        {
+            splash_cd = splash_cd - 0.1f;
+        }
+
         if (shrink_timer > 0)
         {
             shrink_timer += 0.01f;
@@ -104,12 +116,19 @@ public class InteractiveSettings : MonoBehaviour
         }
     }
 
+    public void PlaySplashSound()
+    {
+        
+        if (splash_cd <= 0)
+        {
+            AudioSource.PlayOneShot(splash_sounds[(int)(Random.value * splash_sounds.Length) % splash_sounds.Length]);
+            splash_cd = 2;
+        }
+    }
 
     void Update()
     {
-        
-        
-
+      
     }
 
 }

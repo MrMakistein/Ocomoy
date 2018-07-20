@@ -6,7 +6,8 @@ public class PlayerAudioMananger : MonoBehaviour
 {
 
 
-    public AudioClip[] footStep;
+    public AudioClip[] footStep_normal;
+    public AudioClip[] footStep_water;
     public AudioSource PlayerAudioSource;
     // Use this for initialization
     void Start()
@@ -23,6 +24,16 @@ public class PlayerAudioMananger : MonoBehaviour
     void FootStep()
     {
         //Takes a random footstep sound from the footstep array
-        PlayerAudioSource.PlayOneShot(footStep[(int)(Random.value * footStep.Length) % footStep.Length]);
+        if (Player.instance.in_water)
+        {
+            PlayerAudioSource.PlayOneShot(footStep_water[(int)(Random.value * footStep_water.Length) % footStep_water.Length]);
+        } else
+        {
+            PlayerAudioSource.PlayOneShot(footStep_normal[(int)(Random.value * footStep_normal.Length) % footStep_normal.Length]);
+        }
+      
+
+       
+
     }
 }
