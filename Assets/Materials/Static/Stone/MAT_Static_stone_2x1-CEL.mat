@@ -62,6 +62,7 @@ Material:
     - _AlphaCutOff: 0
     - _AnimSpeed: 1
     - _Aufheller: 0.2
+    - _BumpDepth: 1
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1

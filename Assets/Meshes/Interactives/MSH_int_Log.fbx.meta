@@ -12,7 +12,17 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: Wood
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WoodFront
+    second: {fileID: 2100000, guid: 07fd3572f1dd11b4db1173eec2371165, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WoodSide
+    second: {fileID: 2100000, guid: ebf9983ccde946f49b98800aafc59d9a, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

@@ -403,6 +403,8 @@ public class dnd : MonoBehaviour
     public void ReleaseObject()
     {
         buttonReleased = false;
+        currentModeIsPNT = false;
+        is_Holding = false;
     }
 
     private GameObject GetObjectFromMouseRaycast()
@@ -509,6 +511,7 @@ public class dnd : MonoBehaviour
         return v3;
     }
 
+   
 
     //for coroutine
     IEnumerator resetCollision(Rigidbody body, float delayTime)

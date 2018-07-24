@@ -120,6 +120,8 @@
 			CGPROGRAM
 			// required to use ComputeScreenPos()
 			#include "UnityCG.cginc"
+			#include "ClassicNoise2D.hlsl"
+			#include "FractalNoise.hlsl"
 
 			#pragma vertex vert
 			#pragma fragment frag
@@ -138,7 +140,7 @@
 			
 			//For Flow effect
 			sampler2D _SpriteMap;
-			//is Filled automatically with scale and offset from map
+			//is Filled automatically with tiling(xy) and offset(zw) from map
 			float4 _SpriteMap_ST;
 			float4 _FoamColor;
 			float _flowSpeed;
@@ -219,14 +221,20 @@
 
 					col = foamLine * _EdgeColor + _Color;
 				}
+				
 				//float4 col = foamRamp * _Color;
 				
-				float noiseForWaves = float4(tex2D(_SpriteMap, float2(TRANSFORM_TEX(input.UVFlowcoord.xy, _SpriteMap).x, TRANSFORM_TEX(input.UVFlowcoord.xy, _SpriteMap).y + _Time.x * _flowSpeed))).r;
-				col = noiseForWaves > _FoamThreshhold && foamRamp != 1? _Color + _FoamColor : col;
+				//float s = 100.0;
+				float2 uv = float2(TRANSFORM_TEX(input.UVFlowcoord.xy, _SpriteMap).x, TRANSFORM_TEX(input.UVFlowcoord.xy, _SpriteMap).y + _Time.x *  _flowSpeed);
+				//float2 period = s*2.0;
 
-				
-				
+				//float noiseForWaves = float4(tex2D(_SpriteMap, float2(TRANSFORM_TEX(input.UVFlowcoord.xy, _SpriteMap).x, TRANSFORM_TEX(input.UVFlowcoord.xy, _SpriteMap).y + _Time.x * _flowSpeed))).r;
+				//float noiseForWaves = pnoise(uv,period);
 
+				float BlurAmount = 0.2;
+				
+				float noiseForWaves = frac_noise(uv, _Time.y).x;
+				col = noiseForWaves > _FoamThreshhold && foamRamp != 1 ? _Color + _FoamColor : col;
 				return col;
 			}
 

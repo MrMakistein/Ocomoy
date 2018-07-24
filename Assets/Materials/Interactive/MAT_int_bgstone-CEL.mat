@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: MAT_int_bgstone-CEL
-  m_Shader: {fileID: 4800000, guid: 7ed66685e1692a94c8e82233723b7db8, type: 3}
+  m_Shader: {fileID: 4800000, guid: c691f8a4084f4d44e9cdd626f68d2ccd, type: 3}
   m_ShaderKeywords: _USEGRADIENTCOLORS_ON _USERAMPTEXTURE_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -78,8 +78,8 @@ Material:
     - _NoiseScale: 1
     - _OcclusionStrength: 1
     - _Offset: -1
-    - _OutlineDot: 0.25
-    - _OutlineExtrusion: 0
+    - _OutlineDot: 0
+    - _OutlineExtrusion: 0.1
     - _Parallax: 0.02
     - _RampColorBlend: 0
     - _RampPos1: 0.297
@@ -97,7 +97,7 @@ Material:
     m_Colors:
     - _Color: {r: 0.6397059, g: 0.6360727, b: 0.6067799, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}
     - _RampColor1: {r: 0.29411763, g: 0.29411763, b: 0.29411763, a: 1}
     - _RampColor1Grad: {r: 0.22461219, g: 0.22794116, b: 0.16760378, a: 1}
     - _RampColor2: {r: 0.60294116, g: 0.60294116, b: 0.60294116, a: 1}

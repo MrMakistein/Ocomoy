@@ -90,6 +90,10 @@ public class Player : MonoBehaviour {
     public GameObject water_particles;
     public ParticleSystem water_particle_system;
 
+    public GameObject charged_particles;
+    public ParticleSystem charged_particle_system;
+
+
     private void Awake()
     {
         Player.instance = this;
@@ -101,6 +105,7 @@ public class Player : MonoBehaviour {
         water_count = 0;
         hit_particle_system = hit_particles.GetComponent<ParticleSystem>();
         water_particle_system = water_particles.GetComponent<ParticleSystem>();
+        charged_particle_system = charged_particles.GetComponent<ParticleSystem>();
 
         arena = GameObject.Find("Arena");
         slip_count = 5;
@@ -169,6 +174,8 @@ public class Player : MonoBehaviour {
             display_slippy.SetActive(false);
             display_clone.SetActive(false);
             display_slow.SetActive(false);
+
+            charged_particle_system.Stop();
 
             if (equipped_ability >= 2 && equipped_ability <= 6)
             {
@@ -634,6 +641,7 @@ public class Player : MonoBehaviour {
             if (col.gameObject.GetComponent<Shrine>().shrine_id > 1) { 
                 col.gameObject.GetComponent<Shrine>().shrine_cooldown_timer = col.gameObject.GetComponent<Shrine>().shrine_cooldown;
                 col.gameObject.GetComponent<Shrine>().StartCoroutine("StartPray");
+                charged_particle_system.Play();
                 equipped_ability = col.gameObject.GetComponent<Shrine>().shrine_id;
 
 

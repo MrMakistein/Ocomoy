@@ -59,6 +59,12 @@ Kd 0.93 0.86 0.29
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 Ni 1.00
+newmtl MSH_env_river_v4:wasserfallSG
+illum 4
+Kd 0.02 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 0.93 0.93 0.93
+Ni 1.00
 newmtl SandSparkleSG
 illum 4
 Kd 1.00 1.00 1.00

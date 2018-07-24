@@ -22,7 +22,7 @@ public class River : MonoBehaviour {
 
             if (Player.instance.water_count <= 0)
             {
-                Debug.Log("entered");
+                //Debug.Log("entered");
                 Player.instance.in_water = true;
                 Player.instance.StartWaterParticles();
 
@@ -46,7 +46,7 @@ public class River : MonoBehaviour {
 
             if (Player.instance.water_count <= 1)
             {
-                Debug.Log("exit");
+                //Debug.Log("exit");
                 Player.instance.in_water = false;
                 Player.instance.StopWaterParticles();
 

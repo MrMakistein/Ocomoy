@@ -79,6 +79,7 @@ public class GodEffects : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         //to display the correct item
         if (CurrentType == GodEffectType.tornado)
         {
@@ -104,18 +105,20 @@ public class GodEffects : MonoBehaviour
         if (CurrentType == GodEffectType.blizzard)
         {
             //display.gameObject.GetComponent<Text>().text = "blizzard";
-        }
+        }*/
 
         if (!charged && dnd.draggingObject == this.gameObject && CrossPlatformInputManager.GetButtonDown("ActivateCurse"))
         {
             charged = true;
             GetComponent<Renderer>().material = chargeMaterial;
+
             
         }
 
 
         if(charged && CrossPlatformInputManager.GetButtonDown("ActivateCurse") && !ThrowOrClick)
         {
+            dnd.instance.ReleaseObject();
             StatsManager.instance.round_powerups_used_god++;
             this.gameObject.SetActive (false); //deactivate god object (destroy after Sound has played)
 			//new calculated Position, to spawn the effect on the ground(with a slight offset)

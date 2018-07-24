@@ -83,35 +83,57 @@ public class InteractiveSettings : MonoBehaviour
         {
             if (combo_particle_reset_timer >= 2.3f && ComboManager.instance.combo_level == 3)
             {
-                combo_particles1.SetActive(true);
-                combo_particles1.GetComponent<ComboParticles>().StartParticles();
+                if (combo_particles1 != null)
+                {
+                    combo_particles1.SetActive(true);
+                    combo_particles1.GetComponent<ComboParticles>().StartParticles();
+                }
             }
             else if (combo_particle_reset_timer >= 2.3f && ComboManager.instance.combo_level == 4)
             {
-                combo_particles2.SetActive(true);
-                combo_particles2.GetComponent<ComboParticles>().StartParticles();
+                if (combo_particles2 != null)
+                {
+                    combo_particles2.SetActive(true);
+                    combo_particles2.GetComponent<ComboParticles>().StartParticles();
+                }
             }
             else if (combo_particle_reset_timer >= 2.3f && ComboManager.instance.combo_level == 5)
             {
-                combo_particles3.SetActive(true);
-                combo_particles3.GetComponent<ComboParticles>().StartParticles();
-                
+                if (combo_particles3 != null) { 
+                    combo_particles3.SetActive(true);
+                    combo_particles3.GetComponent<ComboParticles>().StartParticles();
+                }
             }
 
             combo_particle_reset_timer = combo_particle_reset_timer - 0.01f;
 
             if (combo_particle_reset_timer > 2.0 && combo_particle_reset_timer <= 2.29)
             {
-                combo_particles2.GetComponent<ComboParticles>().StopParticles();
-                combo_particles3.GetComponent<ComboParticles>().StopParticles();
+                if (combo_particles2 != null)
+                {
+                    combo_particles2.GetComponent<ComboParticles>().StopParticles();
+                }
+                if (combo_particles3 != null)
+                {
+                    combo_particles3.GetComponent<ComboParticles>().StopParticles();
+                }
                 combo_particle_reset_timer = 2.0f;
             }
 
             if (combo_particle_reset_timer <= 0)
             {
-                combo_particles1.SetActive(false);
-                combo_particles2.SetActive(false);
-                combo_particles3.SetActive(false);
+                if (combo_particles1 != null)
+                {
+                    combo_particles1.SetActive(false);
+                }
+                if (combo_particles2 != null)
+                {
+                    combo_particles2.SetActive(false);
+                }
+                if (combo_particles3 != null)
+                { 
+                    combo_particles3.SetActive(false);
+                }
             }
         }
     }

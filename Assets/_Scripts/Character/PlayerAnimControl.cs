@@ -11,6 +11,7 @@ public class PlayerAnimControl : MonoBehaviour {
     //0 = idle, 1 = running
     float blendVal = 0;
     public static bool pray = false;
+    public static bool dash = false;
 
     bool praytest;
     private void Awake()
@@ -40,7 +41,14 @@ public class PlayerAnimControl : MonoBehaviour {
         } else {
             anim.SetBool("isPraying", false);
         }
-        
+        if (dash)
+        {
+            anim.SetBool("isDashing", true);
+            dash = false;
+        } else
+        {
+            anim.SetBool("isDashing", false);
+        }
     }
 
     public static void playPrayAnimation()

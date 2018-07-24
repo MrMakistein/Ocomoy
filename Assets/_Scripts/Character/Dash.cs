@@ -37,6 +37,7 @@ public class Dash : MonoBehaviour {
            
             dashTimer = dashDuration;
             coolDownTimer = coolDownAmount;
+            PlayerAnimControl.dash = true;
         }
 		
 	}

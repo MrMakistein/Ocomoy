@@ -59,7 +59,9 @@ public class ThrowObject : MonoBehaviour
 
             if (combo_kill_timer <= 10)
             {
-                mesh.SetActive(false);
+                if (mesh != null) { 
+                    mesh.SetActive(false);
+                    }
                 this.GetComponent<BoxCollider>().enabled = false;
             }
 

@@ -1,6 +1,9 @@
 ﻿Shader "Custom/CelShader" {
 	Properties{ //show up in the material inspector
 		_MainTex("Texture", 2D) = "white" {}
+
+		_BumpMap("Normal Map", 2D) = "bump" { }
+		_BumpHeight("Bump Height", float) = 1
 	_Cutoff("Alpha Cut off", Range(0, 1)) = 0.1
 		_RampTex("Ramp", 2D) = "white" {}
 	_Color("Color", Color) = (1, 1, 1)
@@ -44,6 +47,103 @@
 			"Queue" = "AlphaTest"
 			"RenderType" = "TransparentCutout"
 		}
+
+		// Outline pass
+
+		Pass
+	{
+		//Blend DstColor SrcColor // Multiplicative
+
+		// Won't draw where it sees ref value 4
+		Cull Front
+		ZWrite OFF
+		ZTest ON
+
+		Stencil
+		{
+			Ref 4
+			Comp always
+			Pass replace
+			ZFail keep
+		}
+
+		Blend SrcAlpha OneMinusSrcAlpha
+
+		CGPROGRAM
+#pragma vertex vert
+#pragma fragment frag
+
+#include "UnityCG.cginc"
+
+		// Properties
+		uniform float4 _OutlineColor;
+	uniform float _OutlineSize;
+	uniform float _OutlineExtrusion;
+	uniform float _OutlineDot;
+	uniform float4 _MousePos;
+
+	struct vertexInput
+	{
+		float4 vertex : POSITION;
+		float3 normal : NORMAL;
+	};
+
+	struct vertexOutput
+	{
+		float4 pos : SV_POSITION;
+		float4 color : COLOR;
+	};
+
+	vertexOutput vert(vertexInput input)
+	{
+		vertexOutput output;
+
+		float4 newPos = input.vertex;
+
+		// normal extrusion technique
+		float3 normal = normalize(input.normal);
+		newPos += float4(normal, 0.0) * _OutlineExtrusion;
+
+		// convert to world space
+		output.pos = UnityObjectToClipPos(newPos);
+		output.color = _OutlineColor;
+		return output;
+	}
+
+	float4 frag(vertexOutput input) : COLOR
+	{
+		// checker value will be negative for 4x4 blocks of pixels
+		// in a checkerboard pattern
+		//input.pos.xy = floor(input.pos.xy * _OutlineDot) * 0.5;
+		//float checker = -frac(input.pos.r + input.pos.g);
+
+		// clip HLSL instruction stops rendering a pixel if value is negative
+		//clip(checker);
+		if (_OutlineExtrusion == 0) {
+			discard;
+		}
+
+
+	//calculate screen position
+	float4 screenPos = ComputeScreenPos(input.pos);
+
+	//_CutObjPos
+	float dx = _MousePos.x / 2 - screenPos.x + 5;
+	float dy = -_MousePos.y / 2 - screenPos.y;
+
+
+	//include aspect ratio, that cutout appears round |not needed apparently
+	//dy *= _ScreenParams.y / _ScreenParams.x;
+	float dist = (sqrt(dx * dx + dy * dy) / (_ScreenParams.y / 20));
+	dist = 0;
+	input.color.a = input.color.a - saturate(-0.2 + dist);
+	return input.color;
+	}
+
+		ENDCG
+
+	}//end outline pass
+
 		//Regular Color and Lighting pass
 		Pass{
 			Tags{
@@ -77,6 +177,9 @@
 		#pragma multi_compile_fwdbase_fullshadows
 		// Properties
 		sampler2D _MainTex;
+		sampler2D _BumpMap;
+		float4 _BumpMap_ST;
+		float _BumpHeight;
 		float _Cutoff;
 
 		sampler2D _RampTex;
@@ -213,6 +316,7 @@
 			float3 normal : NORMAL;
 			float3 texCoord : TEXCOORD0;
 			float2 texCoord1 : TEXCOORD1;
+			float4 tangent : TANGENT;
 		};
 
 		struct vertexOutput
@@ -225,6 +329,10 @@
 			float2 lightMap : TEXCOORD3;
 			float3 objectPos : TEXCOORD4;
 			LIGHTING_COORDS(5,6) // shadows
+
+			half3 tspace0 : TEXCOORD7; // tangent.x, bitangent.x, normal.x
+			half3 tspace1 : TEXCOORD8; // tangent.y, bitangent.y, normal.y
+			half3 tspace2 : TEXCOORD9; // tangent.z, bitangent.z, normal.z
 		};
 
 
@@ -235,13 +343,23 @@
 			// convert input to world space
 			output.pos = UnityObjectToClipPos(input.vertex);
 			float4 normal4 = float4(input.normal, 0.0); // need float4 to mult with 4x4 matrix
+
 			output.normal = normalize(mul(normal4, unity_WorldToObject).xyz);
-
-
 			output.texCoord = input.texCoord;
 
 			output.screenPos = ComputeScreenPos(output.pos);
 			output.objectPos = mul(unity_ObjectToWorld, input.vertex);
+			//for normal map
+			half3 wNormal = UnityObjectToWorldNormal(input.normal);
+			half3 wTangent = UnityObjectToWorldDir(input.tangent.xyz);
+			// compute bitangent from cross product of normal and tangent
+			half tangentSign = input.tangent.w * unity_WorldTransformParams.w;
+			half3 wBitangent = cross(wNormal, wTangent) * tangentSign;
+			// output the tangent space matrix
+			output.tspace0 = half3(wTangent.x, wBitangent.x, wNormal.x);
+			output.tspace1 = half3(wTangent.y, wBitangent.y, wNormal.y);
+			output.tspace2 = half3(wTangent.z, wBitangent.z, wNormal.z);
+
 
 	#if LIGHTMAP_ON
 			output.lightMap = input.texCoord1.xy * unity_LightmapST.xy + unity_LightmapST.zw;
@@ -255,9 +373,20 @@
 		float4 frag(vertexOutput input, float facing : VFACE) : COLOR
 		{
 
-			//get Camera Depth if Gradient is Activated
+			//normal mapping
+			half2 normalUV = TRANSFORM_TEX(input.texCoord.xy, _BumpMap);
+			
+			//+= tex2D(_BumpMap, input.texCoord.xy);//TRANSFORM_TEX(input.texCoord, _BumpMap));
 
-
+			half3 tnormal = UnpackNormal(tex2D(_BumpMap, normalUV));
+			//invert red for correct calculation
+			tnormal.r *= -1;
+			tnormal.z = _BumpHeight;
+			// transform normal from tangent to world space
+			half3 worldNormal;
+			worldNormal.x = dot(input.tspace0, tnormal);
+			worldNormal.y = dot(input.tspace1, tnormal);
+			worldNormal.z = dot(input.tspace2, tnormal);
 
 			// convert light direction to world space & normalize
 			// _WorldSpaceLightPos0 provided by Unity
@@ -266,10 +395,11 @@
 			// finds location on ramp texture that we should sample
 			// based on angle between surface normal and light direction
 
-
-			float ramp = clamp(dot(input.normal, lightDir), 0.05, 1.0); //vom lichteinfallswinkel abhängiger wert (wie hell wird der vertex(?)/Punkt(?) beleuchtet)
+			float ramp = clamp(dot(input.normal, lightDir), 0.05, 1.0);		//vom lichteinfallswinkel abhängiger wert (wie hell wird der vertex(?)/Punkt(?) beleuchtet)
 																		//--> wenn dot product null: wird gar nicht beleuchtet (links auf ramp), sonst rechts = 1 oder dazwischen
 
+			ramp = clamp(dot(worldNormal, lightDir), 0.05, 1.0);
+			
 			float3 lighting = float3(0, 0, 0);
 			float3 tintedLighting = float3(0, 0, 0);
 
@@ -444,93 +574,7 @@
 
 
 			//---------------------------------------------------------------------------------------------------------------------
-			// Outline pass
 
-				Pass
-			{
-				//Blend DstColor SrcColor // Multiplicative
-
-				// Won't draw where it sees ref value 4
-				Cull Front
-				ZWrite OFF
-				ZTest ON
-
-				Blend SrcAlpha OneMinusSrcAlpha
-
-				CGPROGRAM
-		#pragma vertex vert
-		#pragma fragment frag
-
-		#include "UnityCG.cginc"
-
-			// Properties
-			uniform float4 _OutlineColor;
-			uniform float _OutlineSize;
-			uniform float _OutlineExtrusion;
-			uniform float _OutlineDot;
-			uniform float4 _MousePos;
-
-		struct vertexInput
-		{
-			float4 vertex : POSITION;
-			float3 normal : NORMAL;
-		};
-
-		struct vertexOutput
-		{
-			float4 pos : SV_POSITION;
-			float4 color : COLOR;
-		};
-
-		vertexOutput vert(vertexInput input)
-		{
-			vertexOutput output;
-
-			float4 newPos = input.vertex;
-
-			// normal extrusion technique
-			float3 normal = normalize(input.normal);
-			newPos += float4(normal, 0.0) * _OutlineExtrusion;
-
-			// convert to world space
-			output.pos = UnityObjectToClipPos(newPos);
-			output.color = _OutlineColor;
-			return output;
-		}
-
-		float4 frag(vertexOutput input) : COLOR
-		{
-			// checker value will be negative for 4x4 blocks of pixels
-			// in a checkerboard pattern
-			//input.pos.xy = floor(input.pos.xy * _OutlineDot) * 0.5;
-			//float checker = -frac(input.pos.r + input.pos.g);
-
-			// clip HLSL instruction stops rendering a pixel if value is negative
-			//clip(checker);
-			if (_OutlineExtrusion == 0) {
-				discard;
-			}
-
-
-			//calculate screen position
-			float4 screenPos = ComputeScreenPos(input.pos);
-
-			//_CutObjPos
-			float dx = _MousePos.x/2 - screenPos.x + 5;
-			float dy = -_MousePos.y/2 - screenPos.y;
-
-
-			//include aspect ratio, that cutout appears round |not needed apparently
-			//dy *= _ScreenParams.y / _ScreenParams.x;
-			float dist = (sqrt(dx * dx + dy * dy) / (_ScreenParams.y / 20));
-
-			input.color.a = input.color.a - saturate(-0.2 + dist);
-			return input.color;
-			}
-
-			ENDCG
-
-	}//end outline pass
 
 
 					

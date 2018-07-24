@@ -4,6 +4,9 @@ using UnityEngine;
 /// <summary>
 /// For controlling the Appearance of the Health Circle.
 /// Should be attached to the responsible projector!
+/// <notes>
+/// The health ramp must be set to readable! A width of min. 100 px would be preferrable.++
+/// </notes>
 /// </summary>
 public class HealthBarControl : MonoBehaviour {
     private GameObject _player;
@@ -26,7 +29,8 @@ public class HealthBarControl : MonoBehaviour {
     public Sprite _sprite;
     public Color _fullHealthColor = Color.green;
     public Color _noHealthColor = Color.red;
-
+    public Color _limitColor = Color.gray;
+    public Texture2D _healthRamp; //right is full health color, left is no health color, min 3 pixels height required
 
 	// Use this for initialization
 	void Start () {
@@ -42,13 +46,19 @@ public class HealthBarControl : MonoBehaviour {
         _projectorOuterLimit.orthographicSize = _maxOrthoSize;
         _projectorInnerLimit.orthographicSize = _minOrthoSize;
 
+        //Set all initial colors
+        _noHealthColor = _healthRamp.GetPixel(0, 0);
+        _fullHealthColor = _healthRamp.GetPixel(_healthRamp.width, 0);
+        _projector.material.SetColor("_Color", _fullHealthColor);
+        _projectorInnerLimit.material.SetColor("_Color", _limitColor);
+        _projectorOuterLimit.material.SetColor("_Color", _limitColor);
 
     }
 
     // Update is called once per frame
     void Update () {
         _currentHealth = _player.GetComponent<Player>().currentHealth;
-        UpdateHealthCircle(_currentHealth);
+        UpdateHealthCircle(_currentHealth); //TODO: ggf aus Player aufrufen bei Hit/recover, nicht in update
     }
 
     /// <summary>
@@ -59,7 +69,7 @@ public class HealthBarControl : MonoBehaviour {
     {
         if (currentHealth >= 0)
         {
-            #region calculate size
+            #region adjust circle scale
             // map health percentage to defined circle radius range
             //new_value = (old_value - old_bottom) / (old_top - old_bottom) * (new_top - new_bottom) + new_bottom;
             float toBeOrthoSize = (currentHealth / _maxHealth) * _maxOrthoSize; //--> verhaeltnis
@@ -69,18 +79,19 @@ public class HealthBarControl : MonoBehaviour {
                 toBeOrthoSize = toBeOrthoSize / _maxOrthoSize * (_maxOrthoSize - _minOrthoSize) + _minOrthoSize;
             }
             _projector.orthographicSize = toBeOrthoSize;
-            #endregion set size 
+            #endregion circlescale
 
-            #region set color
-            //access Shader Parameter!
-            //float H = 0;
-            //float S = 0;
-            //float V = 0;
-            //Color.RGBToHSV(_fullHealthColor, out H, out S, out V);
-           // Debug.Log(H + " " + S + " " + V);
-           // _projector.material.SetColor("_Color", _fullHealthColor);
-            #endregion set color
-
+            #region adjust circle color
+            Color colorToSet;
+            //get corresponding Pixel
+            int xPos = Mathf.FloorToInt(_healthRamp.width * (currentHealth / _maxHealth)); //map health percentage to ramp width
+            colorToSet = _healthRamp.GetPixel(xPos, 0); //get color at corresponding health percentage (height does not matter)
+            _projector.material.SetColor("_Color", colorToSet); //access Shader Parameter!
+            #endregion circlecolor
+        } else { //if health falls below zero...
+            _projector.orthographicSize = _minOrthoSize; //set to min size
+            //_projector.material.SetColor("_Color", _healthRamp.GetPixel(0, 0)); //color in no health color
+            _projector.material.SetColor("_Color", _noHealthColor); //color in no health color
         }
     }
 
