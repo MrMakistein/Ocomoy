@@ -522,6 +522,7 @@ ModelImporter:
     2300334: polySurface284
     2300336: polySurface285
     2300338: polySurface89
+    2300340: //RootNode
     3300000: pCube155
     3300002: pCube158
     3300004: pCube161
@@ -692,6 +693,7 @@ ModelImporter:
     3300334: polySurface284
     3300336: polySurface285
     3300338: polySurface89
+    3300340: //RootNode
     4300000: polySurface331
     4300002: pCube390
     4300004: polySurface332
@@ -862,6 +864,7 @@ ModelImporter:
     4300334: polySurface285
     4300336: pCube353
     4300338: pCube354
+    4300340: group42
     7400000: Take 001
     9500000: //RootNode
   externalObjects:

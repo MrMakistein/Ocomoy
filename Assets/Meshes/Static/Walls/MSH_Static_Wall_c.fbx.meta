@@ -221,6 +221,102 @@ ModelImporter:
     100426: polySurface165
     100428: polySurface63
     100430: polySurface64
+    100432: MSH_STATIC_Wall_A
+    100434: MSH_STATIC_Wall_A1
+    100436: transform1
+    100438: transform10
+    100440: transform11
+    100442: transform12
+    100444: transform13
+    100446: transform14
+    100448: transform15
+    100450: transform16
+    100452: transform17
+    100454: transform18
+    100456: transform19
+    100458: transform2
+    100460: transform20
+    100462: transform21
+    100464: transform22
+    100466: transform23
+    100468: transform24
+    100470: transform25
+    100472: transform26
+    100474: transform27
+    100476: transform28
+    100478: transform29
+    100480: transform3
+    100482: transform30
+    100484: transform31
+    100486: transform32
+    100488: transform33
+    100490: transform34
+    100492: transform35
+    100494: transform36
+    100496: transform37
+    100498: transform38
+    100500: transform39
+    100502: transform4
+    100504: transform40
+    100506: transform41
+    100508: transform42
+    100510: transform43
+    100512: transform44
+    100514: transform45
+    100516: transform46
+    100518: transform47
+    100520: transform48
+    100522: transform49
+    100524: transform5
+    100526: transform50
+    100528: transform51
+    100530: transform52
+    100532: transform53
+    100534: transform54
+    100536: transform55
+    100538: transform56
+    100540: transform57
+    100542: transform58
+    100544: transform59
+    100546: transform6
+    100548: transform60
+    100550: transform61
+    100552: transform62
+    100554: transform63
+    100556: transform64
+    100558: transform65
+    100560: transform66
+    100562: transform67
+    100564: transform68
+    100566: transform69
+    100568: transform7
+    100570: transform70
+    100572: transform71
+    100574: transform72
+    100576: transform73
+    100578: transform74
+    100580: transform75
+    100582: transform76
+    100584: transform77
+    100586: transform78
+    100588: transform79
+    100590: transform8
+    100592: transform80
+    100594: transform81
+    100596: transform82
+    100598: transform83
+    100600: transform84
+    100602: transform85
+    100604: transform86
+    100606: transform87
+    100608: transform88
+    100610: transform89
+    100612: transform9
+    100614: transform90
+    100616: transform91
+    100618: transform92
+    100620: transform93
+    100622: transform94
     400000: //RootNode
     400002: pCube155
     400004: pCube158
@@ -437,6 +533,102 @@ ModelImporter:
     400426: polySurface165
     400428: polySurface63
     400430: polySurface64
+    400432: MSH_STATIC_Wall_A
+    400434: MSH_STATIC_Wall_A1
+    400436: transform1
+    400438: transform10
+    400440: transform11
+    400442: transform12
+    400444: transform13
+    400446: transform14
+    400448: transform15
+    400450: transform16
+    400452: transform17
+    400454: transform18
+    400456: transform19
+    400458: transform2
+    400460: transform20
+    400462: transform21
+    400464: transform22
+    400466: transform23
+    400468: transform24
+    400470: transform25
+    400472: transform26
+    400474: transform27
+    400476: transform28
+    400478: transform29
+    400480: transform3
+    400482: transform30
+    400484: transform31
+    400486: transform32
+    400488: transform33
+    400490: transform34
+    400492: transform35
+    400494: transform36
+    400496: transform37
+    400498: transform38
+    400500: transform39
+    400502: transform4
+    400504: transform40
+    400506: transform41
+    400508: transform42
+    400510: transform43
+    400512: transform44
+    400514: transform45
+    400516: transform46
+    400518: transform47
+    400520: transform48
+    400522: transform49
+    400524: transform5
+    400526: transform50
+    400528: transform51
+    400530: transform52
+    400532: transform53
+    400534: transform54
+    400536: transform55
+    400538: transform56
+    400540: transform57
+    400542: transform58
+    400544: transform59
+    400546: transform6
+    400548: transform60
+    400550: transform61
+    400552: transform62
+    400554: transform63
+    400556: transform64
+    400558: transform65
+    400560: transform66
+    400562: transform67
+    400564: transform68
+    400566: transform69
+    400568: transform7
+    400570: transform70
+    400572: transform71
+    400574: transform72
+    400576: transform73
+    400578: transform74
+    400580: transform75
+    400582: transform76
+    400584: transform77
+    400586: transform78
+    400588: transform79
+    400590: transform8
+    400592: transform80
+    400594: transform81
+    400596: transform82
+    400598: transform83
+    400600: transform84
+    400602: transform85
+    400604: transform86
+    400606: transform87
+    400608: transform88
+    400610: transform89
+    400612: transform9
+    400614: transform90
+    400616: transform91
+    400618: transform92
+    400620: transform93
+    400622: transform94
     2100000: Static_B_0009_WallStones9
     2100002: WallStones1
     2100004: Static_B_0009_WallStones1
@@ -657,6 +849,8 @@ ModelImporter:
     2300424: polySurface165
     2300426: polySurface63
     2300428: polySurface64
+    2300430: MSH_STATIC_Wall_A1
+    2300432: //RootNode
     3300000: pCube155
     3300002: pCube158
     3300004: pCube161
@@ -872,6 +1066,8 @@ ModelImporter:
     3300424: polySurface165
     3300426: polySurface63
     3300428: polySurface64
+    3300430: MSH_STATIC_Wall_A1
+    3300432: //RootNode
     4300000: polySurface331
     4300002: pCube390
     4300004: polySurface332
@@ -1087,6 +1283,7 @@ ModelImporter:
     4300424: polySurface139
     4300426: polySurface140
     4300428: pCube210
+    4300430: MSH_STATIC_Wall_A1
     9500000: //RootNode
   externalObjects:
   - first:

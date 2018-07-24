@@ -1013,6 +1013,7 @@ ModelImporter:
     2300618: polySurface95 1
     2300620: polySurface96
     2300622: polySurface97
+    2300624: //RootNode
     3300000: pCube10
     3300002: pCube11
     3300004: pCube14
@@ -1325,6 +1326,7 @@ ModelImporter:
     3300618: polySurface95 1
     3300620: polySurface96
     3300622: polySurface97
+    3300624: //RootNode
     4300000: pPlane1
     4300002: pCube9
     4300004: pCube10
@@ -1637,6 +1639,7 @@ ModelImporter:
     4300618: pCube190
     4300620: polySurface117
     4300622: polySurface120
+    4300624: House1
     9500000: //RootNode
   externalObjects:
   - first:

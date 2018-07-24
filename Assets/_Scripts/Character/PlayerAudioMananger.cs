@@ -25,15 +25,16 @@ public class PlayerAudioMananger : MonoBehaviour
     {
         //Takes a random footstep sound from the footstep array
         if (Player.instance.in_water)
-        {
-            PlayerAudioSource.PlayOneShot(footStep_water[(int)(Random.value * footStep_water.Length) % footStep_water.Length]);
+        { 
+            if (footStep_water.Length != 0) { 
+                PlayerAudioSource.PlayOneShot(footStep_water[(int)(Random.value * footStep_water.Length) % footStep_water.Length]);
+            }
         } else
         {
-            PlayerAudioSource.PlayOneShot(footStep_normal[(int)(Random.value * footStep_normal.Length) % footStep_normal.Length]);
+            if (footStep_normal.Length != 0)
+            {
+                PlayerAudioSource.PlayOneShot(footStep_normal[(int)(Random.value * footStep_normal.Length) % footStep_normal.Length]);
+            }
         }
-      
-
-       
-
     }
 }
